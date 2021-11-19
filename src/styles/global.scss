@@ -573,6 +573,12 @@ div {
 
     .markdown-body {
       font-size: 14px !important;
+      
+      pre {
+        white-space: normal;
+        word-break: break-word;
+      }
+
       img {
         max-width: 100%;
       }

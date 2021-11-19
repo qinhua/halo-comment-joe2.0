@@ -72,7 +72,7 @@
           </div>
           <div class="body markdown-body">
             <!-- 将所有的评论内容约束为一段 -->
-            <p v-html="compileContent"></p>
+            <pre v-html="compileContent"></pre>
           </div>
         </div>
       </div>

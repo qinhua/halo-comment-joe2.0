@@ -30,11 +30,11 @@
           configs.aWord || "你是我一生只会遇见一次的惊喜 ..."
         }}</label>
       </div>
-      <div
+      <pre
         class="comment-preview markdown-body"
         v-else
         v-html="renderedContent"
-      ></div>
+      ></pre>
       <!-- 上传图片预览 -->
       <div id="upload-img-show"></div>
       <!-- 表情开关 -->
