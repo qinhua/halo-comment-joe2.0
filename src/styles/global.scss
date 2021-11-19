@@ -573,10 +573,12 @@ div {
 
     .markdown-body {
       font-size: 14px !important;
-      
+
       pre {
+        padding: 0;
         white-space: normal;
         word-break: break-word;
+        background: none;
       }
 
       img {
