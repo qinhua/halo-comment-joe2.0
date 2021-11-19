@@ -1,12 +1,12 @@
 <template>
   <span class="emoji-item" :title="data.description">
-    <img :src="tiebaSrc" />
+    <img :src="hahaSrc" />
   </span>
 </template>
 
 <script>
 export default {
-  name: "TiebaEmoji",
+  name: "HahaEmoji",
   props: {
     data: {
       type: Object,
@@ -15,12 +15,12 @@ export default {
       type: String,
       required: false,
       default:
-        "https://cdn.jsdelivr.net/gh/qinhua/cdn_assets@master/comment/emoji/smilies/",
+        "https://cdn.jsdelivr.net/gh/qinhua/cdn_assets@master/comment/emoji/haha/",
     },
   },
   computed: {
-    tiebaSrc() {
-      return this.url + "icon_" + this.data.name + ".gif";
+    hahaSrc() {
+      return this.url + "icon_" + this.data.name.replace('ha-','') + ".png";
     },
   },
 };

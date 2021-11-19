@@ -1,17 +1,15 @@
 const emojiData = require("../components/EmojiPicker/data/emojis2.js");
 
 export function renderedEmojiHtml(html) {
-  let parser = new DOMParser();
-  let doc = removeNotEmoji(parser.parseFromString(html, "text/html"));
-  let emotions = doc.getElementsByClassName("emotion-item");
+  const parser = new DOMParser();
+  const doc = removeNotEmoji(parser.parseFromString(html, "text/html"));
+  const emotions = doc.getElementsByClassName("emoji-animate");
   for (let i = 0; i < emotions.length; i++) {
-    let emojiName = emotions[i].getAttribute("data-icon");
-
+    const emojiName = emotions[i].getAttribute("data-icon");
     for (let j = 0; j < emojiData["default"].length; j++) {
-      if (emojiData["default"][j]["name"] === emojiName) {
-        let emoji = emojiData["default"][j];
-        let img = emotions[i].getElementsByClassName("img")[0];
-
+      const emoji = emojiData["default"][j];
+      if (emoji.style && emoji.name === emojiName) {
+        const img = emotions[i].getElementsByClassName("img")[0];
         let dataStyle = "";
         Object.keys(emoji.style).forEach(function(item) {
           dataStyle += item + ":" + emoji.style[item] + ";";
@@ -26,16 +24,13 @@ export function renderedEmojiHtml(html) {
 
 /**
  * 判断需要渲染的 HTML 是否属于表情包，如果不属于，则去除此 HTML，仅保留文字
- * issue#17 https://github.com/LIlGG/halo-comment-joe2.0/issues/17
  */
 function removeNotEmoji(doc) {
-  let smilies = doc.getElementsByClassName("smilies");
+  const smilies = doc.getElementsByClassName("emoji-img");
   let skip = true;
-
   for (let i = 0; i < smilies.length; i++) {
-    let name = smilies[i].dataset.icon;
-
-    if (!findEmoji("tieba", name)) {
+    const name = smilies[i].dataset.icon;
+    if (!findEmoji("tieba", name) && !findEmoji("haha", name)) {
       skip = false;
       break;
     }
@@ -45,10 +40,10 @@ function removeNotEmoji(doc) {
     return doc;
   }
 
-  var firstNode = smilies[0];
-  var name = firstNode.dataset.icon;
+  const firstNode = smilies[0];
+  const name = firstNode.dataset.icon;
 
-  if (!findEmoji("tieba", name)) {
+  if (!findEmoji("tieba", name) && !findEmoji("haha", name)) {
     removeNode(firstNode);
   }
 
@@ -56,8 +51,8 @@ function removeNotEmoji(doc) {
 }
 
 function removeNode(node) {
-  let alt = node.getAttribute("alt");
-  let textNode = document.createTextNode(alt);
+  const alt = node.getAttribute("alt");
+  const textNode = document.createTextNode(alt);
   node.parentNode.replaceChild(textNode, node);
 }
 

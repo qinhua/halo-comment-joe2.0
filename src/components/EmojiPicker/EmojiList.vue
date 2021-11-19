@@ -11,22 +11,25 @@
 </template>
 
 <script>
+import HahaEmoji from './HahaEmoji'
 import BilibiliEmoji from './BilibiliEmoji'
-import MenheraEmoji from './MenheraEmoji'
 import TiebaEmoji from './TiebaEmoji'
+import MenheraEmoji from './MenheraEmoji'
 
 export default {
   name: 'EmojiList',
   components: {
+    HahaEmoji,
     BilibiliEmoji,
-    MenheraEmoji,
-    TiebaEmoji
+    TiebaEmoji,
+    MenheraEmoji
   },
   data: () => ({
     categories: [
-      { name: 'bilibili', title: 'bilibili~' },
-      { name: 'menhera', title: '(✪ω✪)' },
+      { name: 'haha', title: 'Haha' },
+      { name: 'bilibili', title: 'Bilibili' },
       { name: 'tieba', title: 'Tieba' },
+      { name: 'menhera', title: '(✪ω✪)' },
     ]
   }),
   props: {
@@ -48,7 +51,7 @@ export default {
     type() {
       if(this.category === "bilibili") {
         return "Math";
-      } else if(this.category === "tieba") {
+      } else if(["tieba","haha"].includes(this.category)) {
         return "BBCode"
       }
       return "";

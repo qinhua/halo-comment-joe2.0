@@ -5,10 +5,17 @@
         <tr>
           <th
             v-for="(categorie, index) in categories"
-            :class="['category', categorie.name + '-box', { active: index === active }, {'on-hover': index === active}]"
+            :class="[
+              'category',
+              categorie.name + '-box',
+              { active: index === active },
+              { 'on-hover': index === active },
+            ]"
             :key="index"
             @click="onSelect(index)"
-          >{{categorie.title}}</th>
+          >
+            {{ categorie.title }}
+          </th>
         </tr>
       </tbody>
     </table>
@@ -16,24 +23,23 @@
 </template>
 
 <script>
-
 export default {
-  name: 'Categories',
+  name: "Categories",
   data: () => ({
     categories: [
-      { name: 'bilibili', title: 'bilibili~' },
-      { name: 'menhera', title: '(✪ω✪)' },
-      { name: 'tieba', title: 'Tieba' },
+      { name: "haha", title: "Haha" },
+      { name: "bilibili", title: "Bilibili" },
+      { name: "tieba", title: "Tieba" },
+      { name: "menhera", title: "(✪ω✪)" },
     ],
-    active: 0
+    active: 0,
   }),
   methods: {
     onSelect(index) {
-      this.active = index
-
-      const _category = this.categories[index]
-      this.$emit('select', _category)
-    }
-  }
-}
+      this.active = index;
+      const _category = this.categories[index];
+      this.$emit("select", _category);
+    },
+  },
+};
 </script>

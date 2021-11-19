@@ -2,10 +2,10 @@ export default {
   size: "normal", // 组件尺寸，normal/small
   autoLoad: true, // 是否自动加载评论
   showUserAgent: true, // 是否显示用户UserAgent信息
-  gravatarType: "identicon", // gravatar头像类型（可在后台管理里设置）
+  gravatarType: "mm", // gravatar头像类型（可在后台管理里设置）
   gravatarSource: "", // gravatar头像源
   gravatarSourceDefault: "https://cn.gravatar.com/avatar", // gravatar默认头像源
-  avatarError: "", // 头像加载错误时展示的图片
+  avatarError: "https://cdn.jsdelivr.net/gh/qinhua/cdn_assets@master/comment/default_avatar.jpg", // 头像加载错误时展示的图片
   avatarLoading: "", // 头像加载时展示的图片
   loadingStyle: "default", // 评论加载时的loading样式
   aWord: "你是我一生只会遇见一次的惊喜 ...", // 输入框聚焦时提示的一言

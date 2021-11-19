@@ -39,7 +39,7 @@
       <div id="upload-img-show"></div>
       <!-- 表情开关 -->
       <p id="emotion-toggle" class="no-select">
-        <span @click="handleToogleDialogEmoji">{{
+        <span @click="handleToggleDialogEmoji">{{
           !emojiDialogVisible ? "戳我试试 OωO" : "嘿嘿嘿 ヾ(≧∇≦*)ゝ"
         }}</span>
       </p>
@@ -126,7 +126,7 @@
 
 <script>
 import Vue from "vue";
-import marked from "l-marked";
+import marked from "j-marked";
 import md5 from "md5";
 import VEmojiPicker from "./EmojiPicker/VEmojiPicker";
 import emojiData from "./EmojiPicker/data/emojis2.js";
@@ -155,7 +155,7 @@ export default {
       type: String,
       required: false,
       default: "posts",
-      validator: function(value) {
+      validator: function (value) {
         return ["posts", "sheets", "journals"].indexOf(value) !== -1;
       },
     },
@@ -326,7 +326,7 @@ export default {
     },
     handleAvatarError(e) {
       const img = e.target || e.srcElement;
-      img.src = this.config.avatarError;
+      img.src = this.configs.avatarError;
       img.onerror = null;
     },
     createdNewNode(newComment) {
@@ -407,16 +407,14 @@ export default {
         }
       }
     },
-    handleToogleDialogEmoji() {
+    handleToggleDialogEmoji() {
       this.emojiDialogVisible = !this.emojiDialogVisible;
     },
     handleSelectEmoji(args) {
       let emoji, type;
       let emojiComment;
 
-      if (args.length == 0) {
-        return;
-      }
+      if (args.length == 0) return;
 
       if (args.length > 0) {
         emoji = args[0];
@@ -424,17 +422,18 @@ export default {
       if (args.length > 1) {
         type = args[1];
       }
-
       if (!type) {
         emojiComment = emoji.name;
       } else {
         if (type === "Math") {
           emojiComment = "f(x)=∫(" + emoji.name + ")sec²xdx";
         } else if (type === "BBCode") {
-          emojiComment = ":" + emoji.name + ":";
+          // 区分扩展名，gif末尾加个感叹号
+          emojiComment = `:${
+            emoji.name + (emoji.extension === "gif" ? "!" : "")
+          }:`;
         }
       }
-
       this.comment.content += " " + emojiComment + " ";
     },
     handleGithubLogin() {
@@ -457,7 +456,7 @@ export default {
             },
           }
         )
-        .then(function(response) {
+        .then(function (response) {
           this.$tips(response);
         })
         .catch((error) => {
@@ -478,7 +477,7 @@ export default {
               },
             }
           )
-          .then(function(response) {
+          .then(function (response) {
             let args = response.split("&");
             let arg = args[0].split("=");
             let access_token = arg[1];
@@ -530,7 +529,7 @@ export default {
             id: _self.comment.author,
           },
         })
-        .then(function(res) {
+        .then(function (res) {
           let data = res.data;
           if (!!data.code && data.code == 500) {
             errorQQCallback();

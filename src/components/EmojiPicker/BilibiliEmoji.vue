@@ -1,5 +1,5 @@
 <template>
-  <span class="emotion-secter emotion-item emotion-select-parent" :style="biliSpanStyle">
+  <span class="emotion-secter emoji-item emotion-select-parent" :style="biliSpanStyle">
     <div class="img emotion-select-child" :style="biliImgStyle"></div>
   </span>
 </template>
@@ -30,7 +30,6 @@ export default {
       Object.keys(emoji.style).forEach(function (item) {
         dataStyle += item + ":" + emoji.style[item] + ";";
       });
-
       return "background-image: url(" + background + ");" + dataStyle;
     },
   },

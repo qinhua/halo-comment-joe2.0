@@ -227,3 +227,7 @@ for (var i = 0; i < comments.length; i++) {
 ```
 
 <font color="red">注：使用上述方法注入 CSS，需要保证 Shadow DOM 的 mode 处于 open 状态，否则无法使用 JS 进行修改。</font>
+
+### 关于emoji
+
+项目中的 emoji 解析依赖了 [j-marked](https://gitee.com/duider/j-marked) 这个包。

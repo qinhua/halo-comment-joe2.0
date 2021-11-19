@@ -571,33 +571,82 @@ div {
       }
     }
 
-    .markdown-body {
-      font-size: 14px !important;
 
-      pre {
-        padding: 0;
-        white-space: normal;
-        word-break: break-word;
-        background: none;
+  }
+
+  .markdown-body {
+    font-size: 14px !important;
+
+    pre {
+      padding: 0;
+      white-space: normal;
+      word-break: break-word;
+      background: none;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .emoji-item {
+      display: inline-block;
+      padding: 0;
+      overflow: hidden;
+      color: #333;
+
+      @media (max-width: 860px) {
+        transform: scale(0.8);
       }
 
       img {
+        position: relative;
+        top: -3px;
+        display: block;
         max-width: 100%;
-      }
-      
-      .emotion-inline {
-        margin: 6px 2px -8px;
+        width: auto;
+        height: 26px;
+        margin: 2px auto 0;
+        border: 0;
       }
 
-      .comment_inline_img {
-        display: inline-block;
-        height: 150px;
-        margin-right: 3px;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        padding: 3px;
-        cursor: pointer;
+      &.text {
+        width: auto;
+        height: auto;
+        padding: 2px 6px;
+        font-size: 14px;
       }
+    }
+
+    .emoji-animate {
+      position: relative;
+      top: 10px;
+      width: 32px;
+      height: 32px;
+
+      .img {
+        width: 32px;
+        height: 864px;
+        max-width: 32px;
+        background: top/32px no-repeat;
+        background-image: none;animation: im-emotion-step 1.08s steps(27) infinite;
+      }
+    }
+
+    .emoji-img {
+      position: relative;
+      top: 4px;
+      height: 1.4em;
+      max-height: 1.4em;
+    }
+
+    .comment_inline_img {
+      display: inline-block;
+      height: 150px;
+      margin-right: 3px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 3px;
+      cursor: pointer;
     }
   }
 
@@ -665,10 +714,6 @@ div {
         height: 180px;
         margin-bottom: 10px;
         color: #535a63;
-        // background-image: url(https://view.moezx.cc/images/2018/03/24/comment-bg.png);
-        // background-size: contain;
-        // background-repeat: no-repeat;
-        // background-position: right;
 
         &:focus {
           border-color: var(--theme);
@@ -738,6 +783,8 @@ div {
         height: 180px;
         margin: 0 0 10px;
         padding: 10px;
+        white-space: normal;
+        word-break: break-word;
         font-size: 14px !important;
         line-height: 1.5;
         overflow-y: auto;
@@ -749,10 +796,6 @@ div {
 
         img {
           max-width: 100%;
-        }
-
-        .emotion-inline {
-          margin: 6px 2px -8px;
         }
       }
 
@@ -1140,8 +1183,66 @@ div {
     margin-bottom: 5px;
     border-radius: 5px;
 
+    .emoji-item {
+      cursor: pointer;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      padding: 3px;
+      margin: 3px;
+      overflow: hidden;
+      color: #333;
+      border-radius: 4px;
+
+      @media (max-width: 860px) {
+        transform: scale(0.8);
+        margin-bottom: -10px;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        width: auto;
+        height: 26px;
+        margin: 3px auto 0;
+        border: 0;
+      }
+
+      &:hover {
+        background-color: rgba(245, 245, 245, 0.8);
+      }
+
+      &.text {
+        width: auto;
+        height: auto;
+        padding: 2px 6px;
+        font-size: 14px;
+      }
+    }
+
+    .emotion-secter,
+    .emoji-animate {
+      width: 32px;
+      height: 32px;
+
+      .img {
+        width: 32px;
+        height: 864px;
+        max-width: 32px;
+        background: top/32px no-repeat;
+        background-image: none;
+        animation: im-emotion-step 1.08s steps(27) infinite;
+      }
+
+      @media (max-width: 860px) {
+        transform: scale(0.8);
+        margin-bottom: -10px;
+      }
+    }
+
     &.bilibili-container,
-    &.tieba-container {
+    &.tieba-container,
+    &.haha-container {
       padding-left: 16px;
 
       @media (max-width: 860px) {
@@ -1149,37 +1250,9 @@ div {
       }
     }
 
-    span,
-    img {
-      width: 32px;
-      height: 32px;
-
-      @media (max-width: 860px) {
-        transform: scale(0.6);
-        margin-bottom: -10px;
-      }
-    }
-
-    img {
-      margin: 7px;
-      max-width: 100%;
-      border: 0;
-
-      &:hover {
-        background-color: rgba(245, 245, 245, 0.8);
-        border-radius: 5px;
-      }
-    }
-
-    .emoji-item {
-      padding: 3px 5px;
-      margin: 3px;
-      display: inline-block;
-      border-radius: 4px;
-      color: #333;
-
-      &:hover {
-        background-color: rgba(245, 245, 245, 0.8);
+    &.haha-container {
+      img {
+        height: 24px;
       }
     }
 
@@ -1200,7 +1273,11 @@ div {
     }
 
     .emotion-select-parent {
-      background-size: cover;
+      overflow: hidden;
+      padding: 1px 2px;
+      background-size: 32px auto;
+      background-repeat: no-repeat;
+      background-position: center;
 
       &:hover {
         background-color: rgba(245, 245, 245, 0.8);
@@ -1231,40 +1308,6 @@ div {
         }
       }
     }
-  }
-
-  .emotion-inline {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-}
-
-.emotion-item {
-  margin: 6px;
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  overflow: hidden;
-  border-radius: 4px;
-  margin-bottom: -8px;
-
-  .img {
-    width: 32px;
-    height: 864px;
-    max-width: 32px;
-    background: top/32px no-repeat;
-    background-image: none;
-    -webkit-animation: im-emotion-step 1.08s steps(27) infinite;
-    animation: im-emotion-step 1.08s steps(27) infinite;
-    -webkit-animation-duration: 1.08s;
-    animation-duration: 1.08s;
-    -webkit-animation-timing-function: steps(27);
-    animation-timing-function: steps(27);
-  }
-
-  @media (max-width: 860px) {
-    transform: scale(0.6);
-    margin-bottom: -10px;
   }
 }
 
@@ -1310,13 +1353,6 @@ div {
   .fade-leave-to {
     opacity: 0;
   }
-}
-
-.smilies {
-  position: relative;
-  top: 6px;
-  height: 1.4em;
-  max-height: 1.4em;
 }
 
 /*--------------------------------------------------------------

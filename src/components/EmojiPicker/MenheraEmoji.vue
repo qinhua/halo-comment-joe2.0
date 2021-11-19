@@ -1,7 +1,5 @@
 <template>
-  <a class="emoji-item">
-    {{ data.name }}
-  </a>
+  <a class="emoji-item text">{{ data.name }}</a>
 </template>
 
 <script>

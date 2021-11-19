@@ -17,7 +17,7 @@ export default {
       configs: {
         autoLoad: true,
         showUserAgent: true,
-        gravatarType: "identicon",
+        gravatarType: "mm",
         gravatarSource: "",
         loadingStyle: "default",
         aWord: "你是我一生只会遇见一次的惊喜 ...",

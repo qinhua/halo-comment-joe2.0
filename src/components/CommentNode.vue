@@ -106,7 +106,7 @@
 import "./index";
 import { timeAgo, return2Br } from "@/utils/util";
 import ua from "ua-parser-js";
-import marked from "l-marked";
+import marked from "j-marked";
 import { renderedEmojiHtml } from "@/utils/emojiutil";
 import CommentEditor from "./CommentEditor.vue";
 import globals from "@/utils/globals.js";
@@ -220,11 +220,7 @@ export default {
         this.options.gravatar_source ||
         this.configs.gravatarSourceDefault;
 
-      return (
-        gravatarSource +
-        `/${this.comment.gravatarMd5}?s=256&d=` +
-        this.options.comment_gravatar_default
-      );
+      return `${gravatarSource}/${this.comment.gravatarMd5}?s=256&d=${this.options.comment_gravatar_default}`;
       // }
     },
     compileContent() {
@@ -312,7 +308,7 @@ export default {
     },
     handleAvatarError(e) {
       const img = e.target || e.srcElement;
-      img.src = this.config.avatarError;
+      img.src = this.configs.avatarError;
       img.onerror = null;
     },
   },

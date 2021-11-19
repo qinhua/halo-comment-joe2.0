@@ -1208,13 +1208,13 @@ function normalizeComponent (
 var external_Vue_ = __webpack_require__("8bbf");
 var external_Vue_default = /*#__PURE__*/__webpack_require__.n(external_Vue_);
 
-// EXTERNAL MODULE: ./src/components/CommentEditor.vue + 40 modules
+// EXTERNAL MODULE: ./src/components/CommentEditor.vue + 45 modules
 var CommentEditor = __webpack_require__("3f17");
 
 // EXTERNAL MODULE: ./src/components/CommentNode.vue + 4 modules
 var CommentNode = __webpack_require__("f9af");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"0d6fe75f-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/CommentLoading.vue?vue&type=template&id=278b6f20&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"4e61017a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/CommentLoading.vue?vue&type=template&id=278b6f20&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"comment-loader-container"},[(_vm.configs.loadingStyle==='default')?_c('div',{staticClass:"comment-loader-default"},[_c('span'),_c('span'),_c('span'),_c('span')]):(_vm.configs.loadingStyle==='circle')?_c('div',{staticClass:"comment-loader-circle"}):(_vm.configs.loadingStyle==='balls')?_c('div',{staticClass:"comment-loader-balls"},[_c('div'),_c('div'),_c('div')]):_vm._e()])}
 var staticRenderFns = []
 
@@ -1281,7 +1281,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 )
 
 /* harmony default export */ var CommentLoading = (component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"0d6fe75f-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Pagination.vue?vue&type=template&id=5c7eb618&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"4e61017a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Pagination.vue?vue&type=template&id=5c7eb618&
 var Paginationvue_type_template_id_5c7eb618_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('ul',{staticClass:"page"},[_c('li',{staticClass:"page-item",class:{ disabled: !_vm.hasPrev }},[_c('button',{staticClass:"prev-button",attrs:{"tabindex":"-1"},on:{"click":_vm.handlePrevClick}},[_vm._v("上一页")])]),(_vm.firstPage != null)?_c('li',{staticClass:"page-item",class:{ active: _vm.page === _vm.firstPage}},[_c('button',{class:{ active: _vm.page === _vm.firstPage},on:{"click":function($event){return _vm.handlePageItemClick(_vm.firstPage)}}},[_vm._v(_vm._s(_vm.firstPage + 1))])]):_vm._e(),_c('li',{directives:[{name:"show",rawName:"v-show",value:(_vm.hasMorePrev),expression:"hasMorePrev"}],staticClass:"page-item"},[_c('span',[_vm._v("...")])]),_vm._l((_vm.middlePages),function(middlePage){return _c('li',{key:middlePage,staticClass:"page-item",class:{ active: middlePage === _vm.page }},[_c('button',{class:{ active: middlePage === _vm.page },on:{"click":function($event){return _vm.handlePageItemClick(middlePage)}}},[_vm._v(" "+_vm._s(middlePage + 1)+" ")])])}),_c('li',{directives:[{name:"show",rawName:"v-show",value:(_vm.hasMoreNext),expression:"hasMoreNext"}],staticClass:"page-item"},[_c('span',[_vm._v("...")])]),(_vm.lastPage)?_c('li',{staticClass:"page-item",class:{ active: _vm.page === _vm.lastPage}},[_c('button',{class:{ active: _vm.page === _vm.lastPage},on:{"click":function($event){return _vm.handlePageItemClick(_vm.lastPage)}}},[_vm._v(" "+_vm._s(_vm.lastPage + 1)+" ")])]):_vm._e(),_c('li',{staticClass:"page-item",class:{ disabled: !_vm.hasNext }},[_c('button',{staticClass:"next-button",on:{"click":_vm.handleNextClick}},[_vm._v("下一页")])])],2)}
 var Paginationvue_type_template_id_5c7eb618_staticRenderFns = []
 
@@ -2919,38 +2919,42 @@ module.exports = function Type(x) {
 
 "use strict";
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"0d6fe75f-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/CommentEditor.vue?vue&type=template&id=764b8d36&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.isCurrReply)?_c('section',{ref:"editor",staticClass:"comment-editor",attrs:{"id":_vm.respondId,"role":"form"}},[(_vm.isReply)?_c('h3',{staticClass:"comment-reply-title",attrs:{"id":"reply-title"}},[_c('small',[_c('a',{staticClass:"cancel-comment-reply-link",attrs:{"href":"javascript:;"},on:{"click":_vm.cancelReply}},[_vm._v("取消回复")])])]):_vm._e(),_c('form',{staticClass:"comment-form"},[(!_vm.previewMode)?_c('div',{staticClass:"comment-textarea"},[_c('textarea',{directives:[{name:"model",rawName:"v-model",value:(_vm.comment.content),expression:"comment.content"}],staticClass:"commentbody",attrs:{"required":"required","aria-required":"true","tabindex":"4","placeholder":_vm.configs.aWord || '你是我一生只会遇见一次的惊喜 ...'},domProps:{"value":(_vm.comment.content)},on:{"input":function($event){if($event.target.composing){ return; }_vm.$set(_vm.comment, "content", $event.target.value)}}}),_c('label',{staticClass:"input-label"},[_vm._v(_vm._s(_vm.configs.aWord || "你是我一生只会遇见一次的惊喜 ..."))])]):_c('pre',{staticClass:"comment-preview markdown-body",domProps:{"innerHTML":_vm._s(_vm.renderedContent)}}),_c('div',{attrs:{"id":"upload-img-show"}}),_c('p',{staticClass:"no-select",attrs:{"id":"emotion-toggle"}},[_c('span',{on:{"click":_vm.handleToogleDialogEmoji}},[_vm._v(_vm._s(!_vm.emojiDialogVisible ? "戳我试试 OωO" : "嘿嘿嘿 ヾ(≧∇≦*)ゝ"))])]),_c('transition',{attrs:{"name":"emoji-fade"}},[_c('VEmojiPicker',{directives:[{name:"show",rawName:"v-show",value:(_vm.emojiDialogVisible),expression:"emojiDialogVisible"}],attrs:{"pack":_vm.emojiPack},on:{"select":_vm.handleSelectEmoji}})],1),_c('div',{staticClass:"author-info"},[_c('div',{staticClass:"commentator"},[_c('img',{staticClass:"avatar",attrs:{"src":_vm.avatar},on:{"error":_vm.handleAvatarError}}),_c('div',{staticClass:"socila-check",class:[_vm.checkType.back]},[_c('i',{class:[_vm.checkType.icon],attrs:{"aria-hidden":"true"}})])]),_c('PopupInput',{staticClass:"cmt-popup cmt-author",attrs:{"popupStyle":"margin-left: -115px","popupText":_vm.configs.authorPopup || '输入QQ号将自动拉取昵称和头像',"inputType":"text","placeholder":"* 昵称","id":"author"},on:{"blurInput":_vm.pullInfo},model:{value:(_vm.comment.author),callback:function ($$v) {_vm.$set(_vm.comment, "author", $$v)},expression:"comment.author"}}),_c('PopupInput',{staticClass:"cmt-popup",attrs:{"popupStyle":"margin-left: -65px;","popupText":_vm.configs.emailPopup || '你将收到回复通知',"inputType":"text","placeholder":"* 电子邮件","id":"email"},on:{"blurInput":_vm.pullInfo},model:{value:(_vm.comment.email),callback:function ($$v) {_vm.$set(_vm.comment, "email", $$v)},expression:"comment.email"}})],1),_c('ul',{staticClass:"comment-buttons"},[(_vm.comment.content)?_c('li',{staticClass:"middle",staticStyle:{"margin-right":"5px"}},[_c('a',{staticClass:"button-preview-edit",attrs:{"href":"javascript:;","rel":"nofollow noopener"},on:{"click":_vm.handlePreviewContent}},[_vm._v(_vm._s(_vm.previewMode ? "编辑" : "预览"))])]):_vm._e(),_c('li',{staticClass:"middle"},[_c('a',{staticClass:"button-submit",attrs:{"href":"javascript:;","tabindex":"5","rel":"nofollow noopener"},on:{"click":_vm.handleSubmitClick}},[_vm._v("提交")])])])],1)]):_vm._e()}
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"4e61017a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/CommentEditor.vue?vue&type=template&id=571ca6ad&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.isCurrReply)?_c('section',{ref:"editor",staticClass:"comment-editor",attrs:{"id":_vm.respondId,"role":"form"}},[(_vm.isReply)?_c('h3',{staticClass:"comment-reply-title",attrs:{"id":"reply-title"}},[_c('small',[_c('a',{staticClass:"cancel-comment-reply-link",attrs:{"href":"javascript:;"},on:{"click":_vm.cancelReply}},[_vm._v("取消回复")])])]):_vm._e(),_c('form',{staticClass:"comment-form"},[(!_vm.previewMode)?_c('div',{staticClass:"comment-textarea"},[_c('textarea',{directives:[{name:"model",rawName:"v-model",value:(_vm.comment.content),expression:"comment.content"}],staticClass:"commentbody",attrs:{"required":"required","aria-required":"true","tabindex":"4","placeholder":_vm.configs.aWord || '你是我一生只会遇见一次的惊喜 ...'},domProps:{"value":(_vm.comment.content)},on:{"input":function($event){if($event.target.composing){ return; }_vm.$set(_vm.comment, "content", $event.target.value)}}}),_c('label',{staticClass:"input-label"},[_vm._v(_vm._s(_vm.configs.aWord || "你是我一生只会遇见一次的惊喜 ..."))])]):_c('pre',{staticClass:"comment-preview markdown-body",domProps:{"innerHTML":_vm._s(_vm.renderedContent)}}),_c('div',{attrs:{"id":"upload-img-show"}}),_c('p',{staticClass:"no-select",attrs:{"id":"emotion-toggle"}},[_c('span',{on:{"click":_vm.handleToggleDialogEmoji}},[_vm._v(_vm._s(!_vm.emojiDialogVisible ? "戳我试试 OωO" : "嘿嘿嘿 ヾ(≧∇≦*)ゝ"))])]),_c('transition',{attrs:{"name":"emoji-fade"}},[_c('VEmojiPicker',{directives:[{name:"show",rawName:"v-show",value:(_vm.emojiDialogVisible),expression:"emojiDialogVisible"}],attrs:{"pack":_vm.emojiPack},on:{"select":_vm.handleSelectEmoji}})],1),_c('div',{staticClass:"author-info"},[_c('div',{staticClass:"commentator"},[_c('img',{staticClass:"avatar",attrs:{"src":_vm.avatar},on:{"error":_vm.handleAvatarError}}),_c('div',{staticClass:"socila-check",class:[_vm.checkType.back]},[_c('i',{class:[_vm.checkType.icon],attrs:{"aria-hidden":"true"}})])]),_c('PopupInput',{staticClass:"cmt-popup cmt-author",attrs:{"popupStyle":"margin-left: -115px","popupText":_vm.configs.authorPopup || '输入QQ号将自动拉取昵称和头像',"inputType":"text","placeholder":"* 昵称","id":"author"},on:{"blurInput":_vm.pullInfo},model:{value:(_vm.comment.author),callback:function ($$v) {_vm.$set(_vm.comment, "author", $$v)},expression:"comment.author"}}),_c('PopupInput',{staticClass:"cmt-popup",attrs:{"popupStyle":"margin-left: -65px;","popupText":_vm.configs.emailPopup || '你将收到回复通知',"inputType":"text","placeholder":"* 电子邮件","id":"email"},on:{"blurInput":_vm.pullInfo},model:{value:(_vm.comment.email),callback:function ($$v) {_vm.$set(_vm.comment, "email", $$v)},expression:"comment.email"}})],1),_c('ul',{staticClass:"comment-buttons"},[(_vm.comment.content)?_c('li',{staticClass:"middle",staticStyle:{"margin-right":"5px"}},[_c('a',{staticClass:"button-preview-edit",attrs:{"href":"javascript:;","rel":"nofollow noopener"},on:{"click":_vm.handlePreviewContent}},[_vm._v(_vm._s(_vm.previewMode ? "编辑" : "预览"))])]):_vm._e(),_c('li',{staticClass:"middle"},[_c('a',{staticClass:"button-submit",attrs:{"href":"javascript:;","tabindex":"5","rel":"nofollow noopener"},on:{"click":_vm.handleSubmitClick}},[_vm._v("提交")])])])],1)]):_vm._e()}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/CommentEditor.vue?vue&type=template&id=764b8d36&
+// CONCATENATED MODULE: ./src/components/CommentEditor.vue?vue&type=template&id=571ca6ad&
 
 // EXTERNAL MODULE: external "Vue"
 var external_Vue_ = __webpack_require__("8bbf");
 var external_Vue_default = /*#__PURE__*/__webpack_require__.n(external_Vue_);
 
-// EXTERNAL MODULE: ./node_modules/l-marked/lib/marked.js
-var marked = __webpack_require__("a571");
+// EXTERNAL MODULE: ./node_modules/j-marked/lib/marked.js
+var marked = __webpack_require__("e7f9");
 var marked_default = /*#__PURE__*/__webpack_require__.n(marked);
 
 // EXTERNAL MODULE: ./node_modules/md5/md5.js
 var md5 = __webpack_require__("6821");
 var md5_default = /*#__PURE__*/__webpack_require__.n(md5);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"0d6fe75f-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/EmojiPicker/VEmojiPicker.vue?vue&type=template&id=9122b058&
-var VEmojiPickervue_type_template_id_9122b058_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"emotion-box no-select"},[(_vm.showCategory)?_c('Categories',{on:{"select":function($event){return _vm.onChangeCategory($event)}}}):_vm._e(),_c('keep-alive',[_c('EmojiList',{attrs:{"data":_vm.emojis,"category":_vm.category},on:{"select":function($event){return _vm.onSelectEmoji(arguments)}}})],1)],1)}
-var VEmojiPickervue_type_template_id_9122b058_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"4e61017a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/EmojiPicker/VEmojiPicker.vue?vue&type=template&id=bbddb46c&
+var VEmojiPickervue_type_template_id_bbddb46c_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"emotion-box no-select"},[(_vm.showCategory)?_c('Categories',{on:{"select":function($event){return _vm.onChangeCategory($event)}}}):_vm._e(),_c('keep-alive',[_c('EmojiList',{attrs:{"data":_vm.emojis,"category":_vm.category},on:{"select":function($event){return _vm.onSelectEmoji(arguments)}}})],1)],1)}
+var VEmojiPickervue_type_template_id_bbddb46c_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/EmojiPicker/VEmojiPicker.vue?vue&type=template&id=9122b058&
+// CONCATENATED MODULE: ./src/components/EmojiPicker/VEmojiPicker.vue?vue&type=template&id=bbddb46c&
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"0d6fe75f-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/EmojiPicker/Categories.vue?vue&type=template&id=bb4721de&
-var Categoriesvue_type_template_id_bb4721de_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('transition',{attrs:{"name":"category"}},[_c('table',{staticClass:"motion-switcher-table"},[_c('tbody',[_c('tr',_vm._l((_vm.categories),function(categorie,index){return _c('th',{key:index,class:['category', categorie.name + '-box', { active: index === _vm.active }, {'on-hover': index === _vm.active}],on:{"click":function($event){return _vm.onSelect(index)}}},[_vm._v(_vm._s(categorie.title))])}),0)])])])}
-var Categoriesvue_type_template_id_bb4721de_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"4e61017a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/EmojiPicker/Categories.vue?vue&type=template&id=1a3225e4&
+var Categoriesvue_type_template_id_1a3225e4_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('transition',{attrs:{"name":"category"}},[_c('table',{staticClass:"motion-switcher-table"},[_c('tbody',[_c('tr',_vm._l((_vm.categories),function(categorie,index){return _c('th',{key:index,class:[
+            'category',
+            categorie.name + '-box',
+            { active: index === _vm.active },
+            { 'on-hover': index === _vm.active } ],on:{"click":function($event){return _vm.onSelect(index)}}},[_vm._v(" "+_vm._s(categorie.title)+" ")])}),0)])])])}
+var Categoriesvue_type_template_id_1a3225e4_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/EmojiPicker/Categories.vue?vue&type=template&id=bb4721de&
+// CONCATENATED MODULE: ./src/components/EmojiPicker/Categories.vue?vue&type=template&id=1a3225e4&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/EmojiPicker/Categories.vue?vue&type=script&lang=js&
 //
@@ -2970,18 +2974,28 @@ var Categoriesvue_type_template_id_bb4721de_staticRenderFns = []
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ var Categoriesvue_type_script_lang_js_ = ({
-  name: 'Categories',
+  name: "Categories",
   data: () => ({
     categories: [{
-      name: 'bilibili',
-      title: 'bilibili~'
+      name: "haha",
+      title: "Haha"
     }, {
-      name: 'menhera',
-      title: '(✪ω✪)'
+      name: "bilibili",
+      title: "Bilibili"
     }, {
-      name: 'tieba',
-      title: 'Tieba'
+      name: "tieba",
+      title: "Tieba"
+    }, {
+      name: "menhera",
+      title: "(✪ω✪)"
     }],
     active: 0
   }),
@@ -2989,7 +3003,7 @@ var Categoriesvue_type_template_id_bb4721de_staticRenderFns = []
     onSelect(index) {
       this.active = index;
       const _category = this.categories[index];
-      this.$emit('select', _category);
+      this.$emit("select", _category);
     }
 
   }
@@ -3009,8 +3023,8 @@ var componentNormalizer = __webpack_require__("2877");
 
 var component = Object(componentNormalizer["a" /* default */])(
   EmojiPicker_Categoriesvue_type_script_lang_js_,
-  Categoriesvue_type_template_id_bb4721de_render,
-  Categoriesvue_type_template_id_bb4721de_staticRenderFns,
+  Categoriesvue_type_template_id_1a3225e4_render,
+  Categoriesvue_type_template_id_1a3225e4_staticRenderFns,
   false,
   null,
   null,
@@ -3019,19 +3033,78 @@ var component = Object(componentNormalizer["a" /* default */])(
 )
 
 /* harmony default export */ var Categories = (component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"0d6fe75f-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/EmojiPicker/EmojiList.vue?vue&type=template&id=32034b26&
-var EmojiListvue_type_template_id_32034b26_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"motion-container",class:_vm.categoryClass,attrs:{"id":"container-emoji"}},_vm._l((_vm.data[_vm.category]),function(emoji,index){return _c(_vm.categoryEmoji,{key:index,tag:"component",attrs:{"data":emoji},nativeOn:{"click":function($event){return _vm.onSelect(emoji, _vm.type)}}})}),1)}
-var EmojiListvue_type_template_id_32034b26_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"4e61017a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/EmojiPicker/EmojiList.vue?vue&type=template&id=7c37e19a&
+var EmojiListvue_type_template_id_7c37e19a_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"motion-container",class:_vm.categoryClass,attrs:{"id":"container-emoji"}},_vm._l((_vm.data[_vm.category]),function(emoji,index){return _c(_vm.categoryEmoji,{key:index,tag:"component",attrs:{"data":emoji},nativeOn:{"click":function($event){return _vm.onSelect(emoji, _vm.type)}}})}),1)}
+var EmojiListvue_type_template_id_7c37e19a_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/EmojiPicker/EmojiList.vue?vue&type=template&id=32034b26&
+// CONCATENATED MODULE: ./src/components/EmojiPicker/EmojiList.vue?vue&type=template&id=7c37e19a&
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"0d6fe75f-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/EmojiPicker/BilibiliEmoji.vue?vue&type=template&id=8cefe072&
-var BilibiliEmojivue_type_template_id_8cefe072_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('span',{staticClass:"emotion-secter emotion-item emotion-select-parent",style:(_vm.biliSpanStyle)},[_c('div',{staticClass:"img emotion-select-child",style:(_vm.biliImgStyle)})])}
-var BilibiliEmojivue_type_template_id_8cefe072_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"4e61017a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/EmojiPicker/HahaEmoji.vue?vue&type=template&id=7cc12668&
+var HahaEmojivue_type_template_id_7cc12668_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('span',{staticClass:"emoji-item",attrs:{"title":_vm.data.description}},[_c('img',{attrs:{"src":_vm.hahaSrc}})])}
+var HahaEmojivue_type_template_id_7cc12668_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/EmojiPicker/BilibiliEmoji.vue?vue&type=template&id=8cefe072&
+// CONCATENATED MODULE: ./src/components/EmojiPicker/HahaEmoji.vue?vue&type=template&id=7cc12668&
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.string.replace.js
+var es_string_replace = __webpack_require__("5319");
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/EmojiPicker/HahaEmoji.vue?vue&type=script&lang=js&
+
+//
+//
+//
+//
+//
+//
+/* harmony default export */ var HahaEmojivue_type_script_lang_js_ = ({
+  name: "HahaEmoji",
+  props: {
+    data: {
+      type: Object
+    },
+    url: {
+      type: String,
+      required: false,
+      default: "https://cdn.jsdelivr.net/gh/qinhua/cdn_assets@master/comment/emoji/haha/"
+    }
+  },
+  computed: {
+    hahaSrc() {
+      return this.url + "icon_" + this.data.name.replace('ha-', '') + ".png";
+    }
+
+  }
+});
+// CONCATENATED MODULE: ./src/components/EmojiPicker/HahaEmoji.vue?vue&type=script&lang=js&
+ /* harmony default export */ var EmojiPicker_HahaEmojivue_type_script_lang_js_ = (HahaEmojivue_type_script_lang_js_); 
+// CONCATENATED MODULE: ./src/components/EmojiPicker/HahaEmoji.vue
+
+
+
+
+
+/* normalize component */
+
+var HahaEmoji_component = Object(componentNormalizer["a" /* default */])(
+  EmojiPicker_HahaEmojivue_type_script_lang_js_,
+  HahaEmojivue_type_template_id_7cc12668_render,
+  HahaEmojivue_type_template_id_7cc12668_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  ,true
+)
+
+/* harmony default export */ var HahaEmoji = (HahaEmoji_component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"4e61017a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/EmojiPicker/BilibiliEmoji.vue?vue&type=template&id=5e0edd64&
+var BilibiliEmojivue_type_template_id_5e0edd64_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('span',{staticClass:"emotion-secter emoji-item emotion-select-parent",style:(_vm.biliSpanStyle)},[_c('div',{staticClass:"img emotion-select-child",style:(_vm.biliImgStyle)})])}
+var BilibiliEmojivue_type_template_id_5e0edd64_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/components/EmojiPicker/BilibiliEmoji.vue?vue&type=template&id=5e0edd64&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/EmojiPicker/BilibiliEmoji.vue?vue&type=script&lang=js&
 //
@@ -3081,8 +3154,8 @@ var BilibiliEmojivue_type_template_id_8cefe072_staticRenderFns = []
 
 var BilibiliEmoji_component = Object(componentNormalizer["a" /* default */])(
   EmojiPicker_BilibiliEmojivue_type_script_lang_js_,
-  BilibiliEmojivue_type_template_id_8cefe072_render,
-  BilibiliEmojivue_type_template_id_8cefe072_staticRenderFns,
+  BilibiliEmojivue_type_template_id_5e0edd64_render,
+  BilibiliEmojivue_type_template_id_5e0edd64_staticRenderFns,
   false,
   null,
   null,
@@ -3091,56 +3164,12 @@ var BilibiliEmoji_component = Object(componentNormalizer["a" /* default */])(
 )
 
 /* harmony default export */ var BilibiliEmoji = (BilibiliEmoji_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"0d6fe75f-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/EmojiPicker/MenheraEmoji.vue?vue&type=template&id=59870fa2&
-var MenheraEmojivue_type_template_id_59870fa2_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('a',{staticClass:"emoji-item"},[_vm._v(" "+_vm._s(_vm.data.name)+" ")])}
-var MenheraEmojivue_type_template_id_59870fa2_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"4e61017a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/EmojiPicker/TiebaEmoji.vue?vue&type=template&id=5ce00750&
+var TiebaEmojivue_type_template_id_5ce00750_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('span',{staticClass:"emoji-item",attrs:{"title":_vm.data.description}},[_c('img',{attrs:{"src":_vm.tiebaSrc}})])}
+var TiebaEmojivue_type_template_id_5ce00750_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/EmojiPicker/MenheraEmoji.vue?vue&type=template&id=59870fa2&
-
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/EmojiPicker/MenheraEmoji.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-/* harmony default export */ var MenheraEmojivue_type_script_lang_js_ = ({
-  name: "MenheraEmoji",
-  props: {
-    data: {
-      type: Object
-    }
-  }
-});
-// CONCATENATED MODULE: ./src/components/EmojiPicker/MenheraEmoji.vue?vue&type=script&lang=js&
- /* harmony default export */ var EmojiPicker_MenheraEmojivue_type_script_lang_js_ = (MenheraEmojivue_type_script_lang_js_); 
-// CONCATENATED MODULE: ./src/components/EmojiPicker/MenheraEmoji.vue
-
-
-
-
-
-/* normalize component */
-
-var MenheraEmoji_component = Object(componentNormalizer["a" /* default */])(
-  EmojiPicker_MenheraEmojivue_type_script_lang_js_,
-  MenheraEmojivue_type_template_id_59870fa2_render,
-  MenheraEmojivue_type_template_id_59870fa2_staticRenderFns,
-  false,
-  null,
-  null,
-  null
-  ,true
-)
-
-/* harmony default export */ var MenheraEmoji = (MenheraEmoji_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"0d6fe75f-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/EmojiPicker/TiebaEmoji.vue?vue&type=template&id=3421258b&
-var TiebaEmojivue_type_template_id_3421258b_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('span',{attrs:{"title":_vm.data.description}},[_c('img',{attrs:{"src":_vm.tiebaSrc}})])}
-var TiebaEmojivue_type_template_id_3421258b_staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./src/components/EmojiPicker/TiebaEmoji.vue?vue&type=template&id=3421258b&
+// CONCATENATED MODULE: ./src/components/EmojiPicker/TiebaEmoji.vue?vue&type=template&id=5ce00750&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/EmojiPicker/TiebaEmoji.vue?vue&type=script&lang=js&
 //
@@ -3180,8 +3209,8 @@ var TiebaEmojivue_type_template_id_3421258b_staticRenderFns = []
 
 var TiebaEmoji_component = Object(componentNormalizer["a" /* default */])(
   EmojiPicker_TiebaEmojivue_type_script_lang_js_,
-  TiebaEmojivue_type_template_id_3421258b_render,
-  TiebaEmojivue_type_template_id_3421258b_staticRenderFns,
+  TiebaEmojivue_type_template_id_5ce00750_render,
+  TiebaEmojivue_type_template_id_5ce00750_staticRenderFns,
   false,
   null,
   null,
@@ -3190,6 +3219,48 @@ var TiebaEmoji_component = Object(componentNormalizer["a" /* default */])(
 )
 
 /* harmony default export */ var TiebaEmoji = (TiebaEmoji_component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"4e61017a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/EmojiPicker/MenheraEmoji.vue?vue&type=template&id=1185626e&
+var MenheraEmojivue_type_template_id_1185626e_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('a',{staticClass:"emoji-item text"},[_vm._v(_vm._s(_vm.data.name))])}
+var MenheraEmojivue_type_template_id_1185626e_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/components/EmojiPicker/MenheraEmoji.vue?vue&type=template&id=1185626e&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/EmojiPicker/MenheraEmoji.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+/* harmony default export */ var MenheraEmojivue_type_script_lang_js_ = ({
+  name: "MenheraEmoji",
+  props: {
+    data: {
+      type: Object
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/EmojiPicker/MenheraEmoji.vue?vue&type=script&lang=js&
+ /* harmony default export */ var EmojiPicker_MenheraEmojivue_type_script_lang_js_ = (MenheraEmojivue_type_script_lang_js_); 
+// CONCATENATED MODULE: ./src/components/EmojiPicker/MenheraEmoji.vue
+
+
+
+
+
+/* normalize component */
+
+var MenheraEmoji_component = Object(componentNormalizer["a" /* default */])(
+  EmojiPicker_MenheraEmojivue_type_script_lang_js_,
+  MenheraEmojivue_type_template_id_1185626e_render,
+  MenheraEmojivue_type_template_id_1185626e_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  ,true
+)
+
+/* harmony default export */ var MenheraEmoji = (MenheraEmoji_component.exports);
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/EmojiPicker/EmojiList.vue?vue&type=script&lang=js&
 //
 //
@@ -3206,23 +3277,28 @@ var TiebaEmoji_component = Object(componentNormalizer["a" /* default */])(
 
 
 
+
 /* harmony default export */ var EmojiListvue_type_script_lang_js_ = ({
   name: 'EmojiList',
   components: {
+    HahaEmoji: HahaEmoji,
     BilibiliEmoji: BilibiliEmoji,
-    MenheraEmoji: MenheraEmoji,
-    TiebaEmoji: TiebaEmoji
+    TiebaEmoji: TiebaEmoji,
+    MenheraEmoji: MenheraEmoji
   },
   data: () => ({
     categories: [{
-      name: 'bilibili',
-      title: 'bilibili~'
+      name: 'haha',
+      title: 'Haha'
     }, {
-      name: 'menhera',
-      title: '(✪ω✪)'
+      name: 'bilibili',
+      title: 'Bilibili'
     }, {
       name: 'tieba',
       title: 'Tieba'
+    }, {
+      name: 'menhera',
+      title: '(✪ω✪)'
     }]
   }),
   props: {
@@ -3251,7 +3327,7 @@ var TiebaEmoji_component = Object(componentNormalizer["a" /* default */])(
     type() {
       if (this.category === "bilibili") {
         return "Math";
-      } else if (this.category === "tieba") {
+      } else if (["tieba", "haha"].includes(this.category)) {
         return "BBCode";
       }
 
@@ -3278,8 +3354,8 @@ var TiebaEmoji_component = Object(componentNormalizer["a" /* default */])(
 
 var EmojiList_component = Object(componentNormalizer["a" /* default */])(
   EmojiPicker_EmojiListvue_type_script_lang_js_,
-  EmojiListvue_type_template_id_32034b26_render,
-  EmojiListvue_type_template_id_32034b26_staticRenderFns,
+  EmojiListvue_type_template_id_7c37e19a_render,
+  EmojiListvue_type_template_id_7c37e19a_staticRenderFns,
   false,
   null,
   null,
@@ -3325,7 +3401,7 @@ var EmojiList_component = Object(componentNormalizer["a" /* default */])(
   },
   data: () => ({
     mapEmojis: {},
-    category: 'bilibili'
+    category: 'haha'
   }),
 
   created() {
@@ -3379,8 +3455,8 @@ var EmojiList_component = Object(componentNormalizer["a" /* default */])(
 
 var VEmojiPicker_component = Object(componentNormalizer["a" /* default */])(
   EmojiPicker_VEmojiPickervue_type_script_lang_js_,
-  VEmojiPickervue_type_template_id_9122b058_render,
-  VEmojiPickervue_type_template_id_9122b058_staticRenderFns,
+  VEmojiPickervue_type_template_id_bbddb46c_render,
+  VEmojiPickervue_type_template_id_bbddb46c_staticRenderFns,
   false,
   null,
   null,
@@ -3405,7 +3481,7 @@ var api_comment = __webpack_require__("063c");
 var axios = __webpack_require__("bc3a");
 var axios_default = /*#__PURE__*/__webpack_require__.n(axios);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"0d6fe75f-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/PopupInput/index.vue?vue&type=template&id=2b8851d8&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"4e61017a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/PopupInput/index.vue?vue&type=template&id=2b8851d8&
 var PopupInputvue_type_template_id_2b8851d8_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"popup"},[_c('transition',{attrs:{"name":"fade"}},[_c('span',{directives:[{name:"show",rawName:"v-show",value:(_vm.isPopup),expression:"isPopup"}],staticClass:"popuptext",style:(_vm.popupStyle)},[_vm._v(" "+_vm._s(_vm.popupText)+" ")])]),_c('input',{attrs:{"type":_vm.inputType,"required":"required","aria-required":"true","placeholder":_vm.placeholder},domProps:{"value":_vm.value},on:{"focus":function($event){_vm.isPopup=true},"blur":_vm.inputBlur,"input":function($event){return _vm.$emit('input', $event.target.value)}}})],1)}
 var PopupInputvue_type_template_id_2b8851d8_staticRenderFns = []
 
@@ -3980,7 +4056,7 @@ function loop() {
 
     handleAvatarError(e) {
       const img = e.target || e.srcElement;
-      img.src = this.config.avatarError;
+      img.src = this.configs.avatarError;
       img.onerror = null;
     },
 
@@ -4064,17 +4140,14 @@ function loop() {
       }
     },
 
-    handleToogleDialogEmoji() {
+    handleToggleDialogEmoji() {
       this.emojiDialogVisible = !this.emojiDialogVisible;
     },
 
     handleSelectEmoji(args) {
       let emoji, type;
       let emojiComment;
-
-      if (args.length == 0) {
-        return;
-      }
+      if (args.length == 0) return;
 
       if (args.length > 0) {
         emoji = args[0];
@@ -4090,7 +4163,8 @@ function loop() {
         if (type === "Math") {
           emojiComment = "f(x)=∫(" + emoji.name + ")sec²xdx";
         } else if (type === "BBCode") {
-          emojiComment = ":" + emoji.name + ":";
+          // 区分扩展名，gif末尾加个感叹号
+          emojiComment = `:${emoji.name + (emoji.extension === "gif" ? "!" : "")}:`;
         }
       }
 
@@ -5227,7 +5301,7 @@ var addStylesShadow = __webpack_require__("35d6");
 // EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
 var componentNormalizer = __webpack_require__("2877");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"0d6fe75f-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Comment.vue?vue&type=template&id=bd280698&shadow
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"4e61017a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Comment.vue?vue&type=template&id=bd280698&shadow
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{class:[
     'halo-comment',
     { 'halo-comment__small': _vm.mergedConfigs.size === 'small' } ],attrs:{"id":"halo-comment"}},[(_vm.isReply)?_c('comment-editor',{staticClass:"bottom-comment",attrs:{"targetId":_vm.id,"target":_vm.target,"options":_vm.mergedOptions,"configs":_vm.mergedConfigs}}):_vm._e(),(!_vm.mergedConfigs.autoLoad && !_vm.loaded)?_c('div',{staticClass:"comment-load-button"},[_c('a',{staticClass:"button-load",attrs:{"href":"javascript:void(0)","rel":"nofollow noopener"},on:{"click":_vm.loadComments}},[_vm._v("加载评论")])]):_vm._e(),_c('comment-loading',{directives:[{name:"show",rawName:"v-show",value:(_vm.commentLoading),expression:"commentLoading"}],attrs:{"configs":_vm.mergedConfigs}}),(_vm.comments.length >= 1)?_c('ul',{staticClass:"commentwrap"},[_vm._l((_vm.comments),function(comment,index){return [_c('CommentNode',{key:index,attrs:{"targetId":_vm.id,"target":_vm.target,"comment":comment,"options":_vm.mergedOptions,"configs":_vm.mergedConfigs,"depth":1}})]})],2):_vm._e(),(_vm.loaded && !_vm.commentLoading && _vm.comments.length <= 0)?_c('div',{staticClass:"comment-empty"},[_vm._v(" "+_vm._s(_vm.mergedConfigs.notComment || "暂无评论")+" ")]):_vm._e(),(_vm.pagination.pages > 1)?_c('div',{staticClass:"comment-page"},[_c('pagination',{attrs:{"page":_vm.pagination.page,"size":_vm.pagination.size,"total":_vm.pagination.total},on:{"change":_vm.handlePaginationChange}})],1):_vm._e()],1)}
@@ -5247,13 +5321,13 @@ var components = __webpack_require__("2af9");
   // 是否自动加载评论
   showUserAgent: true,
   // 是否显示用户UserAgent信息
-  gravatarType: "identicon",
+  gravatarType: "mm",
   // gravatar头像类型（可在后台管理里设置）
   gravatarSource: "",
   // gravatar头像源
   gravatarSourceDefault: "https://cn.gravatar.com/avatar",
   // gravatar默认头像源
-  avatarError: "",
+  avatarError: "https://cdn.jsdelivr.net/gh/qinhua/cdn_assets@master/comment/default_avatar.jpg",
   // 头像加载错误时展示的图片
   avatarLoading: "",
   // 头像加载时展示的图片
@@ -5274,7 +5348,7 @@ var components = __webpack_require__("2af9");
 /* harmony default export */ var default_option = ({
   blog_logo: "",
   gravatar_source: "",
-  comment_gravatar_default: ""
+  comment_gravatar_default: "mm"
 });
 // EXTERNAL MODULE: ./src/api/comment.js + 1 modules
 var comment = __webpack_require__("063c");
@@ -7089,7 +7163,7 @@ var index = {
 
 /* harmony default export */ var vue_lazyload_esm = (index);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"0d6fe75f-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/plugins/Tips/index.vue?vue&type=template&id=e062b24c&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"4e61017a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/plugins/Tips/index.vue?vue&type=template&id=e062b24c&
 var Tipsvue_type_template_id_e062b24c_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.show),expression:"show"}],staticClass:"butterBar butterBar-center"},[_c('p',{staticClass:"butterBar-message",domProps:{"innerHTML":_vm._s(_vm.message)}})])}
 var Tipsvue_type_template_id_e062b24c_staticRenderFns = []
 
@@ -8883,2624 +8957,6 @@ exports.BROKEN_CARET = fails(function () {
   re.lastIndex = 2;
   return re.exec('str') != null;
 });
-
-
-/***/ }),
-
-/***/ "a571":
-/***/ (function(module, exports, __webpack_require__) {
-
-/**
- * marked - a markdown parser
- * Copyright (c) 2011-2020, Christopher Jeffrey. (MIT Licensed)
- * https://github.com/markedjs/marked
- */
-
-/**
- * DO NOT EDIT THIS FILE
- * The code in this file is generated from files in ./src/
- */
-
-(function (global, factory) {
-   true ? module.exports = factory() :
-  undefined;
-}(this, (function () { 'use strict';
-
-  function _defineProperties(target, props) {
-    for (var i = 0; i < props.length; i++) {
-      var descriptor = props[i];
-      descriptor.enumerable = descriptor.enumerable || false;
-      descriptor.configurable = true;
-      if ("value" in descriptor) descriptor.writable = true;
-      Object.defineProperty(target, descriptor.key, descriptor);
-    }
-  }
-
-  function _createClass(Constructor, protoProps, staticProps) {
-    if (protoProps) _defineProperties(Constructor.prototype, protoProps);
-    if (staticProps) _defineProperties(Constructor, staticProps);
-    return Constructor;
-  }
-
-  function _unsupportedIterableToArray(o, minLen) {
-    if (!o) return;
-    if (typeof o === "string") return _arrayLikeToArray(o, minLen);
-    var n = Object.prototype.toString.call(o).slice(8, -1);
-    if (n === "Object" && o.constructor) n = o.constructor.name;
-    if (n === "Map" || n === "Set") return Array.from(o);
-    if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
-  }
-
-  function _arrayLikeToArray(arr, len) {
-    if (len == null || len > arr.length) len = arr.length;
-
-    for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
-
-    return arr2;
-  }
-
-  function _createForOfIteratorHelperLoose(o) {
-    var i = 0;
-
-    if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) {
-      if (Array.isArray(o) || (o = _unsupportedIterableToArray(o))) return function () {
-        if (i >= o.length) return {
-          done: true
-        };
-        return {
-          done: false,
-          value: o[i++]
-        };
-      };
-      throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-    }
-
-    i = o[Symbol.iterator]();
-    return i.next.bind(i);
-  }
-
-  function createCommonjsModule(fn, module) {
-  	return module = { exports: {} }, fn(module, module.exports), module.exports;
-  }
-
-  var defaults = createCommonjsModule(function (module) {
-    function getDefaults() {
-      return {
-        baseUrl: null,
-        breaks: false,
-        gfm: true,
-        headerIds: true,
-        headerPrefix: '',
-        highlight: null,
-        langPrefix: 'language-',
-        mangle: true,
-        pedantic: false,
-        renderer: null,
-        sanitize: false,
-        sanitizer: null,
-        silent: false,
-        smartLists: false,
-        smartypants: false,
-        tokenizer: null,
-        walkTokens: null,
-        xhtml: false,
-        bilibiliEmojiUrl: 'https://cdn.jsdelivr.net/gh/LIlGG/cdn@1.0.1/img/bili/',
-        codeEmojiEmojiUrl: 'https://cdn.jsdelivr.net/gh/LIlGG/cdn@1.0.1/img/Sakura/images/smilies/'
-      };
-    }
-
-    function changeDefaults(newDefaults) {
-      module.exports.defaults = newDefaults;
-    }
-
-    module.exports = {
-      defaults: getDefaults(),
-      getDefaults: getDefaults,
-      changeDefaults: changeDefaults
-    };
-  });
-  var defaults_1 = defaults.defaults;
-  var defaults_2 = defaults.getDefaults;
-  var defaults_3 = defaults.changeDefaults;
-
-  /**
-   * Helpers
-   */
-  var escapeTest = /[&<>"']/;
-  var escapeReplace = /[&<>"']/g;
-  var escapeTestNoEncode = /[<>"']|&(?!#?\w+;)/;
-  var escapeReplaceNoEncode = /[<>"']|&(?!#?\w+;)/g;
-  var escapeReplacements = {
-    '&': '&amp;',
-    '<': '&lt;',
-    '>': '&gt;',
-    '"': '&quot;',
-    "'": '&#39;'
-  };
-
-  var getEscapeReplacement = function getEscapeReplacement(ch) {
-    return escapeReplacements[ch];
-  };
-
-  function escape(html, encode) {
-    if (encode) {
-      if (escapeTest.test(html)) {
-        return html.replace(escapeReplace, getEscapeReplacement);
-      }
-    } else {
-      if (escapeTestNoEncode.test(html)) {
-        return html.replace(escapeReplaceNoEncode, getEscapeReplacement);
-      }
-    }
-
-    return html;
-  }
-
-  var unescapeTest = /&(#(?:\d+)|(?:#x[0-9A-Fa-f]+)|(?:\w+));?/ig;
-
-  function unescape(html) {
-    // explicitly match decimal, hex, and named HTML entities
-    return html.replace(unescapeTest, function (_, n) {
-      n = n.toLowerCase();
-      if (n === 'colon') return ':';
-
-      if (n.charAt(0) === '#') {
-        return n.charAt(1) === 'x' ? String.fromCharCode(parseInt(n.substring(2), 16)) : String.fromCharCode(+n.substring(1));
-      }
-
-      return '';
-    });
-  }
-
-  var caret = /(^|[^\[])\^/g;
-
-  function edit(regex, opt) {
-    regex = regex.source || regex;
-    opt = opt || '';
-    var obj = {
-      replace: function replace(name, val) {
-        val = val.source || val;
-        val = val.replace(caret, '$1');
-        regex = regex.replace(name, val);
-        return obj;
-      },
-      getRegex: function getRegex() {
-        return new RegExp(regex, opt);
-      }
-    };
-    return obj;
-  }
-
-  var nonWordAndColonTest = /[^\w:]/g;
-  var originIndependentUrl = /^$|^[a-z][a-z0-9+.-]*:|^[?#]/i;
-
-  function cleanUrl(sanitize, base, href) {
-    if (sanitize) {
-      var prot;
-
-      try {
-        prot = decodeURIComponent(unescape(href)).replace(nonWordAndColonTest, '').toLowerCase();
-      } catch (e) {
-        return null;
-      }
-
-      if (prot.indexOf('javascript:') === 0 || prot.indexOf('vbscript:') === 0 || prot.indexOf('data:') === 0) {
-        return null;
-      }
-    }
-
-    if (base && !originIndependentUrl.test(href)) {
-      href = resolveUrl(base, href);
-    }
-
-    try {
-      href = encodeURI(href).replace(/%25/g, '%');
-    } catch (e) {
-      return null;
-    }
-
-    return href;
-  }
-
-  var baseUrls = {};
-  var justDomain = /^[^:]+:\/*[^/]*$/;
-  var protocol = /^([^:]+:)[\s\S]*$/;
-  var domain = /^([^:]+:\/*[^/]*)[\s\S]*$/;
-
-  function resolveUrl(base, href) {
-    if (!baseUrls[' ' + base]) {
-      // we can ignore everything in base after the last slash of its path component,
-      // but we might need to add _that_
-      // https://tools.ietf.org/html/rfc3986#section-3
-      if (justDomain.test(base)) {
-        baseUrls[' ' + base] = base + '/';
-      } else {
-        baseUrls[' ' + base] = rtrim(base, '/', true);
-      }
-    }
-
-    base = baseUrls[' ' + base];
-    var relativeBase = base.indexOf(':') === -1;
-
-    if (href.substring(0, 2) === '//') {
-      if (relativeBase) {
-        return href;
-      }
-
-      return base.replace(protocol, '$1') + href;
-    } else if (href.charAt(0) === '/') {
-      if (relativeBase) {
-        return href;
-      }
-
-      return base.replace(domain, '$1') + href;
-    } else {
-      return base + href;
-    }
-  }
-
-  var noopTest = {
-    exec: function noopTest() {}
-  };
-
-  function merge(obj) {
-    var i = 1,
-        target,
-        key;
-
-    for (; i < arguments.length; i++) {
-      target = arguments[i];
-
-      for (key in target) {
-        if (Object.prototype.hasOwnProperty.call(target, key)) {
-          obj[key] = target[key];
-        }
-      }
-    }
-
-    return obj;
-  }
-
-  function splitCells(tableRow, count) {
-    // ensure that every cell-delimiting pipe has a space
-    // before it to distinguish it from an escaped pipe
-    var row = tableRow.replace(/\|/g, function (match, offset, str) {
-      var escaped = false,
-          curr = offset;
-
-      while (--curr >= 0 && str[curr] === '\\') {
-        escaped = !escaped;
-      }
-
-      if (escaped) {
-        // odd number of slashes means | is escaped
-        // so we leave it alone
-        return '|';
-      } else {
-        // add space before unescaped |
-        return ' |';
-      }
-    }),
-        cells = row.split(/ \|/);
-    var i = 0;
-
-    if (cells.length > count) {
-      cells.splice(count);
-    } else {
-      while (cells.length < count) {
-        cells.push('');
-      }
-    }
-
-    for (; i < cells.length; i++) {
-      // leading or trailing whitespace is ignored per the gfm spec
-      cells[i] = cells[i].trim().replace(/\\\|/g, '|');
-    }
-
-    return cells;
-  } // Remove trailing 'c's. Equivalent to str.replace(/c*$/, '').
-  // /c*$/ is vulnerable to REDOS.
-  // invert: Remove suffix of non-c chars instead. Default falsey.
-
-
-  function rtrim(str, c, invert) {
-    var l = str.length;
-
-    if (l === 0) {
-      return '';
-    } // Length of suffix matching the invert condition.
-
-
-    var suffLen = 0; // Step left until we fail to match the invert condition.
-
-    while (suffLen < l) {
-      var currChar = str.charAt(l - suffLen - 1);
-
-      if (currChar === c && !invert) {
-        suffLen++;
-      } else if (currChar !== c && invert) {
-        suffLen++;
-      } else {
-        break;
-      }
-    }
-
-    return str.substr(0, l - suffLen);
-  }
-
-  function findClosingBracket(str, b) {
-    if (str.indexOf(b[1]) === -1) {
-      return -1;
-    }
-
-    var l = str.length;
-    var level = 0,
-        i = 0;
-
-    for (; i < l; i++) {
-      if (str[i] === '\\') {
-        i++;
-      } else if (str[i] === b[0]) {
-        level++;
-      } else if (str[i] === b[1]) {
-        level--;
-
-        if (level < 0) {
-          return i;
-        }
-      }
-    }
-
-    return -1;
-  }
-
-  function checkSanitizeDeprecation(opt) {
-    if (opt && opt.sanitize && !opt.silent) {
-      console.warn('marked(): sanitize and sanitizer parameters are deprecated since version 0.7.0, should not be used and will be removed in the future. Read more here: https://marked.js.org/#/USING_ADVANCED.md#options');
-    }
-  }
-
-  var helpers = {
-    escape: escape,
-    unescape: unescape,
-    edit: edit,
-    cleanUrl: cleanUrl,
-    resolveUrl: resolveUrl,
-    noopTest: noopTest,
-    merge: merge,
-    splitCells: splitCells,
-    rtrim: rtrim,
-    findClosingBracket: findClosingBracket,
-    checkSanitizeDeprecation: checkSanitizeDeprecation
-  };
-
-  var defaults$1 = defaults.defaults;
-  var rtrim$1 = helpers.rtrim,
-      splitCells$1 = helpers.splitCells,
-      _escape = helpers.escape,
-      findClosingBracket$1 = helpers.findClosingBracket;
-
-  function outputLink(cap, link, raw) {
-    var href = link.href;
-    var title = link.title ? _escape(link.title) : null;
-    var text = cap[1].replace(/\\([\[\]])/g, '$1');
-
-    if (cap[0].charAt(0) !== '!') {
-      return {
-        type: 'link',
-        raw: raw,
-        href: href,
-        title: title,
-        text: text
-      };
-    } else {
-      return {
-        type: 'image',
-        raw: raw,
-        href: href,
-        title: title,
-        text: _escape(text)
-      };
-    }
-  }
-
-  function indentCodeCompensation(raw, text) {
-    var matchIndentToCode = raw.match(/^(\s+)(?:```)/);
-
-    if (matchIndentToCode === null) {
-      return text;
-    }
-
-    var indentToCode = matchIndentToCode[1];
-    return text.split('\n').map(function (node) {
-      var matchIndentInNode = node.match(/^\s+/);
-
-      if (matchIndentInNode === null) {
-        return node;
-      }
-
-      var indentInNode = matchIndentInNode[0];
-
-      if (indentInNode.length >= indentToCode.length) {
-        return node.slice(indentToCode.length);
-      }
-
-      return node;
-    }).join('\n');
-  }
-  /**
-   * Tokenizer
-   */
-
-
-  var Tokenizer_1 = /*#__PURE__*/function () {
-    function Tokenizer(options) {
-      this.options = options || defaults$1;
-    }
-
-    var _proto = Tokenizer.prototype;
-
-    _proto.bilibiliEmoji = function bilibiliEmoji(src) {
-      var cap = this.rules.inline.bilibiliEmoji.exec(src);
-
-      if (cap) {
-        if (cap[0].length > 1) {
-          return {
-            type: 'bilibiliEmoji',
-            raw: cap[0],
-            text: cap[1]
-          };
-        }
-      }
-    };
-
-    _proto.textEmoji = function textEmoji(src) {
-      var cap = this.rules.inline.textEmoji.exec(src);
-
-      if (cap) {
-        if (cap[0].length > 1) {
-          return {
-            type: 'textEmoji',
-            raw: cap[0],
-            text: cap[1]
-          };
-        }
-      }
-    };
-
-    _proto.codeEmoji = function codeEmoji(src) {
-      var cap = this.rules.inline.codeEmoji.exec(src);
-
-      if (cap) {
-        if (cap[0].length > 1) {
-          return {
-            type: 'codeEmoji',
-            raw: cap[0],
-            text: cap[1]
-          };
-        }
-      }
-    };
-
-    _proto.space = function space(src) {
-      var cap = this.rules.block.newline.exec(src);
-
-      if (cap) {
-        if (cap[0].length > 1) {
-          return {
-            type: 'space',
-            raw: cap[0]
-          };
-        }
-
-        return {
-          raw: '\n'
-        };
-      }
-    };
-
-    _proto.code = function code(src, tokens) {
-      var cap = this.rules.block.code.exec(src);
-
-      if (cap) {
-        var lastToken = tokens[tokens.length - 1]; // An indented code block cannot interrupt a paragraph.
-
-        if (lastToken && lastToken.type === 'paragraph') {
-          return {
-            raw: cap[0],
-            text: cap[0].trimRight()
-          };
-        }
-
-        var text = cap[0].replace(/^ {4}/gm, '');
-        return {
-          type: 'code',
-          raw: cap[0],
-          codeBlockStyle: 'indented',
-          text: !this.options.pedantic ? rtrim$1(text, '\n') : text
-        };
-      }
-    };
-
-    _proto.fences = function fences(src) {
-      var cap = this.rules.block.fences.exec(src);
-
-      if (cap) {
-        var raw = cap[0];
-        var text = indentCodeCompensation(raw, cap[3] || '');
-        return {
-          type: 'code',
-          raw: raw,
-          lang: cap[2] ? cap[2].trim() : cap[2],
-          text: text
-        };
-      }
-    };
-
-    _proto.heading = function heading(src) {
-      var cap = this.rules.block.heading.exec(src);
-
-      if (cap) {
-        return {
-          type: 'heading',
-          raw: cap[0],
-          depth: cap[1].length,
-          text: cap[2]
-        };
-      }
-    };
-
-    _proto.nptable = function nptable(src) {
-      var cap = this.rules.block.nptable.exec(src);
-
-      if (cap) {
-        var item = {
-          type: 'table',
-          header: splitCells$1(cap[1].replace(/^ *| *\| *$/g, '')),
-          align: cap[2].replace(/^ *|\| *$/g, '').split(/ *\| */),
-          cells: cap[3] ? cap[3].replace(/\n$/, '').split('\n') : [],
-          raw: cap[0]
-        };
-
-        if (item.header.length === item.align.length) {
-          var l = item.align.length;
-          var i;
-
-          for (i = 0; i < l; i++) {
-            if (/^ *-+: *$/.test(item.align[i])) {
-              item.align[i] = 'right';
-            } else if (/^ *:-+: *$/.test(item.align[i])) {
-              item.align[i] = 'center';
-            } else if (/^ *:-+ *$/.test(item.align[i])) {
-              item.align[i] = 'left';
-            } else {
-              item.align[i] = null;
-            }
-          }
-
-          l = item.cells.length;
-
-          for (i = 0; i < l; i++) {
-            item.cells[i] = splitCells$1(item.cells[i], item.header.length);
-          }
-
-          return item;
-        }
-      }
-    };
-
-    _proto.hr = function hr(src) {
-      var cap = this.rules.block.hr.exec(src);
-
-      if (cap) {
-        return {
-          type: 'hr',
-          raw: cap[0]
-        };
-      }
-    };
-
-    _proto.blockquote = function blockquote(src) {
-      var cap = this.rules.block.blockquote.exec(src);
-
-      if (cap) {
-        var text = cap[0].replace(/^ *> ?/gm, '');
-        return {
-          type: 'blockquote',
-          raw: cap[0],
-          text: text
-        };
-      }
-    };
-
-    _proto.list = function list(src) {
-      var cap = this.rules.block.list.exec(src);
-
-      if (cap) {
-        var raw = cap[0];
-        var bull = cap[2];
-        var isordered = bull.length > 1;
-        var isparen = bull[bull.length - 1] === ')';
-        var list = {
-          type: 'list',
-          raw: raw,
-          ordered: isordered,
-          start: isordered ? +bull.slice(0, -1) : '',
-          loose: false,
-          items: []
-        }; // Get each top-level item.
-
-        var itemMatch = cap[0].match(this.rules.block.item);
-        var next = false,
-            item,
-            space,
-            b,
-            addBack,
-            loose,
-            istask,
-            ischecked;
-        var l = itemMatch.length;
-
-        for (var i = 0; i < l; i++) {
-          item = itemMatch[i];
-          raw = item; // Remove the list item's bullet
-          // so it is seen as the next token.
-
-          space = item.length;
-          item = item.replace(/^ *([*+-]|\d+[.)]) */, ''); // Outdent whatever the
-          // list item contains. Hacky.
-
-          if (~item.indexOf('\n ')) {
-            space -= item.length;
-            item = !this.options.pedantic ? item.replace(new RegExp('^ {1,' + space + '}', 'gm'), '') : item.replace(/^ {1,4}/gm, '');
-          } // Determine whether the next list item belongs here.
-          // Backpedal if it does not belong in this list.
-
-
-          if (i !== l - 1) {
-            b = this.rules.block.bullet.exec(itemMatch[i + 1])[0];
-
-            if (isordered ? b.length === 1 || !isparen && b[b.length - 1] === ')' : b.length > 1 || this.options.smartLists && b !== bull) {
-              addBack = itemMatch.slice(i + 1).join('\n');
-              list.raw = list.raw.substring(0, list.raw.length - addBack.length);
-              i = l - 1;
-            }
-          } // Determine whether item is loose or not.
-          // Use: /(^|\n)(?! )[^\n]+\n\n(?!\s*$)/
-          // for discount behavior.
-
-
-          loose = next || /\n\n(?!\s*$)/.test(item);
-
-          if (i !== l - 1) {
-            next = item.charAt(item.length - 1) === '\n';
-            if (!loose) loose = next;
-          }
-
-          if (loose) {
-            list.loose = true;
-          } // Check for task list items
-
-
-          istask = /^\[[ xX]\] /.test(item);
-          ischecked = undefined;
-
-          if (istask) {
-            ischecked = item[1] !== ' ';
-            item = item.replace(/^\[[ xX]\] +/, '');
-          }
-
-          list.items.push({
-            type: 'list_item',
-            raw: raw,
-            task: istask,
-            checked: ischecked,
-            loose: loose,
-            text: item
-          });
-        }
-
-        return list;
-      }
-    };
-
-    _proto.html = function html(src) {
-      var cap = this.rules.block.html.exec(src);
-
-      if (cap) {
-        return {
-          type: this.options.sanitize ? 'paragraph' : 'html',
-          raw: cap[0],
-          pre: !this.options.sanitizer && (cap[1] === 'pre' || cap[1] === 'script' || cap[1] === 'style'),
-          text: this.options.sanitize ? this.options.sanitizer ? this.options.sanitizer(cap[0]) : _escape(cap[0]) : cap[0]
-        };
-      }
-    };
-
-    _proto.def = function def(src) {
-      var cap = this.rules.block.def.exec(src);
-
-      if (cap) {
-        if (cap[3]) cap[3] = cap[3].substring(1, cap[3].length - 1);
-        var tag = cap[1].toLowerCase().replace(/\s+/g, ' ');
-        return {
-          tag: tag,
-          raw: cap[0],
-          href: cap[2],
-          title: cap[3]
-        };
-      }
-    };
-
-    _proto.table = function table(src) {
-      var cap = this.rules.block.table.exec(src);
-
-      if (cap) {
-        var item = {
-          type: 'table',
-          header: splitCells$1(cap[1].replace(/^ *| *\| *$/g, '')),
-          align: cap[2].replace(/^ *|\| *$/g, '').split(/ *\| */),
-          cells: cap[3] ? cap[3].replace(/\n$/, '').split('\n') : []
-        };
-
-        if (item.header.length === item.align.length) {
-          item.raw = cap[0];
-          var l = item.align.length;
-          var i;
-
-          for (i = 0; i < l; i++) {
-            if (/^ *-+: *$/.test(item.align[i])) {
-              item.align[i] = 'right';
-            } else if (/^ *:-+: *$/.test(item.align[i])) {
-              item.align[i] = 'center';
-            } else if (/^ *:-+ *$/.test(item.align[i])) {
-              item.align[i] = 'left';
-            } else {
-              item.align[i] = null;
-            }
-          }
-
-          l = item.cells.length;
-
-          for (i = 0; i < l; i++) {
-            item.cells[i] = splitCells$1(item.cells[i].replace(/^ *\| *| *\| *$/g, ''), item.header.length);
-          }
-
-          return item;
-        }
-      }
-    };
-
-    _proto.lheading = function lheading(src) {
-      var cap = this.rules.block.lheading.exec(src);
-
-      if (cap) {
-        return {
-          type: 'heading',
-          raw: cap[0],
-          depth: cap[2].charAt(0) === '=' ? 1 : 2,
-          text: cap[1]
-        };
-      }
-    };
-
-    _proto.paragraph = function paragraph(src) {
-      var cap = this.rules.block.paragraph.exec(src);
-
-      if (cap) {
-        return {
-          type: 'paragraph',
-          raw: cap[0],
-          text: cap[1].charAt(cap[1].length - 1) === '\n' ? cap[1].slice(0, -1) : cap[1]
-        };
-      }
-    };
-
-    _proto.text = function text(src, tokens) {
-      var cap = this.rules.block.text.exec(src);
-
-      if (cap) {
-        var lastToken = tokens[tokens.length - 1];
-
-        if (lastToken && lastToken.type === 'text') {
-          return {
-            raw: cap[0],
-            text: cap[0]
-          };
-        }
-
-        return {
-          type: 'text',
-          raw: cap[0],
-          text: cap[0]
-        };
-      }
-    };
-
-    _proto.escape = function escape(src) {
-      var cap = this.rules.inline.escape.exec(src);
-
-      if (cap) {
-        return {
-          type: 'escape',
-          raw: cap[0],
-          text: _escape(cap[1])
-        };
-      }
-    };
-
-    _proto.tag = function tag(src, inLink, inRawBlock) {
-      var cap = this.rules.inline.tag.exec(src);
-
-      if (cap) {
-        if (!inLink && /^<a /i.test(cap[0])) {
-          inLink = true;
-        } else if (inLink && /^<\/a>/i.test(cap[0])) {
-          inLink = false;
-        }
-
-        if (!inRawBlock && /^<(pre|code|kbd|script)(\s|>)/i.test(cap[0])) {
-          inRawBlock = true;
-        } else if (inRawBlock && /^<\/(pre|code|kbd|script)(\s|>)/i.test(cap[0])) {
-          inRawBlock = false;
-        }
-
-        return {
-          type: this.options.sanitize ? 'text' : 'html',
-          raw: cap[0],
-          inLink: inLink,
-          inRawBlock: inRawBlock,
-          text: this.options.sanitize ? this.options.sanitizer ? this.options.sanitizer(cap[0]) : _escape(cap[0]) : cap[0]
-        };
-      }
-    };
-
-    _proto.link = function link(src) {
-      var cap = this.rules.inline.link.exec(src);
-
-      if (cap) {
-        var lastParenIndex = findClosingBracket$1(cap[2], '()');
-
-        if (lastParenIndex > -1) {
-          var start = cap[0].indexOf('!') === 0 ? 5 : 4;
-          var linkLen = start + cap[1].length + lastParenIndex;
-          cap[2] = cap[2].substring(0, lastParenIndex);
-          cap[0] = cap[0].substring(0, linkLen).trim();
-          cap[3] = '';
-        }
-
-        var href = cap[2];
-        var title = '';
-
-        if (this.options.pedantic) {
-          var link = /^([^'"]*[^\s])\s+(['"])(.*)\2/.exec(href);
-
-          if (link) {
-            href = link[1];
-            title = link[3];
-          } else {
-            title = '';
-          }
-        } else {
-          title = cap[3] ? cap[3].slice(1, -1) : '';
-        }
-
-        href = href.trim().replace(/^<([\s\S]*)>$/, '$1');
-        var token = outputLink(cap, {
-          href: href ? href.replace(this.rules.inline._escapes, '$1') : href,
-          title: title ? title.replace(this.rules.inline._escapes, '$1') : title
-        }, cap[0]);
-        return token;
-      }
-    };
-
-    _proto.reflink = function reflink(src, links) {
-      var cap;
-
-      if ((cap = this.rules.inline.reflink.exec(src)) || (cap = this.rules.inline.nolink.exec(src))) {
-        var link = (cap[2] || cap[1]).replace(/\s+/g, ' ');
-        link = links[link.toLowerCase()];
-
-        if (!link || !link.href) {
-          var text = cap[0].charAt(0);
-          return {
-            type: 'text',
-            raw: text,
-            text: text
-          };
-        }
-
-        var token = outputLink(cap, link, cap[0]);
-        return token;
-      }
-    };
-
-    _proto.strong = function strong(src) {
-      var cap = this.rules.inline.strong.exec(src);
-
-      if (cap) {
-        return {
-          type: 'strong',
-          raw: cap[0],
-          text: cap[4] || cap[3] || cap[2] || cap[1]
-        };
-      }
-    };
-
-    _proto.em = function em(src) {
-      var cap = this.rules.inline.em.exec(src);
-
-      if (cap) {
-        return {
-          type: 'em',
-          raw: cap[0],
-          text: cap[6] || cap[5] || cap[4] || cap[3] || cap[2] || cap[1]
-        };
-      }
-    };
-
-    _proto.codespan = function codespan(src) {
-      var cap = this.rules.inline.code.exec(src);
-
-      if (cap) {
-        var text = cap[2].replace(/\n/g, ' ');
-        var hasNonSpaceChars = /[^ ]/.test(text);
-        var hasSpaceCharsOnBothEnds = text.startsWith(' ') && text.endsWith(' ');
-
-        if (hasNonSpaceChars && hasSpaceCharsOnBothEnds) {
-          text = text.substring(1, text.length - 1);
-        }
-
-        text = _escape(text, true);
-        return {
-          type: 'codespan',
-          raw: cap[0],
-          text: text
-        };
-      }
-    };
-
-    _proto.br = function br(src) {
-      var cap = this.rules.inline.br.exec(src);
-
-      if (cap) {
-        return {
-          type: 'br',
-          raw: cap[0]
-        };
-      }
-    };
-
-    _proto.del = function del(src) {
-      var cap = this.rules.inline.del.exec(src);
-
-      if (cap) {
-        return {
-          type: 'del',
-          raw: cap[0],
-          text: cap[1]
-        };
-      }
-    };
-
-    _proto.autolink = function autolink(src, mangle) {
-      var cap = this.rules.inline.autolink.exec(src);
-
-      if (cap) {
-        var text, href;
-
-        if (cap[2] === '@') {
-          text = _escape(this.options.mangle ? mangle(cap[1]) : cap[1]);
-          href = 'mailto:' + text;
-        } else {
-          text = _escape(cap[1]);
-          href = text;
-        }
-
-        return {
-          type: 'link',
-          raw: cap[0],
-          text: text,
-          href: href,
-          tokens: [{
-            type: 'text',
-            raw: text,
-            text: text
-          }]
-        };
-      }
-    };
-
-    _proto.url = function url(src, mangle) {
-      var cap;
-
-      if (cap = this.rules.inline.url.exec(src)) {
-        var text, href;
-
-        if (cap[2] === '@') {
-          text = _escape(this.options.mangle ? mangle(cap[0]) : cap[0]);
-          href = 'mailto:' + text;
-        } else {
-          // do extended autolink path validation
-          var prevCapZero;
-
-          do {
-            prevCapZero = cap[0];
-            cap[0] = this.rules.inline._backpedal.exec(cap[0])[0];
-          } while (prevCapZero !== cap[0]);
-
-          text = _escape(cap[0]);
-
-          if (cap[1] === 'www.') {
-            href = 'http://' + text;
-          } else {
-            href = text;
-          }
-        }
-
-        return {
-          type: 'link',
-          raw: cap[0],
-          text: text,
-          href: href,
-          tokens: [{
-            type: 'text',
-            raw: text,
-            text: text
-          }]
-        };
-      }
-    };
-
-    _proto.inlineText = function inlineText(src, inRawBlock, smartypants) {
-      var cap = this.rules.inline.text.exec(src);
-
-      if (cap) {
-        var text;
-
-        if (inRawBlock) {
-          text = this.options.sanitize ? this.options.sanitizer ? this.options.sanitizer(cap[0]) : _escape(cap[0]) : cap[0];
-        } else {
-          text = _escape(this.options.smartypants ? smartypants(cap[0]) : cap[0]);
-        }
-
-        return {
-          type: 'text',
-          raw: cap[0],
-          text: text
-        };
-      }
-    };
-
-    return Tokenizer;
-  }();
-
-  var noopTest$1 = helpers.noopTest,
-      edit$1 = helpers.edit,
-      merge$1 = helpers.merge;
-  /**
-   * Block-Level Grammar
-   */
-
-  var block = {
-    newline: /^\n+/,
-    code: /^( {4}[^\n]+\n*)+/,
-    fences: /^ {0,3}(`{3,}(?=[^`\n]*\n)|~{3,})([^\n]*)\n(?:|([\s\S]*?)\n)(?: {0,3}\1[~`]* *(?:\n+|$)|$)/,
-    hr: /^ {0,3}((?:- *){3,}|(?:_ *){3,}|(?:\* *){3,})(?:\n+|$)/,
-    heading: /^ {0,3}(#{1,6}) +([^\n]*?)(?: +#+)? *(?:\n+|$)/,
-    blockquote: /^( {0,3}> ?(paragraph|[^\n]*)(?:\n|$))+/,
-    list: /^( {0,3})(bull) [\s\S]+?(?:hr|def|\n{2,}(?! )(?!\1bull )\n*|\s*$)/,
-    html: '^ {0,3}(?:' // optional indentation
-    + '<(script|pre|style)[\\s>][\\s\\S]*?(?:</\\1>[^\\n]*\\n+|$)' // (1)
-    + '|comment[^\\n]*(\\n+|$)' // (2)
-    + '|<\\?[\\s\\S]*?\\?>\\n*' // (3)
-    + '|<![A-Z][\\s\\S]*?>\\n*' // (4)
-    + '|<!\\[CDATA\\[[\\s\\S]*?\\]\\]>\\n*' // (5)
-    + '|</?(tag)(?: +|\\n|/?>)[\\s\\S]*?(?:\\n{2,}|$)' // (6)
-    + '|<(?!script|pre|style)([a-z][\\w-]*)(?:attribute)*? */?>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:\\n{2,}|$)' // (7) open tag
-    + '|</(?!script|pre|style)[a-z][\\w-]*\\s*>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:\\n{2,}|$)' // (7) closing tag
-    + ')',
-    def: /^ {0,3}\[(label)\]: *\n? *<?([^\s>]+)>?(?:(?: +\n? *| *\n *)(title))? *(?:\n+|$)/,
-    nptable: noopTest$1,
-    table: noopTest$1,
-    lheading: /^([^\n]+)\n {0,3}(=+|-+) *(?:\n+|$)/,
-    // regex template, placeholders will be replaced according to different paragraph
-    // interruption rules of commonmark and the original markdown spec:
-    _paragraph: /^([^\n]+(?:\n(?!hr|heading|lheading|blockquote|fences|list|html)[^\n]+)*)/,
-    text: /^[^\n]+/
-  };
-  block._label = /(?!\s*\])(?:\\[\[\]]|[^\[\]])+/;
-  block._title = /(?:"(?:\\"?|[^"\\])*"|'[^'\n]*(?:\n[^'\n]+)*\n?'|\([^()]*\))/;
-  block.def = edit$1(block.def).replace('label', block._label).replace('title', block._title).getRegex();
-  block.bullet = /(?:[*+-]|\d{1,9}[.)])/;
-  block.item = /^( *)(bull) ?[^\n]*(?:\n(?!\1bull ?)[^\n]*)*/;
-  block.item = edit$1(block.item, 'gm').replace(/bull/g, block.bullet).getRegex();
-  block.list = edit$1(block.list).replace(/bull/g, block.bullet).replace('hr', '\\n+(?=\\1?(?:(?:- *){3,}|(?:_ *){3,}|(?:\\* *){3,})(?:\\n+|$))').replace('def', '\\n+(?=' + block.def.source + ')').getRegex();
-  block._tag = 'address|article|aside|base|basefont|blockquote|body|caption' + '|center|col|colgroup|dd|details|dialog|dir|div|dl|dt|fieldset|figcaption' + '|figure|footer|form|frame|frameset|h[1-6]|head|header|hr|html|iframe' + '|legend|li|link|main|menu|menuitem|meta|nav|noframes|ol|optgroup|option' + '|p|param|section|source|summary|table|tbody|td|tfoot|th|thead|title|tr' + '|track|ul';
-  block._comment = /<!--(?!-?>)[\s\S]*?-->/;
-  block.html = edit$1(block.html, 'i').replace('comment', block._comment).replace('tag', block._tag).replace('attribute', / +[a-zA-Z:_][\w.:-]*(?: *= *"[^"\n]*"| *= *'[^'\n]*'| *= *[^\s"'=<>`]+)?/).getRegex();
-  block.paragraph = edit$1(block._paragraph).replace('hr', block.hr).replace('heading', ' {0,3}#{1,6} ').replace('|lheading', '') // setex headings don't interrupt commonmark paragraphs
-  .replace('blockquote', ' {0,3}>').replace('fences', ' {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n').replace('list', ' {0,3}(?:[*+-]|1[.)]) ') // only lists starting from 1 can interrupt
-  .replace('html', '</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|!--)').replace('tag', block._tag) // pars can be interrupted by type (6) html blocks
-  .getRegex();
-  block.blockquote = edit$1(block.blockquote).replace('paragraph', block.paragraph).getRegex();
-  /**
-   * Normal Block Grammar
-   */
-
-  block.normal = merge$1({}, block);
-  /**
-   * GFM Block Grammar
-   */
-
-  block.gfm = merge$1({}, block.normal, {
-    nptable: '^ *([^|\\n ].*\\|.*)\\n' // Header
-    + ' *([-:]+ *\\|[-| :]*)' // Align
-    + '(?:\\n((?:(?!\\n|hr|heading|blockquote|code|fences|list|html).*(?:\\n|$))*)\\n*|$)',
-    // Cells
-    table: '^ *\\|(.+)\\n' // Header
-    + ' *\\|?( *[-:]+[-| :]*)' // Align
-    + '(?:\\n *((?:(?!\\n|hr|heading|blockquote|code|fences|list|html).*(?:\\n|$))*)\\n*|$)' // Cells
-
-  });
-  block.gfm.nptable = edit$1(block.gfm.nptable).replace('hr', block.hr).replace('heading', ' {0,3}#{1,6} ').replace('blockquote', ' {0,3}>').replace('code', ' {4}[^\\n]').replace('fences', ' {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n').replace('list', ' {0,3}(?:[*+-]|1[.)]) ') // only lists starting from 1 can interrupt
-  .replace('html', '</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|!--)').replace('tag', block._tag) // tables can be interrupted by type (6) html blocks
-  .getRegex();
-  block.gfm.table = edit$1(block.gfm.table).replace('hr', block.hr).replace('heading', ' {0,3}#{1,6} ').replace('blockquote', ' {0,3}>').replace('code', ' {4}[^\\n]').replace('fences', ' {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n').replace('list', ' {0,3}(?:[*+-]|1[.)]) ') // only lists starting from 1 can interrupt
-  .replace('html', '</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|!--)').replace('tag', block._tag) // tables can be interrupted by type (6) html blocks
-  .getRegex();
-  /**
-   * Pedantic grammar (original John Gruber's loose markdown specification)
-   */
-
-  block.pedantic = merge$1({}, block.normal, {
-    html: edit$1('^ *(?:comment *(?:\\n|\\s*$)' + '|<(tag)[\\s\\S]+?</\\1> *(?:\\n{2,}|\\s*$)' // closed tag
-    + '|<tag(?:"[^"]*"|\'[^\']*\'|\\s[^\'"/>\\s]*)*?/?> *(?:\\n{2,}|\\s*$))').replace('comment', block._comment).replace(/tag/g, '(?!(?:' + 'a|em|strong|small|s|cite|q|dfn|abbr|data|time|code|var|samp|kbd|sub' + '|sup|i|b|u|mark|ruby|rt|rp|bdi|bdo|span|br|wbr|ins|del|img)' + '\\b)\\w+(?!:|[^\\w\\s@]*@)\\b').getRegex(),
-    def: /^ *\[([^\]]+)\]: *<?([^\s>]+)>?(?: +(["(][^\n]+[")]))? *(?:\n+|$)/,
-    heading: /^ *(#{1,6}) *([^\n]+?) *(?:#+ *)?(?:\n+|$)/,
-    fences: noopTest$1,
-    // fences not supported
-    paragraph: edit$1(block.normal._paragraph).replace('hr', block.hr).replace('heading', ' *#{1,6} *[^\n]').replace('lheading', block.lheading).replace('blockquote', ' {0,3}>').replace('|fences', '').replace('|list', '').replace('|html', '').getRegex()
-  });
-  /**
-   * Inline-Level Grammar
-   */
-
-  var inline = {
-    bilibiliEmoji: /^f\(x\)=∫\(([^A-Z]\w+?)\)sec²xdx/,
-    textEmoji: /^`([^a-zA-Z]+?)`/,
-    codeEmoji: /^:([^A-Z]\w+?):/,
-    escape: /^\\([!"#$%&'()*+,\-./:;<=>?@\[\]\\^_`{|}~])/,
-    autolink: /^<(scheme:[^\s\x00-\x1f<>]*|email)>/,
-    url: noopTest$1,
-    tag: '^comment' + '|^</[a-zA-Z][\\w:-]*\\s*>' // self-closing tag
-    + '|^<[a-zA-Z][\\w-]*(?:attribute)*?\\s*/?>' // open tag
-    + '|^<\\?[\\s\\S]*?\\?>' // processing instruction, e.g. <?php ?>
-    + '|^<![a-zA-Z]+\\s[\\s\\S]*?>' // declaration, e.g. <!DOCTYPE html>
-    + '|^<!\\[CDATA\\[[\\s\\S]*?\\]\\]>',
-    // CDATA section
-    link: /^!?\[(label)\]\(\s*(href)(?:\s+(title))?\s*\)/,
-    reflink: /^!?\[(label)\]\[(?!\s*\])((?:\\[\[\]]?|[^\[\]\\])+)\]/,
-    nolink: /^!?\[(?!\s*\])((?:\[[^\[\]]*\]|\\[\[\]]|[^\[\]])*)\](?:\[\])?/,
-    strong: /^__([^\s_])__(?!_)|^\*\*([^\s*])\*\*(?!\*)|^__([^\s][\s\S]*?[^\s])__(?!_)|^\*\*([^\s][\s\S]*?[^\s])\*\*(?!\*)/,
-    em: /^_([^\s_])_(?!_)|^_([^\s_<][\s\S]*?[^\s_])_(?!_|[^\s,punctuation])|^_([^\s_<][\s\S]*?[^\s])_(?!_|[^\s,punctuation])|^\*([^\s*<\[])\*(?!\*)|^\*([^\s<"][\s\S]*?[^\s\[\*])\*(?![\]`punctuation])|^\*([^\s*"<\[][\s\S]*[^\s])\*(?!\*)/,
-    code: /^(`+)([^`]|[^`][\s\S]*?[^`])\1(?!`)/,
-    br: /^( {2,}|\\)\n(?!\s*$)/,
-    del: noopTest$1,
-    text: /^(`+|[^`])(?:[\s\S]*?(?:(?=[\\<!\[`:f*]|\b_|$)|[^ ](?= {2,}\n))|(?= {2,}\n))/
-  }; // list of punctuation marks from common mark spec
-  // without ` and ] to workaround Rule 17 (inline code blocks/links)
-  // without , to work around example 393
-
-  inline._punctuation = '!"#$%&\'()*+\\-./:;<=>?@\\[^_{|}~';
-  inline.em = edit$1(inline.em).replace(/punctuation/g, inline._punctuation).getRegex();
-  inline._escapes = /\\([!"#$%&'()*+,\-./:;<=>?@\[\]\\^_`{|}~])/g;
-  inline._scheme = /[a-zA-Z][a-zA-Z0-9+.-]{1,31}/;
-  inline._email = /[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+(@)[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+(?![-_])/;
-  inline.autolink = edit$1(inline.autolink).replace('scheme', inline._scheme).replace('email', inline._email).getRegex();
-  inline._attribute = /\s+[a-zA-Z:_][\w.:-]*(?:\s*=\s*"[^"]*"|\s*=\s*'[^']*'|\s*=\s*[^\s"'=<>`]+)?/;
-  inline.tag = edit$1(inline.tag).replace('comment', block._comment).replace('attribute', inline._attribute).getRegex();
-  inline._label = /(?:\[(?:\\.|[^\[\]\\])*\]|\\.|`[^`]*`|[^\[\]\\`])*?/;
-  inline._href = /<(?:\\[<>]?|[^\s<>\\])*>|[^\s\x00-\x1f]*/;
-  inline._title = /"(?:\\"?|[^"\\])*"|'(?:\\'?|[^'\\])*'|\((?:\\\)?|[^)\\])*\)/;
-  inline.link = edit$1(inline.link).replace('label', inline._label).replace('href', inline._href).replace('title', inline._title).getRegex();
-  inline.reflink = edit$1(inline.reflink).replace('label', inline._label).getRegex();
-  /**
-   * Normal Inline Grammar
-   */
-
-  inline.normal = merge$1({}, inline);
-  /**
-   * Pedantic Inline Grammar
-   */
-
-  inline.pedantic = merge$1({}, inline.normal, {
-    strong: /^__(?=\S)([\s\S]*?\S)__(?!_)|^\*\*(?=\S)([\s\S]*?\S)\*\*(?!\*)/,
-    em: /^_(?=\S)([\s\S]*?\S)_(?!_)|^\*(?=\S)([\s\S]*?\S)\*(?!\*)/,
-    link: edit$1(/^!?\[(label)\]\((.*?)\)/).replace('label', inline._label).getRegex(),
-    reflink: edit$1(/^!?\[(label)\]\s*\[([^\]]*)\]/).replace('label', inline._label).getRegex()
-  });
-  /**
-   * GFM Inline Grammar
-   */
-
-  inline.gfm = merge$1({}, inline.normal, {
-    escape: edit$1(inline.escape).replace('])', '~|])').getRegex(),
-    _extended_email: /[A-Za-z0-9._+-]+(@)[a-zA-Z0-9-_]+(?:\.[a-zA-Z0-9-_]*[a-zA-Z0-9])+(?![-_])/,
-    url: /^((?:ftp|https?):\/\/|www\.)(?:[a-zA-Z0-9\-]+\.?)+[^\s<]*|^email/,
-    _backpedal: /(?:[^?!.,:;*_~()&]+|\([^)]*\)|&(?![a-zA-Z0-9]+;$)|[?!.,:;*_~)]+(?!$))+/,
-    del: /^~+(?=\S)([\s\S]*?\S)~+/,
-    text: /^(`+|[^`])(?:[\s\S]*?(?:(?=[\\<!\[`:f*~]|\b_|https?:\/\/|ftp:\/\/|www\.|$)|[^ ](?= {2,}\n)|[^a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-](?=[a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-]+@))|(?= {2,}\n|[a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-]+@))/
-  });
-  inline.gfm.url = edit$1(inline.gfm.url, 'i').replace('email', inline.gfm._extended_email).getRegex();
-  /**
-   * GFM + Line Breaks Inline Grammar
-   */
-
-  inline.breaks = merge$1({}, inline.gfm, {
-    br: edit$1(inline.br).replace('{2,}', '*').getRegex(),
-    text: edit$1(inline.gfm.text).replace('\\b_', '\\b_| {2,}\\n').replace(/\{2,\}/g, '*').getRegex()
-  });
-  var rules = {
-    block: block,
-    inline: inline
-  };
-
-  var defaults$2 = defaults.defaults;
-  var block$1 = rules.block,
-      inline$1 = rules.inline;
-  /**
-   * smartypants text replacement
-   */
-
-  function smartypants(text) {
-    return text // em-dashes
-    .replace(/---/g, "\u2014") // en-dashes
-    .replace(/--/g, "\u2013") // opening singles
-    .replace(/(^|[-\u2014/(\[{"\s])'/g, "$1\u2018") // closing singles & apostrophes
-    .replace(/'/g, "\u2019") // opening doubles
-    .replace(/(^|[-\u2014/(\[{\u2018\s])"/g, "$1\u201C") // closing doubles
-    .replace(/"/g, "\u201D") // ellipses
-    .replace(/\.{3}/g, "\u2026");
-  }
-  /**
-   * mangle email addresses
-   */
-
-
-  function mangle(text) {
-    var out = '',
-        i,
-        ch;
-    var l = text.length;
-
-    for (i = 0; i < l; i++) {
-      ch = text.charCodeAt(i);
-
-      if (Math.random() > 0.5) {
-        ch = 'x' + ch.toString(16);
-      }
-
-      out += '&#' + ch + ';';
-    }
-
-    return out;
-  }
-  /**
-   * Block Lexer
-   */
-
-
-  var Lexer_1 = /*#__PURE__*/function () {
-    function Lexer(options) {
-      this.tokens = [];
-      this.tokens.links = Object.create(null);
-      this.options = options || defaults$2;
-      this.options.tokenizer = this.options.tokenizer || new Tokenizer_1();
-      this.tokenizer = this.options.tokenizer;
-      this.tokenizer.options = this.options;
-      var rules = {
-        block: block$1.normal,
-        inline: inline$1.normal
-      };
-
-      if (this.options.pedantic) {
-        rules.block = block$1.pedantic;
-        rules.inline = inline$1.pedantic;
-      } else if (this.options.gfm) {
-        rules.block = block$1.gfm;
-
-        if (this.options.breaks) {
-          rules.inline = inline$1.breaks;
-        } else {
-          rules.inline = inline$1.gfm;
-        }
-      }
-
-      this.tokenizer.rules = rules;
-    }
-    /**
-     * Expose Rules
-     */
-
-
-    /**
-     * Static Lex Method
-     */
-    Lexer.lex = function lex(src, options) {
-      var lexer = new Lexer(options);
-      return lexer.lex(src);
-    }
-    /**
-     * Preprocessing
-     */
-    ;
-
-    var _proto = Lexer.prototype;
-
-    _proto.lex = function lex(src) {
-      src = src.replace(/\r\n|\r/g, '\n').replace(/\t/g, '    ');
-      this.blockTokens(src, this.tokens, true);
-      this.inline(this.tokens);
-      return this.tokens;
-    }
-    /**
-     * Lexing
-     */
-    ;
-
-    _proto.blockTokens = function blockTokens(src, tokens, top) {
-      if (tokens === void 0) {
-        tokens = [];
-      }
-
-      if (top === void 0) {
-        top = true;
-      }
-
-      src = src.replace(/^ +$/gm, '');
-      var token, i, l, lastToken;
-
-      while (src) {
-        // newline
-        if (token = this.tokenizer.space(src)) {
-          src = src.substring(token.raw.length);
-
-          if (token.type) {
-            tokens.push(token);
-          }
-
-          continue;
-        } // code
-
-
-        if (token = this.tokenizer.code(src, tokens)) {
-          src = src.substring(token.raw.length);
-
-          if (token.type) {
-            tokens.push(token);
-          } else {
-            lastToken = tokens[tokens.length - 1];
-            lastToken.raw += '\n' + token.raw;
-            lastToken.text += '\n' + token.text;
-          }
-
-          continue;
-        } // fences
-
-
-        if (token = this.tokenizer.fences(src)) {
-          src = src.substring(token.raw.length);
-          tokens.push(token);
-          continue;
-        } // heading
-
-
-        if (token = this.tokenizer.heading(src)) {
-          src = src.substring(token.raw.length);
-          tokens.push(token);
-          continue;
-        } // table no leading pipe (gfm)
-
-
-        if (token = this.tokenizer.nptable(src)) {
-          src = src.substring(token.raw.length);
-          tokens.push(token);
-          continue;
-        } // hr
-
-
-        if (token = this.tokenizer.hr(src)) {
-          src = src.substring(token.raw.length);
-          tokens.push(token);
-          continue;
-        } // blockquote
-
-
-        if (token = this.tokenizer.blockquote(src)) {
-          src = src.substring(token.raw.length);
-          token.tokens = this.blockTokens(token.text, [], top);
-          tokens.push(token);
-          continue;
-        } // list
-
-
-        if (token = this.tokenizer.list(src)) {
-          src = src.substring(token.raw.length);
-          l = token.items.length;
-
-          for (i = 0; i < l; i++) {
-            token.items[i].tokens = this.blockTokens(token.items[i].text, [], false);
-          }
-
-          tokens.push(token);
-          continue;
-        } // html
-
-
-        if (token = this.tokenizer.html(src)) {
-          src = src.substring(token.raw.length);
-          tokens.push(token);
-          continue;
-        } // def
-
-
-        if (top && (token = this.tokenizer.def(src))) {
-          src = src.substring(token.raw.length);
-
-          if (!this.tokens.links[token.tag]) {
-            this.tokens.links[token.tag] = {
-              href: token.href,
-              title: token.title
-            };
-          }
-
-          continue;
-        } // table (gfm)
-
-
-        if (token = this.tokenizer.table(src)) {
-          src = src.substring(token.raw.length);
-          tokens.push(token);
-          continue;
-        } // lheading
-
-
-        if (token = this.tokenizer.lheading(src)) {
-          src = src.substring(token.raw.length);
-          tokens.push(token);
-          continue;
-        } // top-level paragraph
-
-
-        if (top && (token = this.tokenizer.paragraph(src))) {
-          src = src.substring(token.raw.length);
-          tokens.push(token);
-          continue;
-        } // text
-
-
-        if (token = this.tokenizer.text(src, tokens)) {
-          src = src.substring(token.raw.length);
-
-          if (token.type) {
-            tokens.push(token);
-          } else {
-            lastToken = tokens[tokens.length - 1];
-            lastToken.raw += '\n' + token.raw;
-            lastToken.text += '\n' + token.text;
-          }
-
-          continue;
-        }
-
-        if (src) {
-          var errMsg = 'Infinite loop on byte: ' + src.charCodeAt(0);
-
-          if (this.options.silent) {
-            console.error(errMsg);
-            break;
-          } else {
-            throw new Error(errMsg);
-          }
-        }
-      }
-
-      return tokens;
-    };
-
-    _proto.inline = function inline(tokens) {
-      var i, j, k, l2, row, token;
-      var l = tokens.length;
-
-      for (i = 0; i < l; i++) {
-        token = tokens[i];
-
-        switch (token.type) {
-          case 'paragraph':
-          case 'text':
-          case 'heading':
-            {
-              token.tokens = [];
-              this.inlineTokens(token.text, token.tokens);
-              break;
-            }
-
-          case 'table':
-            {
-              token.tokens = {
-                header: [],
-                cells: []
-              }; // header
-
-              l2 = token.header.length;
-
-              for (j = 0; j < l2; j++) {
-                token.tokens.header[j] = [];
-                this.inlineTokens(token.header[j], token.tokens.header[j]);
-              } // cells
-
-
-              l2 = token.cells.length;
-
-              for (j = 0; j < l2; j++) {
-                row = token.cells[j];
-                token.tokens.cells[j] = [];
-
-                for (k = 0; k < row.length; k++) {
-                  token.tokens.cells[j][k] = [];
-                  this.inlineTokens(row[k], token.tokens.cells[j][k]);
-                }
-              }
-
-              break;
-            }
-
-          case 'blockquote':
-            {
-              this.inline(token.tokens);
-              break;
-            }
-
-          case 'list':
-            {
-              l2 = token.items.length;
-
-              for (j = 0; j < l2; j++) {
-                this.inline(token.items[j].tokens);
-              }
-
-              break;
-            }
-        }
-      }
-
-      return tokens;
-    }
-    /**
-     * Lexing/Compiling
-     */
-    ;
-
-    _proto.inlineTokens = function inlineTokens(src, tokens, inLink, inRawBlock) {
-      if (tokens === void 0) {
-        tokens = [];
-      }
-
-      if (inLink === void 0) {
-        inLink = false;
-      }
-
-      if (inRawBlock === void 0) {
-        inRawBlock = false;
-      }
-
-      var token;
-
-      while (src) {
-        // bilibili表情 f(x)=∫(weiqu)sec²xdx
-        if (token = this.tokenizer.bilibiliEmoji(src)) {
-          src = src.substring(token.raw.length);
-
-          if (token.type) {
-            tokens.push(token);
-          }
-
-          continue;
-        } // 文字表情
-
-
-        if (token = this.tokenizer.textEmoji(src)) {
-          src = src.substring(token.raw.length);
-
-          if (token.type) {
-            tokens.push(token);
-          }
-
-          continue;
-        } // 帖吧表情/BBcodeEmoji
-
-
-        if (token = this.tokenizer.codeEmoji(src)) {
-          src = src.substring(token.raw.length);
-
-          if (token.type) {
-            tokens.push(token);
-          }
-
-          continue;
-        } // escape
-
-
-        if (token = this.tokenizer.escape(src)) {
-          src = src.substring(token.raw.length);
-          tokens.push(token);
-          continue;
-        } // tag
-
-
-        if (token = this.tokenizer.tag(src, inLink, inRawBlock)) {
-          src = src.substring(token.raw.length);
-          inLink = token.inLink;
-          inRawBlock = token.inRawBlock;
-          tokens.push(token);
-          continue;
-        } // link
-
-
-        if (token = this.tokenizer.link(src)) {
-          src = src.substring(token.raw.length);
-
-          if (token.type === 'link') {
-            token.tokens = this.inlineTokens(token.text, [], true, inRawBlock);
-          }
-
-          tokens.push(token);
-          continue;
-        } // reflink, nolink
-
-
-        if (token = this.tokenizer.reflink(src, this.tokens.links)) {
-          src = src.substring(token.raw.length);
-
-          if (token.type === 'link') {
-            token.tokens = this.inlineTokens(token.text, [], true, inRawBlock);
-          }
-
-          tokens.push(token);
-          continue;
-        } // strong
-
-
-        if (token = this.tokenizer.strong(src)) {
-          src = src.substring(token.raw.length);
-          token.tokens = this.inlineTokens(token.text, [], inLink, inRawBlock);
-          tokens.push(token);
-          continue;
-        } // em
-
-
-        if (token = this.tokenizer.em(src)) {
-          src = src.substring(token.raw.length);
-          token.tokens = this.inlineTokens(token.text, [], inLink, inRawBlock);
-          tokens.push(token);
-          continue;
-        } // code
-
-
-        if (token = this.tokenizer.codespan(src)) {
-          src = src.substring(token.raw.length);
-          tokens.push(token);
-          continue;
-        } // br
-
-
-        if (token = this.tokenizer.br(src)) {
-          src = src.substring(token.raw.length);
-          tokens.push(token);
-          continue;
-        } // del (gfm)
-
-
-        if (token = this.tokenizer.del(src)) {
-          src = src.substring(token.raw.length);
-          token.tokens = this.inlineTokens(token.text, [], inLink, inRawBlock);
-          tokens.push(token);
-          continue;
-        } // autolink
-
-
-        if (token = this.tokenizer.autolink(src, mangle)) {
-          src = src.substring(token.raw.length);
-          tokens.push(token);
-          continue;
-        } // url (gfm)
-
-
-        if (!inLink && (token = this.tokenizer.url(src, mangle))) {
-          src = src.substring(token.raw.length);
-          tokens.push(token);
-          continue;
-        } // text
-
-
-        if (token = this.tokenizer.inlineText(src, inRawBlock, smartypants)) {
-          src = src.substring(token.raw.length);
-          tokens.push(token);
-          continue;
-        }
-
-        if (src) {
-          var errMsg = 'Infinite loop on byte: ' + src.charCodeAt(0);
-
-          if (this.options.silent) {
-            console.error(errMsg);
-            break;
-          } else {
-            throw new Error(errMsg);
-          }
-        }
-      }
-
-      return tokens;
-    };
-
-    _createClass(Lexer, null, [{
-      key: "rules",
-      get: function get() {
-        return {
-          block: block$1,
-          inline: inline$1
-        };
-      }
-    }]);
-
-    return Lexer;
-  }();
-
-  var defaults$3 = defaults.defaults;
-  var cleanUrl$1 = helpers.cleanUrl,
-      escape$1 = helpers.escape;
-  /**
-   * Renderer
-   */
-
-  var Renderer_1 = /*#__PURE__*/function () {
-    function Renderer(options) {
-      this.options = options || defaults$3;
-    }
-
-    var _proto = Renderer.prototype;
-
-    _proto.bilibiliEmoji = function bilibiliEmoji(text) {
-      var href = text + '.png';
-      href = cleanUrl$1(this.options.sanitize, this.options.bilibiliEmojiUrl, href);
-      return '<span class="emotion-inline emotion-item ' + text + '" data-icon="' + text + '"><img src="' + href + '" class="img"></span>';
-    };
-
-    _proto.textEmoji = function textEmoji(text) {
-      return text;
-    };
-
-    _proto.codeEmoji = function codeEmoji(text) {
-      var href = 'icon_' + text + '.gif';
-      href = cleanUrl$1(this.options.sanitize, this.options.codeEmojiEmojiUrl, href);
-      return '<img src="' + href + '" alt=":' + text + ':" class="smilies" data-icon="' + text + '">';
-    };
-
-    _proto.code = function code(_code, infostring, escaped) {
-      var lang = (infostring || '').match(/\S*/)[0];
-
-      if (this.options.highlight) {
-        var out = this.options.highlight(_code, lang);
-
-        if (out != null && out !== _code) {
-          escaped = true;
-          _code = out;
-        }
-      }
-
-      if (!lang) {
-        return '<pre><code>' + (escaped ? _code : escape$1(_code, true)) + '</code></pre>\n';
-      }
-
-      return '<pre><code class="' + this.options.langPrefix + escape$1(lang, true) + '">' + (escaped ? _code : escape$1(_code, true)) + '</code></pre>\n';
-    };
-
-    _proto.blockquote = function blockquote(quote) {
-      return '<blockquote>\n' + quote + '</blockquote>\n';
-    };
-
-    _proto.html = function html(_html) {
-      return _html;
-    };
-
-    _proto.heading = function heading(text, level, raw, slugger) {
-      if (this.options.headerIds) {
-        return '<h' + level + ' id="' + this.options.headerPrefix + slugger.slug(raw) + '">' + text + '</h' + level + '>\n';
-      } // ignore IDs
-
-
-      return '<h' + level + '>' + text + '</h' + level + '>\n';
-    };
-
-    _proto.hr = function hr() {
-      return this.options.xhtml ? '<hr/>\n' : '<hr>\n';
-    };
-
-    _proto.list = function list(body, ordered, start) {
-      var type = ordered ? 'ol' : 'ul',
-          startatt = ordered && start !== 1 ? ' start="' + start + '"' : '';
-      return '<' + type + startatt + '>\n' + body + '</' + type + '>\n';
-    };
-
-    _proto.listitem = function listitem(text) {
-      return '<li>' + text + '</li>\n';
-    };
-
-    _proto.checkbox = function checkbox(checked) {
-      return '<input ' + (checked ? 'checked="" ' : '') + 'disabled="" type="checkbox"' + (this.options.xhtml ? ' /' : '') + '> ';
-    };
-
-    _proto.paragraph = function paragraph(text) {
-      return '<p>' + text + '</p>\n';
-    };
-
-    _proto.table = function table(header, body) {
-      if (body) body = '<tbody>' + body + '</tbody>';
-      return '<table>\n' + '<thead>\n' + header + '</thead>\n' + body + '</table>\n';
-    };
-
-    _proto.tablerow = function tablerow(content) {
-      return '<tr>\n' + content + '</tr>\n';
-    };
-
-    _proto.tablecell = function tablecell(content, flags) {
-      var type = flags.header ? 'th' : 'td';
-      var tag = flags.align ? '<' + type + ' align="' + flags.align + '">' : '<' + type + '>';
-      return tag + content + '</' + type + '>\n';
-    } // span level renderer
-    ;
-
-    _proto.strong = function strong(text) {
-      return '<strong>' + text + '</strong>';
-    };
-
-    _proto.em = function em(text) {
-      return '<em>' + text + '</em>';
-    };
-
-    _proto.codespan = function codespan(text) {
-      return '<code>' + text + '</code>';
-    };
-
-    _proto.br = function br() {
-      return this.options.xhtml ? '<br/>' : '<br>';
-    };
-
-    _proto.del = function del(text) {
-      return '<del>' + text + '</del>';
-    };
-
-    _proto.link = function link(href, title, text) {
-      href = cleanUrl$1(this.options.sanitize, this.options.baseUrl, href);
-
-      if (href === null) {
-        return text;
-      }
-
-      var out = '<a href="' + escape$1(href) + '"';
-
-      if (title) {
-        out += ' title="' + title + '"';
-      }
-
-      out += '>' + text + '</a>';
-      return out;
-    };
-
-    _proto.image = function image(href, title, text) {
-      href = cleanUrl$1(this.options.sanitize, this.options.baseUrl, href);
-
-      if (href === null) {
-        return text;
-      }
-
-      var out = '<img src="' + href + '" alt="' + text + '"';
-
-      if (title) {
-        out += ' title="' + title + '"';
-      }
-
-      out += this.options.xhtml ? '/>' : '>';
-      return out;
-    };
-
-    _proto.text = function text(_text) {
-      return _text;
-    };
-
-    return Renderer;
-  }();
-
-  /**
-   * TextRenderer
-   * returns only the textual part of the token
-   */
-  var TextRenderer_1 = /*#__PURE__*/function () {
-    function TextRenderer() {}
-
-    var _proto = TextRenderer.prototype;
-
-    // no need for block level renderers
-    _proto.strong = function strong(text) {
-      return text;
-    };
-
-    _proto.em = function em(text) {
-      return text;
-    };
-
-    _proto.codespan = function codespan(text) {
-      return text;
-    };
-
-    _proto.del = function del(text) {
-      return text;
-    };
-
-    _proto.html = function html(text) {
-      return text;
-    };
-
-    _proto.text = function text(_text) {
-      return _text;
-    };
-
-    _proto.link = function link(href, title, text) {
-      return '' + text;
-    };
-
-    _proto.image = function image(href, title, text) {
-      return '' + text;
-    };
-
-    _proto.br = function br() {
-      return '';
-    };
-
-    return TextRenderer;
-  }();
-
-  /**
-   * Slugger generates header id
-   */
-  var Slugger_1 = /*#__PURE__*/function () {
-    function Slugger() {
-      this.seen = {};
-    }
-    /**
-     * Convert string to unique id
-     */
-
-
-    var _proto = Slugger.prototype;
-
-    _proto.slug = function slug(value) {
-      var slug = value.toLowerCase().trim() // remove html tags
-      .replace(/<[!\/a-z].*?>/ig, '') // remove unwanted chars
-      .replace(/[\u2000-\u206F\u2E00-\u2E7F\\'!"#$%&()*+,./:;<=>?@[\]^`{|}~]/g, '').replace(/\s/g, '-');
-
-      if (this.seen.hasOwnProperty(slug)) {
-        var originalSlug = slug;
-
-        do {
-          this.seen[originalSlug]++;
-          slug = originalSlug + '-' + this.seen[originalSlug];
-        } while (this.seen.hasOwnProperty(slug));
-      }
-
-      this.seen[slug] = 0;
-      return slug;
-    };
-
-    return Slugger;
-  }();
-
-  var defaults$4 = defaults.defaults;
-  var unescape$1 = helpers.unescape;
-  /**
-   * Parsing & Compiling
-   */
-
-  var Parser_1 = /*#__PURE__*/function () {
-    function Parser(options) {
-      this.options = options || defaults$4;
-      this.options.renderer = this.options.renderer || new Renderer_1();
-      this.renderer = this.options.renderer;
-      this.renderer.options = this.options;
-      this.textRenderer = new TextRenderer_1();
-      this.slugger = new Slugger_1();
-    }
-    /**
-     * Static Parse Method
-     */
-
-
-    Parser.parse = function parse(tokens, options) {
-      var parser = new Parser(options);
-      return parser.parse(tokens);
-    }
-    /**
-     * Parse Loop
-     */
-    ;
-
-    var _proto = Parser.prototype;
-
-    _proto.parse = function parse(tokens, top) {
-      if (top === void 0) {
-        top = true;
-      }
-
-      var out = '',
-          i,
-          j,
-          k,
-          l2,
-          l3,
-          row,
-          cell,
-          header,
-          body,
-          token,
-          ordered,
-          start,
-          loose,
-          itemBody,
-          item,
-          checked,
-          task,
-          checkbox;
-      var l = tokens.length;
-
-      for (i = 0; i < l; i++) {
-        token = tokens[i];
-
-        switch (token.type) {
-          case 'space':
-            {
-              continue;
-            }
-
-          case 'hr':
-            {
-              out += this.renderer.hr();
-              continue;
-            }
-
-          case 'heading':
-            {
-              out += this.renderer.heading(this.parseInline(token.tokens), token.depth, unescape$1(this.parseInline(token.tokens, this.textRenderer)), this.slugger);
-              continue;
-            }
-
-          case 'code':
-            {
-              out += this.renderer.code(token.text, token.lang, token.escaped);
-              continue;
-            }
-
-          case 'table':
-            {
-              header = ''; // header
-
-              cell = '';
-              l2 = token.header.length;
-
-              for (j = 0; j < l2; j++) {
-                cell += this.renderer.tablecell(this.parseInline(token.tokens.header[j]), {
-                  header: true,
-                  align: token.align[j]
-                });
-              }
-
-              header += this.renderer.tablerow(cell);
-              body = '';
-              l2 = token.cells.length;
-
-              for (j = 0; j < l2; j++) {
-                row = token.tokens.cells[j];
-                cell = '';
-                l3 = row.length;
-
-                for (k = 0; k < l3; k++) {
-                  cell += this.renderer.tablecell(this.parseInline(row[k]), {
-                    header: false,
-                    align: token.align[k]
-                  });
-                }
-
-                body += this.renderer.tablerow(cell);
-              }
-
-              out += this.renderer.table(header, body);
-              continue;
-            }
-
-          case 'blockquote':
-            {
-              body = this.parse(token.tokens);
-              out += this.renderer.blockquote(body);
-              continue;
-            }
-
-          case 'list':
-            {
-              ordered = token.ordered;
-              start = token.start;
-              loose = token.loose;
-              l2 = token.items.length;
-              body = '';
-
-              for (j = 0; j < l2; j++) {
-                item = token.items[j];
-                checked = item.checked;
-                task = item.task;
-                itemBody = '';
-
-                if (item.task) {
-                  checkbox = this.renderer.checkbox(checked);
-
-                  if (loose) {
-                    if (item.tokens.length > 0 && item.tokens[0].type === 'text') {
-                      item.tokens[0].text = checkbox + ' ' + item.tokens[0].text;
-
-                      if (item.tokens[0].tokens && item.tokens[0].tokens.length > 0 && item.tokens[0].tokens[0].type === 'text') {
-                        item.tokens[0].tokens[0].text = checkbox + ' ' + item.tokens[0].tokens[0].text;
-                      }
-                    } else {
-                      item.tokens.unshift({
-                        type: 'text',
-                        text: checkbox
-                      });
-                    }
-                  } else {
-                    itemBody += checkbox;
-                  }
-                }
-
-                itemBody += this.parse(item.tokens, loose);
-                body += this.renderer.listitem(itemBody, task, checked);
-              }
-
-              out += this.renderer.list(body, ordered, start);
-              continue;
-            }
-
-          case 'html':
-            {
-              // TODO parse inline content if parameter markdown=1
-              out += this.renderer.html(token.text);
-              continue;
-            }
-
-          case 'paragraph':
-            {
-              out += this.renderer.paragraph(this.parseInline(token.tokens));
-              continue;
-            }
-
-          case 'text':
-            {
-              body = token.tokens ? this.parseInline(token.tokens) : token.text;
-
-              while (i + 1 < l && tokens[i + 1].type === 'text') {
-                token = tokens[++i];
-                body += '\n' + (token.tokens ? this.parseInline(token.tokens) : token.text);
-              }
-
-              out += top ? this.renderer.paragraph(body) : body;
-              continue;
-            }
-
-          default:
-            {
-              var errMsg = 'Token with "' + token.type + '" type was not found.';
-
-              if (this.options.silent) {
-                console.error(errMsg);
-                return;
-              } else {
-                throw new Error(errMsg);
-              }
-            }
-        }
-      }
-
-      return out;
-    }
-    /**
-     * Parse Inline Tokens
-     */
-    ;
-
-    _proto.parseInline = function parseInline(tokens, renderer) {
-      renderer = renderer || this.renderer;
-      var out = '',
-          i,
-          token;
-      var l = tokens.length;
-
-      for (i = 0; i < l; i++) {
-        token = tokens[i];
-
-        switch (token.type) {
-          case 'bilibiliEmoji':
-            {
-              out += renderer.bilibiliEmoji(token.text);
-              break;
-            }
-
-          case 'textEmoji':
-            {
-              out += renderer.textEmoji(token.text);
-              break;
-            }
-
-          case 'codeEmoji':
-            {
-              out += renderer.codeEmoji(token.text);
-              break;
-            }
-
-          case 'escape':
-            {
-              out += renderer.text(token.text);
-              break;
-            }
-
-          case 'html':
-            {
-              out += renderer.html(token.text);
-              break;
-            }
-
-          case 'link':
-            {
-              out += renderer.link(token.href, token.title, this.parseInline(token.tokens, renderer));
-              break;
-            }
-
-          case 'image':
-            {
-              out += renderer.image(token.href, token.title, token.text);
-              break;
-            }
-
-          case 'strong':
-            {
-              out += renderer.strong(this.parseInline(token.tokens, renderer));
-              break;
-            }
-
-          case 'em':
-            {
-              out += renderer.em(this.parseInline(token.tokens, renderer));
-              break;
-            }
-
-          case 'codespan':
-            {
-              out += renderer.codespan(token.text);
-              break;
-            }
-
-          case 'br':
-            {
-              out += renderer.br();
-              break;
-            }
-
-          case 'del':
-            {
-              out += renderer.del(this.parseInline(token.tokens, renderer));
-              break;
-            }
-
-          case 'text':
-            {
-              out += renderer.text(token.text);
-              break;
-            }
-
-          default:
-            {
-              var errMsg = 'Token with "' + token.type + '" type was not found.';
-
-              if (this.options.silent) {
-                console.error(errMsg);
-                return;
-              } else {
-                throw new Error(errMsg);
-              }
-            }
-        }
-      }
-
-      return out;
-    };
-
-    return Parser;
-  }();
-
-  var merge$2 = helpers.merge,
-      checkSanitizeDeprecation$1 = helpers.checkSanitizeDeprecation,
-      escape$2 = helpers.escape;
-  var getDefaults = defaults.getDefaults,
-      changeDefaults = defaults.changeDefaults,
-      defaults$5 = defaults.defaults;
-  /**
-   * Marked
-   */
-
-  function marked(src, opt, callback) {
-    // throw error in case of non string input
-    if (typeof src === 'undefined' || src === null) {
-      throw new Error('marked(): input parameter is undefined or null');
-    }
-
-    if (typeof src !== 'string') {
-      throw new Error('marked(): input parameter is of type ' + Object.prototype.toString.call(src) + ', string expected');
-    }
-
-    if (typeof opt === 'function') {
-      callback = opt;
-      opt = null;
-    }
-
-    opt = merge$2({}, marked.defaults, opt || {});
-    checkSanitizeDeprecation$1(opt);
-
-    if (callback) {
-      var highlight = opt.highlight;
-      var tokens;
-
-      try {
-        tokens = Lexer_1.lex(src, opt);
-      } catch (e) {
-        return callback(e);
-      }
-
-      var done = function done(err) {
-        var out;
-
-        if (!err) {
-          try {
-            out = Parser_1.parse(tokens, opt);
-          } catch (e) {
-            err = e;
-          }
-        }
-
-        opt.highlight = highlight;
-        return err ? callback(err) : callback(null, out);
-      };
-
-      if (!highlight || highlight.length < 3) {
-        return done();
-      }
-
-      delete opt.highlight;
-      if (!tokens.length) return done();
-      var pending = 0;
-      marked.walkTokens(tokens, function (token) {
-        if (token.type === 'code') {
-          pending++;
-          setTimeout(function () {
-            highlight(token.text, token.lang, function (err, code) {
-              if (err) {
-                return done(err);
-              }
-
-              if (code != null && code !== token.text) {
-                token.text = code;
-                token.escaped = true;
-              }
-
-              pending--;
-
-              if (pending === 0) {
-                done();
-              }
-            });
-          }, 0);
-        }
-      });
-
-      if (pending === 0) {
-        done();
-      }
-
-      return;
-    }
-
-    try {
-      var _tokens = Lexer_1.lex(src, opt);
-
-      if (opt.walkTokens) {
-        marked.walkTokens(_tokens, opt.walkTokens);
-      }
-
-      return Parser_1.parse(_tokens, opt);
-    } catch (e) {
-      e.message += '\nPlease report this to https://github.com/markedjs/marked.';
-
-      if (opt.silent) {
-        return '<p>An error occurred:</p><pre>' + escape$2(e.message + '', true) + '</pre>';
-      }
-
-      throw e;
-    }
-  }
-  /**
-   * Options
-   */
-
-
-  marked.options = marked.setOptions = function (opt) {
-    merge$2(marked.defaults, opt);
-    changeDefaults(marked.defaults);
-    return marked;
-  };
-
-  marked.getDefaults = getDefaults;
-  marked.defaults = defaults$5;
-  /**
-   * Use Extension
-   */
-
-  marked.use = function (extension) {
-    var opts = merge$2({}, extension);
-
-    if (extension.renderer) {
-      (function () {
-        var renderer = marked.defaults.renderer || new Renderer_1();
-
-        var _loop = function _loop(prop) {
-          var prevRenderer = renderer[prop];
-
-          renderer[prop] = function () {
-            for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-              args[_key] = arguments[_key];
-            }
-
-            var ret = extension.renderer[prop].apply(renderer, args);
-
-            if (ret === false) {
-              ret = prevRenderer.apply(renderer, args);
-            }
-
-            return ret;
-          };
-        };
-
-        for (var prop in extension.renderer) {
-          _loop(prop);
-        }
-
-        opts.renderer = renderer;
-      })();
-    }
-
-    if (extension.tokenizer) {
-      (function () {
-        var tokenizer = marked.defaults.tokenizer || new Tokenizer_1();
-
-        var _loop2 = function _loop2(prop) {
-          var prevTokenizer = tokenizer[prop];
-
-          tokenizer[prop] = function () {
-            for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
-              args[_key2] = arguments[_key2];
-            }
-
-            var ret = extension.tokenizer[prop].apply(tokenizer, args);
-
-            if (ret === false) {
-              ret = prevTokenizer.apply(tokenizer, args);
-            }
-
-            return ret;
-          };
-        };
-
-        for (var prop in extension.tokenizer) {
-          _loop2(prop);
-        }
-
-        opts.tokenizer = tokenizer;
-      })();
-    }
-
-    if (extension.walkTokens) {
-      var walkTokens = marked.defaults.walkTokens;
-
-      opts.walkTokens = function (token) {
-        extension.walkTokens(token);
-
-        if (walkTokens) {
-          walkTokens(token);
-        }
-      };
-    }
-
-    marked.setOptions(opts);
-  };
-  /**
-   * Run callback for every token
-   */
-
-
-  marked.walkTokens = function (tokens, callback) {
-    for (var _iterator = _createForOfIteratorHelperLoose(tokens), _step; !(_step = _iterator()).done;) {
-      var token = _step.value;
-      callback(token);
-
-      switch (token.type) {
-        case 'table':
-          {
-            for (var _iterator2 = _createForOfIteratorHelperLoose(token.tokens.header), _step2; !(_step2 = _iterator2()).done;) {
-              var cell = _step2.value;
-              marked.walkTokens(cell, callback);
-            }
-
-            for (var _iterator3 = _createForOfIteratorHelperLoose(token.tokens.cells), _step3; !(_step3 = _iterator3()).done;) {
-              var row = _step3.value;
-
-              for (var _iterator4 = _createForOfIteratorHelperLoose(row), _step4; !(_step4 = _iterator4()).done;) {
-                var _cell = _step4.value;
-                marked.walkTokens(_cell, callback);
-              }
-            }
-
-            break;
-          }
-
-        case 'list':
-          {
-            marked.walkTokens(token.items, callback);
-            break;
-          }
-
-        default:
-          {
-            if (token.tokens) {
-              marked.walkTokens(token.tokens, callback);
-            }
-          }
-      }
-    }
-  };
-  /**
-   * Expose
-   */
-
-
-  marked.Parser = Parser_1;
-  marked.parser = Parser_1.parse;
-  marked.Renderer = Renderer_1;
-  marked.TextRenderer = TextRenderer_1;
-  marked.Lexer = Lexer_1;
-  marked.lexer = Lexer_1.lex;
-  marked.Tokenizer = Tokenizer_1;
-  marked.Slugger = Slugger_1;
-  marked.parse = marked;
-  var marked_1 = marked;
-
-  return marked_1;
-
-})));
 
 
 /***/ }),
@@ -13653,7 +11109,7 @@ addToUnscopables('entries');
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__("24fb");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "::-webkit-scrollbar{width:6px;height:6px}::-webkit-scrollbar,::-webkit-scrollbar-track{background-color:#eee}::-webkit-scrollbar-thumb{background-color:var(--theme)}div{-webkit-transition:top .8s ease;transition:top .8s ease}.no-select{-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.halo-comment{font-family:Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,微软雅黑,Arial,sans-serif}.halo-comment a{text-decoration:none;color:var(--theme)}.halo-comment input::-webkit-input-placeholder,.halo-comment textarea::-webkit-input-placeholder{color:#ccc}.halo-comment button,.halo-comment input,.halo-comment textarea{box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-appearance:none;outline:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}.halo-comment button:focus,.halo-comment input:focus,.halo-comment textarea:focus{outline:none}.halo-comment ol,.halo-comment ul{list-style:none}.halo-comment{position:relative;-webkit-box-sizing:border-box;box-sizing:border-box;padding:0 10px;font-size:14px;font-weight:500;line-height:1.8;color:#313131;text-rendering:geometricPrecision;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-box-sizing:content-box;box-sizing:content-box;-webkit-animation:main .6s;animation:main .6s}.halo-comment input[type=color],.halo-comment input[type=date],.halo-comment input[type=datetime-local],.halo-comment input[type=datetime],.halo-comment input[type=email],.halo-comment input[type=month],.halo-comment input[type=number],.halo-comment input[type=password],.halo-comment input[type=range],.halo-comment input[type=search],.halo-comment input[type=tel],.halo-comment input[type=text],.halo-comment input[type=time],.halo-comment input[type=url],.halo-comment input[type=week],.halo-comment textarea{color:#666;border:1px solid #ccc;border-radius:3px}.halo-comment .avatar{background-color:#f5f5f5}.halo-comment .comment-load-button{margin:30px 0;text-align:center}.halo-comment .comment-loader-container{-webkit-animation:top20 .5s;animation:top20 .5s;position:relative;text-align:center;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin:30px 0}.halo-comment .comment-loader-container .comment-loader-default{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;width:30px}.halo-comment .comment-loader-container .comment-loader-default span{width:4px;height:15px;background-color:#898c7b}.halo-comment .comment-loader-container .comment-loader-default span:first-of-type{-webkit-animation:grow 1s ease-in-out -.45s infinite;animation:grow 1s ease-in-out -.45s infinite}.halo-comment .comment-loader-container .comment-loader-default span:nth-of-type(2){-webkit-animation:grow 1s ease-in-out -.3s infinite;animation:grow 1s ease-in-out -.3s infinite}.halo-comment .comment-loader-container .comment-loader-default span:nth-of-type(3){-webkit-animation:grow 1s ease-in-out -.15s infinite;animation:grow 1s ease-in-out -.15s infinite}.halo-comment .comment-loader-container .comment-loader-default span:nth-of-type(4){-webkit-animation:grow 1s ease-in-out infinite;animation:grow 1s ease-in-out infinite}@-webkit-keyframes grow{0%,to{-webkit-transform:scaleY(1);transform:scaleY(1)}50%{-webkit-transform:scaleY(2);transform:scaleY(2)}}@keyframes grow{0%,to{-webkit-transform:scaleY(1);transform:scaleY(1)}50%{-webkit-transform:scaleY(2);transform:scaleY(2)}}.halo-comment .comment-loader-container .comment-loader-circle{border:3px solid #898c7b;border-top-color:#fff;border-radius:50%;width:2.5em;height:2.5em;-webkit-animation:spin .7s linear infinite;animation:spin .7s linear infinite}@-webkit-keyframes spin{to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes spin{to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}.halo-comment .comment-loader-container .comment-loader-balls{width:3.5em;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.halo-comment .comment-loader-container .comment-loader-balls div{width:.7em;height:.7em;border-radius:50%;background-color:#898c7b;-webkit-transform:translateY(-100%);transform:translateY(-100%);-webkit-animation:wave .7s ease-in-out infinite alternate;animation:wave .7s ease-in-out infinite alternate}.halo-comment .comment-loader-container .comment-loader-balls div:first-of-type{-webkit-animation-delay:-.4s;animation-delay:-.4s}.halo-comment .comment-loader-container .comment-loader-balls div:nth-of-type(2){-webkit-animation-delay:-.2s;animation-delay:-.2s}.halo-comment ul.commentwrap{margin:0 auto 30px}.halo-comment .commentwrap{width:100%;margin:0 auto;padding:0}.halo-comment .commentwrap .comment-wrp{padding:10px 0 16px 0;border-bottom:1px solid #ddd}.halo-comment .commentwrap .comment-wrp li{clear:both}.halo-comment .commentwrap .comment-wrp:first-child{padding-top:0}.halo-comment .commentwrap .comment-wrp:last-child{padding-bottom:0;border:none}.halo-comment .commentwrap .children{padding-left:40px;margin:0;clear:both}.halo-comment .commentwrap .children .comment-wrp:last-child{border:none}.halo-comment .commentwrap .children main{width:100%}.halo-comment .commentwrap .children .profile{float:left;margin-top:4px}.halo-comment .commentwrap .children .profile img{height:40px;width:40px}.halo-comment .commentwrap .children .children .children .children .children .children{margin:0;padding:0}.halo-comment .comment{margin:0;padding:0;overflow:hidden;list-style:none}.halo-comment .comment .comment-reply-title{text-align:right}.halo-comment .comment .contents{width:100%;padding-top:10px;float:left}.halo-comment .comment .contents:hover .comment-reply-link{opacity:.9}.halo-comment .comment .main{float:right;width:100%;padding:0}.halo-comment .comment .main.shadow:hover img.avatar{-webkit-transform:rotate(1turn);transform:rotate(1turn)}.halo-comment .comment .main.shadow img.avatar{transform:rotate(0deg);-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-o-transform:rotate(0deg);-ms-transform:rotate(0deg);transition:all 1s ease;-webkit-transition:all 1s ease;-moz-transition:all ease 1s;-o-transition:all ease 1s;-webkit-box-shadow:0 1px 10px -6px rgba(0,0,0,.5);box-shadow:0 1px 10px -6px rgba(0,0,0,.5);margin-left:3px}.halo-comment .comment .profile{float:left;margin-right:10px;margin-top:6px}.halo-comment .comment .profile img{width:100%;max-width:40px;height:40px;border-radius:100%;-webkit-transition:opacity .15s ease-out;transition:opacity .15s ease-out}.halo-comment .comment .profile img:hover{opacity:.8}@media (max-width:880px){.halo-comment .comment .profile{display:none}}.halo-comment .comment .commeta{font-size:16px;margin-bottom:5px;text-transform:uppercase;color:#9499a8;margin-left:50px}.halo-comment .comment .commeta .bb-comment{position:relative;top:-1px;display:inline-block;min-width:30px;text-align:center;font-size:12px;color:#fb7299;font-weight:400;-webkit-transform:scale(.9);transform:scale(.9);border:1px solid #fb7299;border-radius:4px}.halo-comment .comment .commeta .comment-time{display:inline-block;margin-top:6px;font-size:12px;color:#657786}.halo-comment .comment .commeta .info{margin-top:2px;font-size:12px;letter-spacing:0;text-transform:none;color:rgba(0,0,0,.35)}.halo-comment .comment .commeta .info .useragent-info img{vertical-align:sub;width:14px;height:14px;border:0}@media (max-width:480px){.halo-comment .comment .commeta .info .useragent-info{display:none}}.halo-comment .comment .commeta .info .useragent-info-m{margin-top:2px;font-size:12px;letter-spacing:0;text-transform:none;color:rgba(0,0,0,.35);display:none}.halo-comment .comment .commeta .info .useragent-info-m img{vertical-align:sub;width:14px;height:14px;border:0}@media (max-width:480px){.halo-comment .comment .commeta .info .useragent-info-m{display:inline}}@media (max-width:880px){.halo-comment .comment .commeta{margin-left:0}}.halo-comment .comment h4{font-size:24px;font-weight:400;margin:0;letter-spacing:0;text-transform:none;line-height:20px}.halo-comment .comment h4 a{color:var(--theme);font-size:14px;font-weight:600}.halo-comment .comment h4 a:hover{color:var(--theme)}.halo-comment .comment h4 img{display:none;border-radius:3px;margin-right:5px;vertical-align:-4px}@media (max-width:880px){.halo-comment .comment h4 img{display:inline-block}}.halo-comment .comment .comment-reply-link{font-size:12px;display:block;margin-left:10px;float:right;text-transform:uppercase;color:#fff;background-color:var(--theme);line-height:20px;padding:0 6px;border-radius:3px;opacity:0}.halo-comment .comment .comment-reply-link:hover{opacity:1}@media (max-width:880px){.halo-comment .comment .comment-reply-link{opacity:1}}.halo-comment .comment .body{line-height:32px;color:#63686d;position:relative}.halo-comment .comment .body>:last-child{margin-bottom:0}.halo-comment .comment .body p{font-size:14px;line-height:30px;color:#63686d}.halo-comment .comment .body p a{position:relative;color:var(--theme)}.halo-comment .comment .body p a:after{content:\"\";position:absolute;width:100%;-webkit-transform:scaleX(0);transform:scaleX(0);height:2px;bottom:0;left:0;background-color:var(--theme);-webkit-transform-origin:bottom right;transform-origin:bottom right;-webkit-transition:-webkit-transform .25s ease-out;transition:-webkit-transform .25s ease-out;transition:transform .25s ease-out;transition:transform .25s ease-out,-webkit-transform .25s ease-out}.halo-comment .comment .body p a:hover:after{-webkit-transform:scaleX(1);transform:scaleX(1);-webkit-transform-origin:bottom left;transform-origin:bottom left}.halo-comment .comment .body p p{display:inline}@media (max-width:580px){.halo-comment .comment .body p{margin:0;font-size:12px;line-height:24px;padding-bottom:13px}}.halo-comment .comment .body .comment-at{color:#99ce00;text-decoration:none}.halo-comment .comment .body .comment-at:after{bottom:-2px;background-color:#99ce00}.halo-comment .comment .markdown-body{font-size:14px!important}.halo-comment .comment .markdown-body pre{padding:0;white-space:normal;word-break:break-word;background:none}.halo-comment .comment .markdown-body img{max-width:100%}.halo-comment .comment .markdown-body .emotion-inline{margin:6px 2px -8px}.halo-comment .comment .markdown-body .comment_inline_img{display:inline-block;height:150px;margin-right:3px;border:1px solid #ddd;border-radius:4px;padding:3px;cursor:pointer}.halo-comment .comment-editor{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0 auto;-webkit-animation:top20 .5s;animation:top20 .5s}.halo-comment .comment-editor input:active,.halo-comment .comment-editor input:focus,.halo-comment .comment-editor textarea:active,.halo-comment .comment-editor textarea:focus{outline:0}.halo-comment .comment-editor input::-webkit-input-placeholder,.halo-comment .comment-editor textarea::-webkit-input-placeholder{color:#999}.halo-comment .comment-editor input::-moz-placeholder,.halo-comment .comment-editor textarea::-moz-placeholder{opacity:1;color:#999}.halo-comment .comment-editor input::-ms-input-placeholder,.halo-comment .comment-editor textarea::-ms-input-placeholder{color:#999}.halo-comment .comment-editor .cancel-comment-reply-link{background:#eee;border-radius:3px;padding:12px 25px;font-size:12px;color:#454545}.halo-comment .comment-editor .comment-form{outline:none}.halo-comment .comment-editor .comment-form input,.halo-comment .comment-editor .comment-form textarea{font-size:14px;width:31.3%;margin:0;padding:10px;color:#535a63;background-color:#f9f9f9;border:1px solid #ddd}.halo-comment .comment-editor .comment-form textarea{resize:vertical;display:block;float:none;width:100%;height:180px;margin-bottom:10px;color:#535a63}.halo-comment .comment-editor .comment-form textarea:focus{border-color:var(--theme)}.halo-comment .comment-editor .comment-form input{width:100%}.halo-comment .comment-editor .comment-form input:last-of-type{margin-right:0}.halo-comment .comment-editor .comment-form input:focus{border-color:#ccc}.halo-comment .comment-editor .comment-form .comment-textarea{position:relative}.halo-comment .comment-editor .comment-form .comment-textarea .commentbody:focus{border-color:var(--theme);-webkit-transition:border-color .25s;transition:border-color .25s}.halo-comment .comment-editor .comment-form .comment-textarea .commentbody:placeholder-shown::-webkit-input-placeholder{color:transparent}.halo-comment .comment-editor .comment-form .comment-textarea .commentbody:placeholder-shown::-moz-placeholder{color:transparent}.halo-comment .comment-editor .comment-form .comment-textarea .commentbody:placeholder-shown:-ms-input-placeholder{color:transparent}.halo-comment .comment-editor .comment-form .comment-textarea .commentbody:placeholder-shown::-ms-input-placeholder{color:transparent}.halo-comment .comment-editor .comment-form .comment-textarea .commentbody:-moz-placeholder-shown::placeholder{color:transparent}.halo-comment .comment-editor .comment-form .comment-textarea .commentbody:-ms-input-placeholder::placeholder{color:transparent}.halo-comment .comment-editor .comment-form .comment-textarea .commentbody:placeholder-shown::placeholder{color:transparent}.halo-comment .comment-editor .comment-form .comment-textarea .commentbody:not(:-moz-placeholder-shown)~.input-label{color:#fff;background-color:var(--theme);transform:scale(.75) translate(-2px,-37px);border-radius:3px}.halo-comment .comment-editor .comment-form .comment-textarea .commentbody:not(:-ms-input-placeholder)~.input-label{color:#fff;background-color:var(--theme);transform:scale(.75) translate(-2px,-37px);border-radius:3px}.halo-comment .comment-editor .comment-form .comment-textarea .commentbody:focus~.input-label,.halo-comment .comment-editor .comment-form .comment-textarea .commentbody:not(:placeholder-shown)~.input-label{color:#fff;background-color:var(--theme);-webkit-transform:scale(.75) translate(-2px,-37px);transform:scale(.75) translate(-2px,-37px);border-radius:3px}.halo-comment .comment-editor .comment-form .comment-textarea .input-label{position:absolute;left:10px;top:10px;color:#666;padding:0 6px;-webkit-transform-origin:0 0;transform-origin:0 0;pointer-events:none;-webkit-transition:all .25s;transition:all .25s}.halo-comment .comment-editor .comment-form .comment-preview{position:relative;-webkit-box-sizing:border-box;box-sizing:border-box;display:block;float:none;width:100%;height:180px;margin:0 0 10px;padding:10px;font-size:14px!important;line-height:1.5;overflow-y:auto;-webkit-box-shadow:none;box-shadow:none;color:#535a63;background:#f9f9f9;border:1px solid #ddd;border-radius:3px}.halo-comment .comment-editor .comment-form .comment-preview img{max-width:100%}.halo-comment .comment-editor .comment-form .comment-preview .emotion-inline{margin:6px 2px -8px}.halo-comment .comment-editor .comment-form .author-info .commentator{position:absolute;display:inline-block;width:38px;height:38px;pointer-events:none;margin-top:10px}.halo-comment .comment-editor .comment-form .author-info .commentator img{width:100%;height:100%;border-radius:50%}.halo-comment .comment-editor .comment-form .author-info .commentator .socila-check{display:none;width:1.5em;height:1.5em;font-size:1em;line-height:1.5em;text-align:center;color:#fff;border-radius:50%;position:absolute;margin:-28px 0 0 42px}.halo-comment .comment-editor .comment-form .author-info .commentator .gravatar-check{background-color:#1e8cbe;-webkit-transform:rotate(270deg);transform:rotate(270deg)}.halo-comment .comment-editor .comment-form .author-info .commentator .qq-check{background-color:#99ce00}@media (max-width:625px){.halo-comment .comment-editor .comment-form .author-info .commentator{display:none}.halo-comment .comment-editor .comment-form .author-info .commentator .socila-check{width:1.5em;height:1.5em;font-size:.5em;line-height:1.5em;margin:-40% 0 0 77%}}.halo-comment .comment-editor .comment-form .author-info .cmt-popup{margin:0 0 10px 1%;-webkit-box-flex:1;-ms-flex:1;flex:1;--widthB:calc(var(--widthA) - 71px);--widthC:calc(var(--widthB)/3);width:var(--widthC);margin-top:10px}.halo-comment .comment-editor .comment-form .author-info .cmt-popup.cmt-author{margin-left:54px}@media (max-width:625px){.halo-comment .comment-editor .comment-form .author-info .cmt-popup{margin:0;width:100%;margin-top:15px}.halo-comment .comment-editor .comment-form .author-info .cmt-popup.cmt-author{margin-right:8px;margin-left:0}}@media (min-width:625px){.halo-comment .comment-editor .comment-form .author-info{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}}.halo-comment .comment-editor .comment-form .comment-buttons{font-size:14px;text-align:right;margin-top:10px}.halo-comment .comment-editor .comment-form .comment-buttons .middle{display:inline-block;vertical-align:middle}.halo-comment .comment-editor .comment-form .comment-buttons .button-preview-edit,.halo-comment .comment-editor .comment-form .comment-buttons .button-submit{opacity:.9;display:inline-block;color:#fff;font-weight:500;padding:4px 16px;text-transform:uppercase;border:none;background:var(--theme);border-radius:4px;-webkit-animation:bottom20 .5s;animation:bottom20 .5s;-webkit-transition:all .3s ease 0s;transition:all .3s ease 0s}.halo-comment .comment-editor .comment-form .comment-buttons .button-preview-edit:hover,.halo-comment .comment-editor .comment-form .comment-buttons .button-submit:hover{opacity:1;font-weight:700;letter-spacing:3px;-webkit-box-shadow:0 5px 40px -10px rgba(0,0,0,.57);box-shadow:0 5px 40px -10px rgba(0,0,0,.57);-webkit-transition:all .3s ease 0s;transition:all .3s ease 0s}@media (max-width:1080px){.halo-comment .comment-editor input{width:100%;margin-bottom:14px}}.halo-comment .comment-empty{margin:30px 0;text-align:center;color:#999}.halo-comment .comment-page{padding-top:20px;text-align:center;border-top:3px solid #f5f8fa}.halo-comment .comment-page .page{display:inline-block;padding:10px 0;margin:0}.halo-comment .comment-page .page li{display:inline;margin:0 3px}.halo-comment .comment-page .page button{position:relative;font-size:inherit;font-family:inherit;height:32px;padding:4px 10px;border-radius:4px;cursor:pointer;font-weight:400;color:rgba(0,0,0,.65);background-color:#fff;border:1px solid #d9d9d9}.halo-comment .comment-page .page button:hover{color:var(--theme);border-color:var(--theme)}.halo-comment .comment-page .page .active{color:var(--theme);border-color:var(--theme)}.halo-comment.halo-comment__small .comment-wrp{padding:10px 0}.halo-comment.dark .avatar{background-color:#3e3e3e}.halo-comment.dark input::-webkit-input-placeholder,.halo-comment.dark textarea::-webkit-input-placeholder{color:#777}.halo-comment.dark input::-moz-placeholder,.halo-comment.dark textarea::-moz-placeholder{color:#777}.halo-comment.dark input::-ms-input-placeholder,.halo-comment.dark textarea::-ms-input-placeholder{color:#777}.halo-comment.dark .comment-editor .comment-textarea textarea{color:#b3b3b3;background:#2e2e2e;border-color:#555}.halo-comment.dark .comment-editor #emotion-toggle{color:#ccc}.halo-comment.dark .comment-editor #container-emoji{background:#fff}.halo-comment.dark .comment-editor .author-info input{color:#b3b3b3;background:#2e2e2e;border-color:#555}.halo-comment.dark .comment-editor .motion-switcher-table tr{color:#e2e2e2}.halo-comment.dark .comment-editor .motion-switcher-table th:hover{background-color:#4c4a43;color:var(--theme)}.halo-comment.dark .comment-wrp{border-color:#4e4e4e}.halo-comment.dark .comment-wrp .cancel-comment-reply-link{background:#c7c7c7}.halo-comment.dark .comment-wrp .commeta .comment-time,.halo-comment.dark .comment-wrp .commeta .info{color:#848484}.halo-comment.dark .comment-editor .comment-form .comment-preview{color:#b3b3b3;background:#2e2e2e;border-color:#555}.halo-comment.dark .comment-page{border-color:#545454}.halo-comment.dark .comment-page button{color:#ccc;background-color:#2e2e2e;border-color:#666}.halo-comment.dark .comment-empty{color:#666}.halo-comment.dark .comment .body p{color:#999}#emotion-toggle{cursor:pointer;text-align:center;margin-bottom:5px}.emoji-fade-enter-active,.emoji-fade-leave-active{-webkit-transition:all .8s ease;transition:all .8s ease}.emoji-fade-enter,.emoji-fade-leave-to{opacity:0;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.emotion-box{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap}.emotion-box .category-enter,.emotion-box .category-leave-to{opacity:0}.emotion-box .category-enter-active,.emotion-box .category-leave-active{-webkit-transition:all .2s ease;transition:all .2s ease}.emotion-box .category-enter{-webkit-transform:translateX(10px);transform:translateX(10px)}.emotion-box .category-leave-to{-webkit-transform:translateX(-10px);transform:translateX(-10px)}.emotion-box .motion-switcher-table{border-collapse:collapse;width:100%;margin:0;table-layout:fixed}.emotion-box .motion-switcher-table td,.emotion-box .motion-switcher-table th{padding:8px;text-align:center;border-radius:5px}.emotion-box .motion-switcher-table th:hover{background-color:hsla(0,0%,96.1%,.5);color:var(--theme)}.emotion-box .motion-switcher-table .on-hover{color:var(--theme)}.emotion-box .motion-container{height:110px;overflow:auto;margin-bottom:5px;border-radius:5px}.emotion-box .motion-container.bilibili-container,.emotion-box .motion-container.tieba-container{padding-left:16px}@media (max-width:860px){.emotion-box .motion-container.bilibili-container,.emotion-box .motion-container.tieba-container{padding-left:0}}.emotion-box .motion-container img,.emotion-box .motion-container span{width:32px;height:32px}@media (max-width:860px){.emotion-box .motion-container img,.emotion-box .motion-container span{-webkit-transform:scale(.6);transform:scale(.6);margin-bottom:-10px}}.emotion-box .motion-container img{margin:7px;max-width:100%;border:0}.emotion-box .motion-container img:hover{background-color:hsla(0,0%,96.1%,.8);border-radius:5px}.emotion-box .motion-container .emoji-item{padding:3px 5px;margin:3px;display:inline-block;border-radius:4px;color:#333}.emotion-box .motion-container .emoji-item:hover{background-color:hsla(0,0%,96.1%,.8)}.emotion-box .motion-container a{background-color:transparent;text-decoration:none;color:#e67474;outline:none;-webkit-transition:color .2s ease-out,border .2s ease-out,opacity .2s ease-out;transition:color .2s ease-out,border .2s ease-out,opacity .2s ease-out}.emotion-box .motion-container .emotion-select-parent{background-size:cover}.emotion-box .motion-container .emotion-select-parent:hover{background-color:hsla(0,0%,96.1%,.8);background-image:none!important;border-radius:5px}.emotion-box .motion-container .emotion-select-parent:hover .emotion-select-child{display:block}.emotion-box .motion-container .emotion-select-child{display:none}.emotion-box .motion-container .emotion-secter{margin:12px 12px 0 0}@media (max-width:860px){.emotion-box .motion-container .emotion-secter{margin:0}.emotion-box .motion-container .emotion-secter .emotion-select-parent:hover{background-image:none!important;-webkit-transform:scale(.6);transform:scale(.6)}}.emotion-box .emotion-inline{padding-left:0!important;padding-right:0!important}.emotion-item{margin:6px;display:inline-block;width:32px;height:32px;overflow:hidden;border-radius:4px;margin-bottom:-8px}.emotion-item .img{width:32px;height:864px;max-width:32px;background:top/32px no-repeat;background-image:none;-webkit-animation:im-emotion-step 1.08s steps(27) infinite;animation:im-emotion-step 1.08s steps(27) infinite;-webkit-animation-duration:1.08s;animation-duration:1.08s;-webkit-animation-timing-function:steps(27);animation-timing-function:steps(27)}@media (max-width:860px){.emotion-item{-webkit-transform:scale(.6);transform:scale(.6);margin-bottom:-10px}}.popup{position:relative;display:inline-block;cursor:pointer}.popup .popuptext{width:auto;padding:8px 10px;background-color:#555;color:#fff;text-align:center;border-radius:6px;position:absolute;z-index:1;bottom:110%;left:50%;margin-left:-80px}.popup .popuptext:after{content:\"\";position:absolute;top:100%;left:50%;margin-left:-5px;border-width:5px;border-style:solid;border-color:#555 transparent transparent}.popup .fade-enter-active,.popup .fade-enter-to{-webkit-transition:opacity 1s;transition:opacity 1s}.popup .fade-enter,.popup .fade-leave-to{opacity:0}.smilies{position:relative;top:6px;height:1.4em;max-height:1.4em}.butterBar{position:fixed;text-align:center;top:0;left:0;right:0;width:100%;z-index:10000}.butterBar.butterBar-center{margin:auto}.butterBar .butterBar-message{background:#fe9600;color:#fff;border-bottom-left-radius:4px;border-bottom-right-radius:4px;display:inline-block;font-size:14px;margin-bottom:0;padding:12px 25px;z-index:10000;margin-top:-4px}@-webkit-keyframes main{0%{opacity:0;-webkit-transform:translateY(50px);transform:translateY(50px)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes main{0%{opacity:0;-webkit-transform:translateY(50px);transform:translateY(50px)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}@-webkit-keyframes bottom20{0%{opacity:0;-webkit-transform:translateY(20px);transform:translateY(20px)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes bottom20{0%{opacity:0;-webkit-transform:translateY(20px);transform:translateY(20px)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}@-webkit-keyframes wave{0%{-webkit-transform:translateY(-100%);transform:translateY(-100%)}to{-webkit-transform:translateY(100%);transform:translateY(100%)}}@keyframes wave{0%{-webkit-transform:translateY(-100%);transform:translateY(-100%)}to{-webkit-transform:translateY(100%);transform:translateY(100%)}}@-webkit-keyframes im-emotion-step{0%{-webkit-transform:translateY(0);transform:translateY(0)}to{-webkit-transform:translateY(-100%);transform:translateY(-100%)}}@keyframes im-emotion-step{0%{-webkit-transform:translateY(0);transform:translateY(0)}to{-webkit-transform:translateY(-100%);transform:translateY(-100%)}}@-webkit-keyframes top20{0%{opacity:0;-webkit-transform:translateY(-20px);transform:translateY(-20px)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes top20{0%{opacity:0;-webkit-transform:translateY(-20px);transform:translateY(-20px)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}.markdown-body{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#24292e;line-height:1.5;font-size:16px;word-wrap:break-word}.markdown-body .octicon{display:inline-block;fill:currentColor;vertical-align:text-bottom}.markdown-body .anchor{float:left;line-height:1;margin-left:-20px;padding-right:4px}.markdown-body .anchor:focus{outline:none}.markdown-body details{display:block}.markdown-body details summary{cursor:pointer}.markdown-body summary{display:list-item}.markdown-body a{background-color:transparent;text-decoration:none}.markdown-body a:hover{text-decoration:underline}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body strong{font-weight:inherit;font-weight:bolder;font-weight:600}.markdown-body h1{margin:.67em 0;font-size:32px;font-size:2em}.markdown-body img{border-style:none;background-color:#fff;max-width:100%}.markdown-body hr,.markdown-body img{-webkit-box-sizing:content-box;box-sizing:content-box}.markdown-body hr{overflow:visible;background:transparent;border-bottom:1px solid #dfe2e5;height:0;margin:15px 0;overflow:hidden;background-color:#e1e4e8;border:0;height:.25em;margin:24px 0;padding:0;border-bottom-color:#eee}.markdown-body hr:before{content:\"\";display:table}.markdown-body hr:after{clear:both;content:\"\";display:table}.markdown-body input{font:inherit;margin:0;overflow:visible;font-family:inherit;font-size:inherit;line-height:inherit}.markdown-body [type=checkbox]{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0}.markdown-body *{-webkit-box-sizing:border-box;box-sizing:border-box}.markdown-body table{border-collapse:collapse;border-spacing:0;display:block;overflow:auto;width:100%}.markdown-body table th{font-weight:600}.markdown-body table tr{background-color:#fff;border-top:1px solid #c6cbd1}.markdown-body table tr:nth-child(2n){background-color:#f6f8fa}.markdown-body h2{font-size:24px;font-size:1.5em}.markdown-body h3{font-size:20px;font-size:1.25em}.markdown-body h4{font-size:16px;font-size:1em}.markdown-body h5{font-size:14px;font-size:.875em}.markdown-body h6{font-size:12px;color:#6a737d;font-size:.85em}.markdown-body p{margin-bottom:10px;margin-top:0}.markdown-body blockquote{margin:0;border-left:.25em solid #dfe2e5;color:#6a737d;padding:0 1em}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body dd{margin-left:0}.markdown-body pre{margin-bottom:0;margin-top:0;word-wrap:normal}.markdown-body pre>code{background:transparent;border:0;font-size:100%;margin:0;padding:0;white-space:pre;word-break:normal}.markdown-body pre code{background-color:transparent;border:0;display:inline;line-height:inherit;margin:0;max-width:auto;overflow:visible;padding:0;word-wrap:normal}.markdown-body li{word-wrap:break-all}.markdown-body li>p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{font-size:1em;font-style:italic;font-weight:600;margin-top:16px;padding:0}.markdown-body dl dd{margin-bottom:16px;padding:0 16px}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body code{background-color:rgba(27,31,35,.05);border-radius:3px;font-size:85%;margin:0;padding:.2em .4em}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body a:active,.markdown-body a:hover{outline-width:0}.markdown-body code,.markdown-body pre{font-family:monospace,monospace;font-size:1em}.markdown-body td,.markdown-body th{padding:0}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-bottom:0;margin-top:0;font-weight:600;line-height:1.25;margin-bottom:16px;margin-top:24px}.markdown-body h1,.markdown-body h2{font-weight:600;border-bottom:1px solid #eaecef;padding-bottom:.3em}.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{font-weight:600}.markdown-body ol,.markdown-body ul{margin-bottom:0;margin-top:0;padding-left:0;padding-left:2em}.markdown-body ol ol,.markdown-body ul ol{list-style-type:lower-roman}.markdown-body ol ol ol,.markdown-body ol ul ol,.markdown-body ul ol ol,.markdown-body ul ul ol{list-style-type:lower-alpha}.markdown-body code,.markdown-body pre{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px}.markdown-body input::-webkit-inner-spin-button,.markdown-body input::-webkit-outer-spin-button{-webkit-appearance:none;appearance:none;margin:0}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-bottom:16px;margin-top:0}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-bottom:0;margin-top:0}.markdown-body table td,.markdown-body table th{border:1px solid #dfe2e5;padding:6px 13px}.markdown-body .highlight pre,.markdown-body pre{background-color:#f6f8fa;border-radius:3px;font-size:85%;line-height:1.45;overflow:auto;padding:16px}", ""]);
+exports.push([module.i, "::-webkit-scrollbar{width:6px;height:6px}::-webkit-scrollbar,::-webkit-scrollbar-track{background-color:#eee}::-webkit-scrollbar-thumb{background-color:var(--theme)}div{-webkit-transition:top .8s ease;transition:top .8s ease}.no-select{-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.halo-comment{font-family:Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,微软雅黑,Arial,sans-serif}.halo-comment a{text-decoration:none;color:var(--theme)}.halo-comment input::-webkit-input-placeholder,.halo-comment textarea::-webkit-input-placeholder{color:#ccc}.halo-comment button,.halo-comment input,.halo-comment textarea{box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-appearance:none;outline:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}.halo-comment button:focus,.halo-comment input:focus,.halo-comment textarea:focus{outline:none}.halo-comment ol,.halo-comment ul{list-style:none}.halo-comment{position:relative;-webkit-box-sizing:border-box;box-sizing:border-box;padding:0 10px;font-size:14px;font-weight:500;line-height:1.8;color:#313131;text-rendering:geometricPrecision;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-box-sizing:content-box;box-sizing:content-box;-webkit-animation:main .6s;animation:main .6s}.halo-comment input[type=color],.halo-comment input[type=date],.halo-comment input[type=datetime-local],.halo-comment input[type=datetime],.halo-comment input[type=email],.halo-comment input[type=month],.halo-comment input[type=number],.halo-comment input[type=password],.halo-comment input[type=range],.halo-comment input[type=search],.halo-comment input[type=tel],.halo-comment input[type=text],.halo-comment input[type=time],.halo-comment input[type=url],.halo-comment input[type=week],.halo-comment textarea{color:#666;border:1px solid #ccc;border-radius:3px}.halo-comment .avatar{background-color:#f5f5f5}.halo-comment .comment-load-button{margin:30px 0;text-align:center}.halo-comment .comment-loader-container{-webkit-animation:top20 .5s;animation:top20 .5s;position:relative;text-align:center;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin:30px 0}.halo-comment .comment-loader-container .comment-loader-default{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;width:30px}.halo-comment .comment-loader-container .comment-loader-default span{width:4px;height:15px;background-color:#898c7b}.halo-comment .comment-loader-container .comment-loader-default span:first-of-type{-webkit-animation:grow 1s ease-in-out -.45s infinite;animation:grow 1s ease-in-out -.45s infinite}.halo-comment .comment-loader-container .comment-loader-default span:nth-of-type(2){-webkit-animation:grow 1s ease-in-out -.3s infinite;animation:grow 1s ease-in-out -.3s infinite}.halo-comment .comment-loader-container .comment-loader-default span:nth-of-type(3){-webkit-animation:grow 1s ease-in-out -.15s infinite;animation:grow 1s ease-in-out -.15s infinite}.halo-comment .comment-loader-container .comment-loader-default span:nth-of-type(4){-webkit-animation:grow 1s ease-in-out infinite;animation:grow 1s ease-in-out infinite}@-webkit-keyframes grow{0%,to{-webkit-transform:scaleY(1);transform:scaleY(1)}50%{-webkit-transform:scaleY(2);transform:scaleY(2)}}@keyframes grow{0%,to{-webkit-transform:scaleY(1);transform:scaleY(1)}50%{-webkit-transform:scaleY(2);transform:scaleY(2)}}.halo-comment .comment-loader-container .comment-loader-circle{border:3px solid #898c7b;border-top-color:#fff;border-radius:50%;width:2.5em;height:2.5em;-webkit-animation:spin .7s linear infinite;animation:spin .7s linear infinite}@-webkit-keyframes spin{to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes spin{to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}.halo-comment .comment-loader-container .comment-loader-balls{width:3.5em;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.halo-comment .comment-loader-container .comment-loader-balls div{width:.7em;height:.7em;border-radius:50%;background-color:#898c7b;-webkit-transform:translateY(-100%);transform:translateY(-100%);-webkit-animation:wave .7s ease-in-out infinite alternate;animation:wave .7s ease-in-out infinite alternate}.halo-comment .comment-loader-container .comment-loader-balls div:first-of-type{-webkit-animation-delay:-.4s;animation-delay:-.4s}.halo-comment .comment-loader-container .comment-loader-balls div:nth-of-type(2){-webkit-animation-delay:-.2s;animation-delay:-.2s}.halo-comment ul.commentwrap{margin:0 auto 30px}.halo-comment .commentwrap{width:100%;margin:0 auto;padding:0}.halo-comment .commentwrap .comment-wrp{padding:10px 0 16px 0;border-bottom:1px solid #ddd}.halo-comment .commentwrap .comment-wrp li{clear:both}.halo-comment .commentwrap .comment-wrp:first-child{padding-top:0}.halo-comment .commentwrap .comment-wrp:last-child{padding-bottom:0;border:none}.halo-comment .commentwrap .children{padding-left:40px;margin:0;clear:both}.halo-comment .commentwrap .children .comment-wrp:last-child{border:none}.halo-comment .commentwrap .children main{width:100%}.halo-comment .commentwrap .children .profile{float:left;margin-top:4px}.halo-comment .commentwrap .children .profile img{height:40px;width:40px}.halo-comment .commentwrap .children .children .children .children .children .children{margin:0;padding:0}.halo-comment .comment{margin:0;padding:0;overflow:hidden;list-style:none}.halo-comment .comment .comment-reply-title{text-align:right}.halo-comment .comment .contents{width:100%;padding-top:10px;float:left}.halo-comment .comment .contents:hover .comment-reply-link{opacity:.9}.halo-comment .comment .main{float:right;width:100%;padding:0}.halo-comment .comment .main.shadow:hover img.avatar{-webkit-transform:rotate(1turn);transform:rotate(1turn)}.halo-comment .comment .main.shadow img.avatar{transform:rotate(0deg);-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-o-transform:rotate(0deg);-ms-transform:rotate(0deg);transition:all 1s ease;-webkit-transition:all 1s ease;-moz-transition:all ease 1s;-o-transition:all ease 1s;-webkit-box-shadow:0 1px 10px -6px rgba(0,0,0,.5);box-shadow:0 1px 10px -6px rgba(0,0,0,.5);margin-left:3px}.halo-comment .comment .profile{float:left;margin-right:10px;margin-top:6px}.halo-comment .comment .profile img{width:100%;max-width:40px;height:40px;border-radius:100%;-webkit-transition:opacity .15s ease-out;transition:opacity .15s ease-out}.halo-comment .comment .profile img:hover{opacity:.8}@media (max-width:880px){.halo-comment .comment .profile{display:none}}.halo-comment .comment .commeta{font-size:16px;margin-bottom:5px;text-transform:uppercase;color:#9499a8;margin-left:50px}.halo-comment .comment .commeta .bb-comment{position:relative;top:-1px;display:inline-block;min-width:30px;text-align:center;font-size:12px;color:#fb7299;font-weight:400;-webkit-transform:scale(.9);transform:scale(.9);border:1px solid #fb7299;border-radius:4px}.halo-comment .comment .commeta .comment-time{display:inline-block;margin-top:6px;font-size:12px;color:#657786}.halo-comment .comment .commeta .info{margin-top:2px;font-size:12px;letter-spacing:0;text-transform:none;color:rgba(0,0,0,.35)}.halo-comment .comment .commeta .info .useragent-info img{vertical-align:sub;width:14px;height:14px;border:0}@media (max-width:480px){.halo-comment .comment .commeta .info .useragent-info{display:none}}.halo-comment .comment .commeta .info .useragent-info-m{margin-top:2px;font-size:12px;letter-spacing:0;text-transform:none;color:rgba(0,0,0,.35);display:none}.halo-comment .comment .commeta .info .useragent-info-m img{vertical-align:sub;width:14px;height:14px;border:0}@media (max-width:480px){.halo-comment .comment .commeta .info .useragent-info-m{display:inline}}@media (max-width:880px){.halo-comment .comment .commeta{margin-left:0}}.halo-comment .comment h4{font-size:24px;font-weight:400;margin:0;letter-spacing:0;text-transform:none;line-height:20px}.halo-comment .comment h4 a{color:var(--theme);font-size:14px;font-weight:600}.halo-comment .comment h4 a:hover{color:var(--theme)}.halo-comment .comment h4 img{display:none;border-radius:3px;margin-right:5px;vertical-align:-4px}@media (max-width:880px){.halo-comment .comment h4 img{display:inline-block}}.halo-comment .comment .comment-reply-link{font-size:12px;display:block;margin-left:10px;float:right;text-transform:uppercase;color:#fff;background-color:var(--theme);line-height:20px;padding:0 6px;border-radius:3px;opacity:0}.halo-comment .comment .comment-reply-link:hover{opacity:1}@media (max-width:880px){.halo-comment .comment .comment-reply-link{opacity:1}}.halo-comment .comment .body{line-height:32px;color:#63686d;position:relative}.halo-comment .comment .body>:last-child{margin-bottom:0}.halo-comment .comment .body p{font-size:14px;line-height:30px;color:#63686d}.halo-comment .comment .body p a{position:relative;color:var(--theme)}.halo-comment .comment .body p a:after{content:\"\";position:absolute;width:100%;-webkit-transform:scaleX(0);transform:scaleX(0);height:2px;bottom:0;left:0;background-color:var(--theme);-webkit-transform-origin:bottom right;transform-origin:bottom right;-webkit-transition:-webkit-transform .25s ease-out;transition:-webkit-transform .25s ease-out;transition:transform .25s ease-out;transition:transform .25s ease-out,-webkit-transform .25s ease-out}.halo-comment .comment .body p a:hover:after{-webkit-transform:scaleX(1);transform:scaleX(1);-webkit-transform-origin:bottom left;transform-origin:bottom left}.halo-comment .comment .body p p{display:inline}@media (max-width:580px){.halo-comment .comment .body p{margin:0;font-size:12px;line-height:24px;padding-bottom:13px}}.halo-comment .comment .body .comment-at{color:#99ce00;text-decoration:none}.halo-comment .comment .body .comment-at:after{bottom:-2px;background-color:#99ce00}.halo-comment .markdown-body{font-size:14px!important}.halo-comment .markdown-body pre{padding:0;white-space:normal;word-break:break-word;background:none}.halo-comment .markdown-body img{max-width:100%}.halo-comment .markdown-body .emoji-item{display:inline-block;margin:0 2px;padding:0;overflow:hidden;color:#333;border-radius:4px}@media (max-width:860px){.halo-comment .markdown-body .emoji-item{-webkit-transform:scale(.8);transform:scale(.8)}}.halo-comment .markdown-body .emoji-item img{position:relative;width:32px;top:-3px;display:block;max-width:100%;width:auto;height:26px;margin:2px auto 0;border:0}.halo-comment .markdown-body .emoji-item.text{width:auto;height:auto;padding:2px 6px;font-size:14px}.halo-comment .markdown-body .emoji-animate{position:relative;width:32px;height:32px;top:10px}.halo-comment .markdown-body .emoji-animate .img{width:32px;height:864px;max-width:32px;background:top/32px no-repeat;background-image:none;-webkit-animation:im-emotion-step 1.08s steps(27) infinite;animation:im-emotion-step 1.08s steps(27) infinite;-webkit-animation-duration:1.08s;animation-duration:1.08s;-webkit-animation-timing-function:steps(27);animation-timing-function:steps(27)}@media (max-width:860px){.halo-comment .markdown-body .emoji-animate{-webkit-transform:scale(.8);transform:scale(.8)}}.halo-comment .markdown-body .emoji-img{position:relative;top:4px;height:1.4em;max-height:1.4em}.halo-comment .markdown-body .comment_inline_img{display:inline-block;height:150px;margin-right:3px;border:1px solid #ddd;border-radius:4px;padding:3px;cursor:pointer}.halo-comment .comment-editor{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0 auto;-webkit-animation:top20 .5s;animation:top20 .5s}.halo-comment .comment-editor input:active,.halo-comment .comment-editor input:focus,.halo-comment .comment-editor textarea:active,.halo-comment .comment-editor textarea:focus{outline:0}.halo-comment .comment-editor input::-webkit-input-placeholder,.halo-comment .comment-editor textarea::-webkit-input-placeholder{color:#999}.halo-comment .comment-editor input::-moz-placeholder,.halo-comment .comment-editor textarea::-moz-placeholder{opacity:1;color:#999}.halo-comment .comment-editor input::-ms-input-placeholder,.halo-comment .comment-editor textarea::-ms-input-placeholder{color:#999}.halo-comment .comment-editor .cancel-comment-reply-link{background:#eee;border-radius:3px;padding:12px 25px;font-size:12px;color:#454545}.halo-comment .comment-editor .comment-form{outline:none}.halo-comment .comment-editor .comment-form input,.halo-comment .comment-editor .comment-form textarea{font-size:14px;width:31.3%;margin:0;padding:10px;color:#535a63;background-color:#f9f9f9;border:1px solid #ddd}.halo-comment .comment-editor .comment-form textarea{resize:vertical;display:block;float:none;width:100%;height:180px;margin-bottom:10px;color:#535a63}.halo-comment .comment-editor .comment-form textarea:focus{border-color:var(--theme)}.halo-comment .comment-editor .comment-form input{width:100%}.halo-comment .comment-editor .comment-form input:last-of-type{margin-right:0}.halo-comment .comment-editor .comment-form input:focus{border-color:#ccc}.halo-comment .comment-editor .comment-form .comment-textarea{position:relative}.halo-comment .comment-editor .comment-form .comment-textarea .commentbody:focus{border-color:var(--theme);-webkit-transition:border-color .25s;transition:border-color .25s}.halo-comment .comment-editor .comment-form .comment-textarea .commentbody:placeholder-shown::-webkit-input-placeholder{color:transparent}.halo-comment .comment-editor .comment-form .comment-textarea .commentbody:placeholder-shown::-moz-placeholder{color:transparent}.halo-comment .comment-editor .comment-form .comment-textarea .commentbody:placeholder-shown:-ms-input-placeholder{color:transparent}.halo-comment .comment-editor .comment-form .comment-textarea .commentbody:placeholder-shown::-ms-input-placeholder{color:transparent}.halo-comment .comment-editor .comment-form .comment-textarea .commentbody:-moz-placeholder-shown::placeholder{color:transparent}.halo-comment .comment-editor .comment-form .comment-textarea .commentbody:-ms-input-placeholder::placeholder{color:transparent}.halo-comment .comment-editor .comment-form .comment-textarea .commentbody:placeholder-shown::placeholder{color:transparent}.halo-comment .comment-editor .comment-form .comment-textarea .commentbody:not(:-moz-placeholder-shown)~.input-label{color:#fff;background-color:var(--theme);transform:scale(.75) translate(-2px,-37px);border-radius:3px}.halo-comment .comment-editor .comment-form .comment-textarea .commentbody:not(:-ms-input-placeholder)~.input-label{color:#fff;background-color:var(--theme);transform:scale(.75) translate(-2px,-37px);border-radius:3px}.halo-comment .comment-editor .comment-form .comment-textarea .commentbody:focus~.input-label,.halo-comment .comment-editor .comment-form .comment-textarea .commentbody:not(:placeholder-shown)~.input-label{color:#fff;background-color:var(--theme);-webkit-transform:scale(.75) translate(-2px,-37px);transform:scale(.75) translate(-2px,-37px);border-radius:3px}.halo-comment .comment-editor .comment-form .comment-textarea .input-label{position:absolute;left:10px;top:10px;color:#666;padding:0 6px;-webkit-transform-origin:0 0;transform-origin:0 0;pointer-events:none;-webkit-transition:all .25s;transition:all .25s}.halo-comment .comment-editor .comment-form .comment-preview{position:relative;-webkit-box-sizing:border-box;box-sizing:border-box;display:block;float:none;width:100%;height:180px;margin:0 0 10px;padding:10px;white-space:normal;word-break:break-word;font-size:14px!important;line-height:1.5;overflow-y:auto;-webkit-box-shadow:none;box-shadow:none;color:#535a63;background:#f9f9f9;border:1px solid #ddd;border-radius:3px}.halo-comment .comment-editor .comment-form .comment-preview img{max-width:100%}.halo-comment .comment-editor .comment-form .author-info .commentator{position:absolute;display:inline-block;width:38px;height:38px;pointer-events:none;margin-top:10px}.halo-comment .comment-editor .comment-form .author-info .commentator img{width:100%;height:100%;border-radius:50%}.halo-comment .comment-editor .comment-form .author-info .commentator .socila-check{display:none;width:1.5em;height:1.5em;font-size:1em;line-height:1.5em;text-align:center;color:#fff;border-radius:50%;position:absolute;margin:-28px 0 0 42px}.halo-comment .comment-editor .comment-form .author-info .commentator .gravatar-check{background-color:#1e8cbe;-webkit-transform:rotate(270deg);transform:rotate(270deg)}.halo-comment .comment-editor .comment-form .author-info .commentator .qq-check{background-color:#99ce00}@media (max-width:625px){.halo-comment .comment-editor .comment-form .author-info .commentator{display:none}.halo-comment .comment-editor .comment-form .author-info .commentator .socila-check{width:1.5em;height:1.5em;font-size:.5em;line-height:1.5em;margin:-40% 0 0 77%}}.halo-comment .comment-editor .comment-form .author-info .cmt-popup{margin:0 0 10px 1%;-webkit-box-flex:1;-ms-flex:1;flex:1;--widthB:calc(var(--widthA) - 71px);--widthC:calc(var(--widthB)/3);width:var(--widthC);margin-top:10px}.halo-comment .comment-editor .comment-form .author-info .cmt-popup.cmt-author{margin-left:54px}@media (max-width:625px){.halo-comment .comment-editor .comment-form .author-info .cmt-popup{margin:0;width:100%;margin-top:15px}.halo-comment .comment-editor .comment-form .author-info .cmt-popup.cmt-author{margin-right:8px;margin-left:0}}@media (min-width:625px){.halo-comment .comment-editor .comment-form .author-info{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}}.halo-comment .comment-editor .comment-form .comment-buttons{font-size:14px;text-align:right;margin-top:10px}.halo-comment .comment-editor .comment-form .comment-buttons .middle{display:inline-block;vertical-align:middle}.halo-comment .comment-editor .comment-form .comment-buttons .button-preview-edit,.halo-comment .comment-editor .comment-form .comment-buttons .button-submit{opacity:.9;display:inline-block;color:#fff;font-weight:500;padding:4px 16px;text-transform:uppercase;border:none;background:var(--theme);border-radius:4px;-webkit-animation:bottom20 .5s;animation:bottom20 .5s;-webkit-transition:all .3s ease 0s;transition:all .3s ease 0s}.halo-comment .comment-editor .comment-form .comment-buttons .button-preview-edit:hover,.halo-comment .comment-editor .comment-form .comment-buttons .button-submit:hover{opacity:1;font-weight:700;letter-spacing:3px;-webkit-box-shadow:0 5px 40px -10px rgba(0,0,0,.57);box-shadow:0 5px 40px -10px rgba(0,0,0,.57);-webkit-transition:all .3s ease 0s;transition:all .3s ease 0s}@media (max-width:1080px){.halo-comment .comment-editor input{width:100%;margin-bottom:14px}}.halo-comment .comment-empty{margin:30px 0;text-align:center;color:#999}.halo-comment .comment-page{padding-top:20px;text-align:center;border-top:3px solid #f5f8fa}.halo-comment .comment-page .page{display:inline-block;padding:10px 0;margin:0}.halo-comment .comment-page .page li{display:inline;margin:0 3px}.halo-comment .comment-page .page button{position:relative;font-size:inherit;font-family:inherit;height:32px;padding:4px 10px;border-radius:4px;cursor:pointer;font-weight:400;color:rgba(0,0,0,.65);background-color:#fff;border:1px solid #d9d9d9}.halo-comment .comment-page .page button:hover{color:var(--theme);border-color:var(--theme)}.halo-comment .comment-page .page .active{color:var(--theme);border-color:var(--theme)}.halo-comment.halo-comment__small .comment-wrp{padding:10px 0}.halo-comment.dark .avatar{background-color:#3e3e3e}.halo-comment.dark input::-webkit-input-placeholder,.halo-comment.dark textarea::-webkit-input-placeholder{color:#777}.halo-comment.dark input::-moz-placeholder,.halo-comment.dark textarea::-moz-placeholder{color:#777}.halo-comment.dark input::-ms-input-placeholder,.halo-comment.dark textarea::-ms-input-placeholder{color:#777}.halo-comment.dark .comment-editor .comment-textarea textarea{color:#b3b3b3;background:#2e2e2e;border-color:#555}.halo-comment.dark .comment-editor #emotion-toggle{color:#ccc}.halo-comment.dark .comment-editor #container-emoji{background:#fff}.halo-comment.dark .comment-editor .author-info input{color:#b3b3b3;background:#2e2e2e;border-color:#555}.halo-comment.dark .comment-editor .motion-switcher-table tr{color:#e2e2e2}.halo-comment.dark .comment-editor .motion-switcher-table th:hover{background-color:#4c4a43;color:var(--theme)}.halo-comment.dark .comment-wrp{border-color:#4e4e4e}.halo-comment.dark .comment-wrp .cancel-comment-reply-link{background:#c7c7c7}.halo-comment.dark .comment-wrp .commeta .comment-time,.halo-comment.dark .comment-wrp .commeta .info{color:#848484}.halo-comment.dark .comment-editor .comment-form .comment-preview{color:#b3b3b3;background:#2e2e2e;border-color:#555}.halo-comment.dark .comment-page{border-color:#545454}.halo-comment.dark .comment-page button{color:#ccc;background-color:#2e2e2e;border-color:#666}.halo-comment.dark .comment-empty{color:#666}.halo-comment.dark .comment .body p{color:#999}#emotion-toggle{cursor:pointer;text-align:center;margin-bottom:5px}.emoji-fade-enter-active,.emoji-fade-leave-active{-webkit-transition:all .8s ease;transition:all .8s ease}.emoji-fade-enter,.emoji-fade-leave-to{opacity:0;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.emotion-box{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap}.emotion-box .category-enter,.emotion-box .category-leave-to{opacity:0}.emotion-box .category-enter-active,.emotion-box .category-leave-active{-webkit-transition:all .2s ease;transition:all .2s ease}.emotion-box .category-enter{-webkit-transform:translateX(10px);transform:translateX(10px)}.emotion-box .category-leave-to{-webkit-transform:translateX(-10px);transform:translateX(-10px)}.emotion-box .motion-switcher-table{border-collapse:collapse;width:100%;margin:0;table-layout:fixed}.emotion-box .motion-switcher-table td,.emotion-box .motion-switcher-table th{padding:8px;text-align:center;border-radius:5px}.emotion-box .motion-switcher-table th:hover{background-color:hsla(0,0%,96.1%,.5);color:var(--theme)}.emotion-box .motion-switcher-table .on-hover{color:var(--theme)}.emotion-box .motion-container{height:110px;overflow:auto;margin-bottom:5px;border-radius:5px}.emotion-box .motion-container .emoji-item{cursor:pointer;display:inline-block;width:30px;height:30px;padding:3px;margin:3px;overflow:hidden;color:#333;border-radius:4px}@media (max-width:860px){.emotion-box .motion-container .emoji-item{-webkit-transform:scale(.8);transform:scale(.8);margin-bottom:-10px}}.emotion-box .motion-container .emoji-item img{display:block;max-width:100%;width:auto;height:26px;margin:2px auto 0;border:0}.emotion-box .motion-container .emoji-item:hover{background-color:hsla(0,0%,96.1%,.8)}.emotion-box .motion-container .emoji-item.text{width:auto;height:auto;padding:2px 6px;font-size:14px}.emotion-box .motion-container .emoji-animate,.emotion-box .motion-container .emotion-secter{width:32px;height:32px}.emotion-box .motion-container .emoji-animate .img,.emotion-box .motion-container .emotion-secter .img{width:32px;height:864px;max-width:32px;background:top/32px no-repeat;background-image:none;-webkit-animation:im-emotion-step 1.08s steps(27) infinite;animation:im-emotion-step 1.08s steps(27) infinite;-webkit-animation-duration:1.08s;animation-duration:1.08s;-webkit-animation-timing-function:steps(27);animation-timing-function:steps(27)}@media (max-width:860px){.emotion-box .motion-container .emoji-animate,.emotion-box .motion-container .emotion-secter{-webkit-transform:scale(.8);transform:scale(.8);margin-bottom:-10px}}.emotion-box .motion-container.bilibili-container,.emotion-box .motion-container.haha-container,.emotion-box .motion-container.tieba-container{padding-left:16px}@media (max-width:860px){.emotion-box .motion-container.bilibili-container,.emotion-box .motion-container.haha-container,.emotion-box .motion-container.tieba-container{padding-left:0}}.emotion-box .motion-container.haha-container img{height:24px}.emotion-box .motion-container a{background-color:transparent;text-decoration:none;color:#e67474;outline:none;-webkit-transition:color .2s ease-out,border .2s ease-out,opacity .2s ease-out;transition:color .2s ease-out,border .2s ease-out,opacity .2s ease-out}.emotion-box .motion-container .emotion-select-parent{overflow:hidden;padding:1px 2px;background-size:32px auto;background-repeat:no-repeat;background-position:50%}.emotion-box .motion-container .emotion-select-parent:hover{background-color:hsla(0,0%,96.1%,.8);background-image:none!important;border-radius:5px}.emotion-box .motion-container .emotion-select-parent:hover .emotion-select-child{display:block}.emotion-box .motion-container .emotion-select-child{display:none}.emotion-box .motion-container .emotion-secter{margin:12px 12px 0 0}@media (max-width:860px){.emotion-box .motion-container .emotion-secter{margin:0}.emotion-box .motion-container .emotion-secter .emotion-select-parent:hover{background-image:none!important;-webkit-transform:scale(.6);transform:scale(.6)}}.popup{position:relative;display:inline-block;cursor:pointer}.popup .popuptext{width:auto;padding:8px 10px;background-color:#555;color:#fff;text-align:center;border-radius:6px;position:absolute;z-index:1;bottom:110%;left:50%;margin-left:-80px}.popup .popuptext:after{content:\"\";position:absolute;top:100%;left:50%;margin-left:-5px;border-width:5px;border-style:solid;border-color:#555 transparent transparent}.popup .fade-enter-active,.popup .fade-enter-to{-webkit-transition:opacity 1s;transition:opacity 1s}.popup .fade-enter,.popup .fade-leave-to{opacity:0}.butterBar{position:fixed;text-align:center;top:0;left:0;right:0;width:100%;z-index:10000}.butterBar.butterBar-center{margin:auto}.butterBar .butterBar-message{background:#fe9600;color:#fff;border-bottom-left-radius:4px;border-bottom-right-radius:4px;display:inline-block;font-size:14px;margin-bottom:0;padding:12px 25px;z-index:10000;margin-top:-4px}@-webkit-keyframes main{0%{opacity:0;-webkit-transform:translateY(50px);transform:translateY(50px)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes main{0%{opacity:0;-webkit-transform:translateY(50px);transform:translateY(50px)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}@-webkit-keyframes bottom20{0%{opacity:0;-webkit-transform:translateY(20px);transform:translateY(20px)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes bottom20{0%{opacity:0;-webkit-transform:translateY(20px);transform:translateY(20px)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}@-webkit-keyframes wave{0%{-webkit-transform:translateY(-100%);transform:translateY(-100%)}to{-webkit-transform:translateY(100%);transform:translateY(100%)}}@keyframes wave{0%{-webkit-transform:translateY(-100%);transform:translateY(-100%)}to{-webkit-transform:translateY(100%);transform:translateY(100%)}}@-webkit-keyframes im-emotion-step{0%{-webkit-transform:translateY(0);transform:translateY(0)}to{-webkit-transform:translateY(-100%);transform:translateY(-100%)}}@keyframes im-emotion-step{0%{-webkit-transform:translateY(0);transform:translateY(0)}to{-webkit-transform:translateY(-100%);transform:translateY(-100%)}}@-webkit-keyframes top20{0%{opacity:0;-webkit-transform:translateY(-20px);transform:translateY(-20px)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes top20{0%{opacity:0;-webkit-transform:translateY(-20px);transform:translateY(-20px)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}.markdown-body{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#24292e;line-height:1.5;font-size:16px;word-wrap:break-word}.markdown-body .octicon{display:inline-block;fill:currentColor;vertical-align:text-bottom}.markdown-body .anchor{float:left;line-height:1;margin-left:-20px;padding-right:4px}.markdown-body .anchor:focus{outline:none}.markdown-body details{display:block}.markdown-body details summary{cursor:pointer}.markdown-body summary{display:list-item}.markdown-body a{background-color:transparent;text-decoration:none}.markdown-body a:hover{text-decoration:underline}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body strong{font-weight:inherit;font-weight:bolder;font-weight:600}.markdown-body h1{margin:.67em 0;font-size:32px;font-size:2em}.markdown-body img{border-style:none;background-color:#fff;max-width:100%}.markdown-body hr,.markdown-body img{-webkit-box-sizing:content-box;box-sizing:content-box}.markdown-body hr{overflow:visible;background:transparent;border-bottom:1px solid #dfe2e5;height:0;margin:15px 0;overflow:hidden;background-color:#e1e4e8;border:0;height:.25em;margin:24px 0;padding:0;border-bottom-color:#eee}.markdown-body hr:before{content:\"\";display:table}.markdown-body hr:after{clear:both;content:\"\";display:table}.markdown-body input{font:inherit;margin:0;overflow:visible;font-family:inherit;font-size:inherit;line-height:inherit}.markdown-body [type=checkbox]{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0}.markdown-body *{-webkit-box-sizing:border-box;box-sizing:border-box}.markdown-body table{border-collapse:collapse;border-spacing:0;display:block;overflow:auto;width:100%}.markdown-body table th{font-weight:600}.markdown-body table tr{background-color:#fff;border-top:1px solid #c6cbd1}.markdown-body table tr:nth-child(2n){background-color:#f6f8fa}.markdown-body h2{font-size:24px;font-size:1.5em}.markdown-body h3{font-size:20px;font-size:1.25em}.markdown-body h4{font-size:16px;font-size:1em}.markdown-body h5{font-size:14px;font-size:.875em}.markdown-body h6{font-size:12px;color:#6a737d;font-size:.85em}.markdown-body p{margin-bottom:10px;margin-top:0}.markdown-body blockquote{margin:0;border-left:.25em solid #dfe2e5;color:#6a737d;padding:0 1em}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body dd{margin-left:0}.markdown-body pre{margin-bottom:0;margin-top:0;word-wrap:normal}.markdown-body pre>code{background:transparent;border:0;font-size:100%;margin:0;padding:0;white-space:pre;word-break:normal}.markdown-body pre code{background-color:transparent;border:0;display:inline;line-height:inherit;margin:0;max-width:auto;overflow:visible;padding:0;word-wrap:normal}.markdown-body li{word-wrap:break-all}.markdown-body li>p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{font-size:1em;font-style:italic;font-weight:600;margin-top:16px;padding:0}.markdown-body dl dd{margin-bottom:16px;padding:0 16px}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body code{background-color:rgba(27,31,35,.05);border-radius:3px;font-size:85%;margin:0;padding:.2em .4em}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body a:active,.markdown-body a:hover{outline-width:0}.markdown-body code,.markdown-body pre{font-family:monospace,monospace;font-size:1em}.markdown-body td,.markdown-body th{padding:0}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-bottom:0;margin-top:0;font-weight:600;line-height:1.25;margin-bottom:16px;margin-top:24px}.markdown-body h1,.markdown-body h2{font-weight:600;border-bottom:1px solid #eaecef;padding-bottom:.3em}.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{font-weight:600}.markdown-body ol,.markdown-body ul{margin-bottom:0;margin-top:0;padding-left:0;padding-left:2em}.markdown-body ol ol,.markdown-body ul ol{list-style-type:lower-roman}.markdown-body ol ol ol,.markdown-body ol ul ol,.markdown-body ul ol ol,.markdown-body ul ul ol{list-style-type:lower-alpha}.markdown-body code,.markdown-body pre{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px}.markdown-body input::-webkit-inner-spin-button,.markdown-body input::-webkit-outer-spin-button{-webkit-appearance:none;appearance:none;margin:0}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-bottom:16px;margin-top:0}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-bottom:0;margin-top:0}.markdown-body table td,.markdown-body table th{border:1px solid #dfe2e5;padding:6px 13px}.markdown-body .highlight pre,.markdown-body pre{background-color:#f6f8fa;border-radius:3px;font-size:85%;line-height:1.45;overflow:auto;padding:16px}", ""]);
 // Exports
 module.exports = exports;
 
@@ -13678,6 +11134,2625 @@ module.exports = function combineURLs(baseURL, relativeURL) {
     ? baseURL.replace(/\/+$/, '') + '/' + relativeURL.replace(/^\/+/, '')
     : baseURL;
 };
+
+
+/***/ }),
+
+/***/ "e7f9":
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * marked - a markdown parser
+ * Copyright (c) 2011-2021, Christopher Jeffrey. (MIT Licensed)
+ * https://github.com/markedjs/marked
+ */
+
+/**
+ * DO NOT EDIT THIS FILE
+ * The code in this file is generated from files in ./src/
+ */
+
+(function (global, factory) {
+   true ? module.exports = factory() :
+  undefined;
+}(this, (function () { 'use strict';
+
+  function _defineProperties(target, props) {
+    for (var i = 0; i < props.length; i++) {
+      var descriptor = props[i];
+      descriptor.enumerable = descriptor.enumerable || false;
+      descriptor.configurable = true;
+      if ("value" in descriptor) descriptor.writable = true;
+      Object.defineProperty(target, descriptor.key, descriptor);
+    }
+  }
+
+  function _createClass(Constructor, protoProps, staticProps) {
+    if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) _defineProperties(Constructor, staticProps);
+    return Constructor;
+  }
+
+  function _unsupportedIterableToArray(o, minLen) {
+    if (!o) return;
+    if (typeof o === "string") return _arrayLikeToArray(o, minLen);
+    var n = Object.prototype.toString.call(o).slice(8, -1);
+    if (n === "Object" && o.constructor) n = o.constructor.name;
+    if (n === "Map" || n === "Set") return Array.from(o);
+    if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
+  }
+
+  function _arrayLikeToArray(arr, len) {
+    if (len == null || len > arr.length) len = arr.length;
+
+    for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
+
+    return arr2;
+  }
+
+  function _createForOfIteratorHelperLoose(o) {
+    var i = 0;
+
+    if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) {
+      if (Array.isArray(o) || (o = _unsupportedIterableToArray(o))) return function () {
+        if (i >= o.length) return {
+          done: true
+        };
+        return {
+          done: false,
+          value: o[i++]
+        };
+      };
+      throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+    }
+
+    i = o[Symbol.iterator]();
+    return i.next.bind(i);
+  }
+
+  function createCommonjsModule(fn, module) {
+  	return module = { exports: {} }, fn(module, module.exports), module.exports;
+  }
+
+  var defaults = createCommonjsModule(function (module) {
+    function getDefaults() {
+      return {
+        baseUrl: null,
+        breaks: false,
+        gfm: true,
+        headerIds: true,
+        headerPrefix: '',
+        highlight: null,
+        langPrefix: 'language-',
+        mangle: true,
+        pedantic: false,
+        renderer: null,
+        sanitize: false,
+        sanitizer: null,
+        silent: false,
+        smartLists: false,
+        smartypants: false,
+        tokenizer: null,
+        walkTokens: null,
+        xhtml: false,
+        bilibiliEmojiUrl: 'https://cdn.jsdelivr.net/gh/qinhua/cdn_assets@master/comment/emoji/bili/',
+        tiebaEmojiUrl: 'https://cdn.jsdelivr.net/gh/qinhua/cdn_assets@master/comment/emoji/smilies/',
+        hahaEmojiUrl: 'https://cdn.jsdelivr.net/gh/qinhua/cdn_assets@master/comment/emoji/haha/'
+      };
+    }
+
+    function changeDefaults(newDefaults) {
+      module.exports.defaults = newDefaults;
+    }
+
+    module.exports = {
+      defaults: getDefaults(),
+      getDefaults: getDefaults,
+      changeDefaults: changeDefaults
+    };
+  });
+  var defaults_1 = defaults.defaults;
+  var defaults_2 = defaults.getDefaults;
+  var defaults_3 = defaults.changeDefaults;
+
+  /**
+   * Helpers
+   */
+  var escapeTest = /[&<>"']/;
+  var escapeReplace = /[&<>"']/g;
+  var escapeTestNoEncode = /[<>"']|&(?!#?\w+;)/;
+  var escapeReplaceNoEncode = /[<>"']|&(?!#?\w+;)/g;
+  var escapeReplacements = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;'
+  };
+
+  var getEscapeReplacement = function getEscapeReplacement(ch) {
+    return escapeReplacements[ch];
+  };
+
+  function escape(html, encode) {
+    if (encode) {
+      if (escapeTest.test(html)) {
+        return html.replace(escapeReplace, getEscapeReplacement);
+      }
+    } else {
+      if (escapeTestNoEncode.test(html)) {
+        return html.replace(escapeReplaceNoEncode, getEscapeReplacement);
+      }
+    }
+
+    return html;
+  }
+
+  var unescapeTest = /&(#(?:\d+)|(?:#x[0-9A-Fa-f]+)|(?:\w+));?/ig;
+
+  function unescape(html) {
+    // explicitly match decimal, hex, and named HTML entities
+    return html.replace(unescapeTest, function (_, n) {
+      n = n.toLowerCase();
+      if (n === 'colon') return ':';
+
+      if (n.charAt(0) === '#') {
+        return n.charAt(1) === 'x' ? String.fromCharCode(parseInt(n.substring(2), 16)) : String.fromCharCode(+n.substring(1));
+      }
+
+      return '';
+    });
+  }
+
+  var caret = /(^|[^\[])\^/g;
+
+  function edit(regex, opt) {
+    regex = regex.source || regex;
+    opt = opt || '';
+    var obj = {
+      replace: function replace(name, val) {
+        val = val.source || val;
+        val = val.replace(caret, '$1');
+        regex = regex.replace(name, val);
+        return obj;
+      },
+      getRegex: function getRegex() {
+        return new RegExp(regex, opt);
+      }
+    };
+    return obj;
+  }
+
+  var nonWordAndColonTest = /[^\w:]/g;
+  var originIndependentUrl = /^$|^[a-z][a-z0-9+.-]*:|^[?#]/i;
+
+  function cleanUrl(sanitize, base, href) {
+    if (sanitize) {
+      var prot;
+
+      try {
+        prot = decodeURIComponent(unescape(href)).replace(nonWordAndColonTest, '').toLowerCase();
+      } catch (e) {
+        return null;
+      }
+
+      if (prot.indexOf('javascript:') === 0 || prot.indexOf('vbscript:') === 0 || prot.indexOf('data:') === 0) {
+        return null;
+      }
+    }
+
+    if (base && !originIndependentUrl.test(href)) {
+      href = resolveUrl(base, href);
+    }
+
+    try {
+      href = encodeURI(href).replace(/%25/g, '%');
+    } catch (e) {
+      return null;
+    }
+
+    return href;
+  }
+
+  var baseUrls = {};
+  var justDomain = /^[^:]+:\/*[^/]*$/;
+  var protocol = /^([^:]+:)[\s\S]*$/;
+  var domain = /^([^:]+:\/*[^/]*)[\s\S]*$/;
+
+  function resolveUrl(base, href) {
+    if (!baseUrls[' ' + base]) {
+      // we can ignore everything in base after the last slash of its path component,
+      // but we might need to add _that_
+      // https://tools.ietf.org/html/rfc3986#section-3
+      if (justDomain.test(base)) {
+        baseUrls[' ' + base] = base + '/';
+      } else {
+        baseUrls[' ' + base] = rtrim(base, '/', true);
+      }
+    }
+
+    base = baseUrls[' ' + base];
+    var relativeBase = base.indexOf(':') === -1;
+
+    if (href.substring(0, 2) === '//') {
+      if (relativeBase) {
+        return href;
+      }
+
+      return base.replace(protocol, '$1') + href;
+    } else if (href.charAt(0) === '/') {
+      if (relativeBase) {
+        return href;
+      }
+
+      return base.replace(domain, '$1') + href;
+    } else {
+      return base + href;
+    }
+  }
+
+  var noopTest = {
+    exec: function noopTest() {}
+  };
+
+  function merge(obj) {
+    var i = 1,
+        target,
+        key;
+
+    for (; i < arguments.length; i++) {
+      target = arguments[i];
+
+      for (key in target) {
+        if (Object.prototype.hasOwnProperty.call(target, key)) {
+          obj[key] = target[key];
+        }
+      }
+    }
+
+    return obj;
+  }
+
+  function splitCells(tableRow, count) {
+    // ensure that every cell-delimiting pipe has a space
+    // before it to distinguish it from an escaped pipe
+    var row = tableRow.replace(/\|/g, function (match, offset, str) {
+      var escaped = false,
+          curr = offset;
+
+      while (--curr >= 0 && str[curr] === '\\') {
+        escaped = !escaped;
+      }
+
+      if (escaped) {
+        // odd number of slashes means | is escaped
+        // so we leave it alone
+        return '|';
+      } else {
+        // add space before unescaped |
+        return ' |';
+      }
+    }),
+        cells = row.split(/ \|/);
+    var i = 0;
+
+    if (cells.length > count) {
+      cells.splice(count);
+    } else {
+      while (cells.length < count) {
+        cells.push('');
+      }
+    }
+
+    for (; i < cells.length; i++) {
+      // leading or trailing whitespace is ignored per the gfm spec
+      cells[i] = cells[i].trim().replace(/\\\|/g, '|');
+    }
+
+    return cells;
+  } // Remove trailing 'c's. Equivalent to str.replace(/c*$/, '').
+  // /c*$/ is vulnerable to REDOS.
+  // invert: Remove suffix of non-c chars instead. Default falsey.
+
+
+  function rtrim(str, c, invert) {
+    var l = str.length;
+
+    if (l === 0) {
+      return '';
+    } // Length of suffix matching the invert condition.
+
+
+    var suffLen = 0; // Step left until we fail to match the invert condition.
+
+    while (suffLen < l) {
+      var currChar = str.charAt(l - suffLen - 1);
+
+      if (currChar === c && !invert) {
+        suffLen++;
+      } else if (currChar !== c && invert) {
+        suffLen++;
+      } else {
+        break;
+      }
+    }
+
+    return str.substr(0, l - suffLen);
+  }
+
+  function findClosingBracket(str, b) {
+    if (str.indexOf(b[1]) === -1) {
+      return -1;
+    }
+
+    var l = str.length;
+    var level = 0,
+        i = 0;
+
+    for (; i < l; i++) {
+      if (str[i] === '\\') {
+        i++;
+      } else if (str[i] === b[0]) {
+        level++;
+      } else if (str[i] === b[1]) {
+        level--;
+
+        if (level < 0) {
+          return i;
+        }
+      }
+    }
+
+    return -1;
+  }
+
+  function checkSanitizeDeprecation(opt) {
+    if (opt && opt.sanitize && !opt.silent) {
+      console.warn('marked(): sanitize and sanitizer parameters are deprecated since version 0.7.0, should not be used and will be removed in the future. Read more here: https://marked.js.org/#/USING_ADVANCED.md#options');
+    }
+  }
+
+  var helpers = {
+    escape: escape,
+    unescape: unescape,
+    edit: edit,
+    cleanUrl: cleanUrl,
+    resolveUrl: resolveUrl,
+    noopTest: noopTest,
+    merge: merge,
+    splitCells: splitCells,
+    rtrim: rtrim,
+    findClosingBracket: findClosingBracket,
+    checkSanitizeDeprecation: checkSanitizeDeprecation
+  };
+
+  var defaults$1 = defaults.defaults;
+  var rtrim$1 = helpers.rtrim,
+      splitCells$1 = helpers.splitCells,
+      _escape = helpers.escape,
+      findClosingBracket$1 = helpers.findClosingBracket;
+
+  function outputLink(cap, link, raw) {
+    var href = link.href;
+    var title = link.title ? _escape(link.title) : null;
+    var text = cap[1].replace(/\\([\[\]])/g, '$1');
+
+    if (cap[0].charAt(0) !== '!') {
+      return {
+        type: 'link',
+        raw: raw,
+        href: href,
+        title: title,
+        text: text
+      };
+    } else {
+      return {
+        type: 'image',
+        raw: raw,
+        href: href,
+        title: title,
+        text: _escape(text)
+      };
+    }
+  }
+
+  function indentCodeCompensation(raw, text) {
+    var matchIndentToCode = raw.match(/^(\s+)(?:```)/);
+
+    if (matchIndentToCode === null) {
+      return text;
+    }
+
+    var indentToCode = matchIndentToCode[1];
+    return text.split('\n').map(function (node) {
+      var matchIndentInNode = node.match(/^\s+/);
+
+      if (matchIndentInNode === null) {
+        return node;
+      }
+
+      var indentInNode = matchIndentInNode[0];
+
+      if (indentInNode.length >= indentToCode.length) {
+        return node.slice(indentToCode.length);
+      }
+
+      return node;
+    }).join('\n');
+  }
+  /**
+   * Tokenizer
+   */
+
+
+  var Tokenizer_1 = /*#__PURE__*/function () {
+    function Tokenizer(options) {
+      this.options = options || defaults$1;
+    }
+
+    var _proto = Tokenizer.prototype;
+
+    _proto.bilibiliEmoji = function bilibiliEmoji(src) {
+      var cap = this.rules.inline.bilibiliEmoji.exec(src);
+
+      if (cap) {
+        if (cap[0].length > 1) {
+          return {
+            type: 'bilibiliEmoji',
+            raw: cap[0],
+            text: cap[1]
+          };
+        }
+      }
+    };
+
+    _proto.textEmoji = function textEmoji(src) {
+      var cap = this.rules.inline.textEmoji.exec(src);
+
+      if (cap) {
+        if (cap[0].length > 1) {
+          return {
+            type: 'textEmoji',
+            raw: cap[0],
+            text: cap[1]
+          };
+        }
+      }
+    };
+
+    _proto.codeEmoji = function codeEmoji(src) {
+      var cap = this.rules.inline.codeEmoji.exec(src);
+
+      if (cap) {
+        if (cap[0].length > 1) {
+          return {
+            type: 'codeEmoji',
+            raw: cap[0],
+            text: cap[1]
+          };
+        }
+      }
+    };
+
+    _proto.space = function space(src) {
+      var cap = this.rules.block.newline.exec(src);
+
+      if (cap) {
+        if (cap[0].length > 1) {
+          return {
+            type: 'space',
+            raw: cap[0]
+          };
+        }
+
+        return {
+          raw: '\n'
+        };
+      }
+    };
+
+    _proto.code = function code(src, tokens) {
+      var cap = this.rules.block.code.exec(src);
+
+      if (cap) {
+        var lastToken = tokens[tokens.length - 1]; // An indented code block cannot interrupt a paragraph.
+
+        if (lastToken && lastToken.type === 'paragraph') {
+          return {
+            raw: cap[0],
+            text: cap[0].trimRight()
+          };
+        }
+
+        var text = cap[0].replace(/^ {4}/gm, '');
+        return {
+          type: 'code',
+          raw: cap[0],
+          codeBlockStyle: 'indented',
+          text: !this.options.pedantic ? rtrim$1(text, '\n') : text
+        };
+      }
+    };
+
+    _proto.fences = function fences(src) {
+      var cap = this.rules.block.fences.exec(src);
+
+      if (cap) {
+        var raw = cap[0];
+        var text = indentCodeCompensation(raw, cap[3] || '');
+        return {
+          type: 'code',
+          raw: raw,
+          lang: cap[2] ? cap[2].trim() : cap[2],
+          text: text
+        };
+      }
+    };
+
+    _proto.heading = function heading(src) {
+      var cap = this.rules.block.heading.exec(src);
+
+      if (cap) {
+        return {
+          type: 'heading',
+          raw: cap[0],
+          depth: cap[1].length,
+          text: cap[2]
+        };
+      }
+    };
+
+    _proto.nptable = function nptable(src) {
+      var cap = this.rules.block.nptable.exec(src);
+
+      if (cap) {
+        var item = {
+          type: 'table',
+          header: splitCells$1(cap[1].replace(/^ *| *\| *$/g, '')),
+          align: cap[2].replace(/^ *|\| *$/g, '').split(/ *\| */),
+          cells: cap[3] ? cap[3].replace(/\n$/, '').split('\n') : [],
+          raw: cap[0]
+        };
+
+        if (item.header.length === item.align.length) {
+          var l = item.align.length;
+          var i;
+
+          for (i = 0; i < l; i++) {
+            if (/^ *-+: *$/.test(item.align[i])) {
+              item.align[i] = 'right';
+            } else if (/^ *:-+: *$/.test(item.align[i])) {
+              item.align[i] = 'center';
+            } else if (/^ *:-+ *$/.test(item.align[i])) {
+              item.align[i] = 'left';
+            } else {
+              item.align[i] = null;
+            }
+          }
+
+          l = item.cells.length;
+
+          for (i = 0; i < l; i++) {
+            item.cells[i] = splitCells$1(item.cells[i], item.header.length);
+          }
+
+          return item;
+        }
+      }
+    };
+
+    _proto.hr = function hr(src) {
+      var cap = this.rules.block.hr.exec(src);
+
+      if (cap) {
+        return {
+          type: 'hr',
+          raw: cap[0]
+        };
+      }
+    };
+
+    _proto.blockquote = function blockquote(src) {
+      var cap = this.rules.block.blockquote.exec(src);
+
+      if (cap) {
+        var text = cap[0].replace(/^ *> ?/gm, '');
+        return {
+          type: 'blockquote',
+          raw: cap[0],
+          text: text
+        };
+      }
+    };
+
+    _proto.list = function list(src) {
+      var cap = this.rules.block.list.exec(src);
+
+      if (cap) {
+        var raw = cap[0];
+        var bull = cap[2];
+        var isordered = bull.length > 1;
+        var isparen = bull[bull.length - 1] === ')';
+        var list = {
+          type: 'list',
+          raw: raw,
+          ordered: isordered,
+          start: isordered ? +bull.slice(0, -1) : '',
+          loose: false,
+          items: []
+        }; // Get each top-level item.
+
+        var itemMatch = cap[0].match(this.rules.block.item);
+        var next = false,
+            item,
+            space,
+            b,
+            addBack,
+            loose,
+            istask,
+            ischecked;
+        var l = itemMatch.length;
+
+        for (var i = 0; i < l; i++) {
+          item = itemMatch[i];
+          raw = item; // Remove the list item's bullet
+          // so it is seen as the next token.
+
+          space = item.length;
+          item = item.replace(/^ *([*+-]|\d+[.)]) */, ''); // Outdent whatever the
+          // list item contains. Hacky.
+
+          if (~item.indexOf('\n ')) {
+            space -= item.length;
+            item = !this.options.pedantic ? item.replace(new RegExp('^ {1,' + space + '}', 'gm'), '') : item.replace(/^ {1,4}/gm, '');
+          } // Determine whether the next list item belongs here.
+          // Backpedal if it does not belong in this list.
+
+
+          if (i !== l - 1) {
+            b = this.rules.block.bullet.exec(itemMatch[i + 1])[0];
+
+            if (isordered ? b.length === 1 || !isparen && b[b.length - 1] === ')' : b.length > 1 || this.options.smartLists && b !== bull) {
+              addBack = itemMatch.slice(i + 1).join('\n');
+              list.raw = list.raw.substring(0, list.raw.length - addBack.length);
+              i = l - 1;
+            }
+          } // Determine whether item is loose or not.
+          // Use: /(^|\n)(?! )[^\n]+\n\n(?!\s*$)/
+          // for discount behavior.
+
+
+          loose = next || /\n\n(?!\s*$)/.test(item);
+
+          if (i !== l - 1) {
+            next = item.charAt(item.length - 1) === '\n';
+            if (!loose) loose = next;
+          }
+
+          if (loose) {
+            list.loose = true;
+          } // Check for task list items
+
+
+          istask = /^\[[ xX]\] /.test(item);
+          ischecked = undefined;
+
+          if (istask) {
+            ischecked = item[1] !== ' ';
+            item = item.replace(/^\[[ xX]\] +/, '');
+          }
+
+          list.items.push({
+            type: 'list_item',
+            raw: raw,
+            task: istask,
+            checked: ischecked,
+            loose: loose,
+            text: item
+          });
+        }
+
+        return list;
+      }
+    };
+
+    _proto.html = function html(src) {
+      var cap = this.rules.block.html.exec(src);
+
+      if (cap) {
+        return {
+          type: this.options.sanitize ? 'paragraph' : 'html',
+          raw: cap[0],
+          pre: !this.options.sanitizer && (cap[1] === 'pre' || cap[1] === 'script' || cap[1] === 'style'),
+          text: this.options.sanitize ? this.options.sanitizer ? this.options.sanitizer(cap[0]) : _escape(cap[0]) : cap[0]
+        };
+      }
+    };
+
+    _proto.def = function def(src) {
+      var cap = this.rules.block.def.exec(src);
+
+      if (cap) {
+        if (cap[3]) cap[3] = cap[3].substring(1, cap[3].length - 1);
+        var tag = cap[1].toLowerCase().replace(/\s+/g, ' ');
+        return {
+          tag: tag,
+          raw: cap[0],
+          href: cap[2],
+          title: cap[3]
+        };
+      }
+    };
+
+    _proto.table = function table(src) {
+      var cap = this.rules.block.table.exec(src);
+
+      if (cap) {
+        var item = {
+          type: 'table',
+          header: splitCells$1(cap[1].replace(/^ *| *\| *$/g, '')),
+          align: cap[2].replace(/^ *|\| *$/g, '').split(/ *\| */),
+          cells: cap[3] ? cap[3].replace(/\n$/, '').split('\n') : []
+        };
+
+        if (item.header.length === item.align.length) {
+          item.raw = cap[0];
+          var l = item.align.length;
+          var i;
+
+          for (i = 0; i < l; i++) {
+            if (/^ *-+: *$/.test(item.align[i])) {
+              item.align[i] = 'right';
+            } else if (/^ *:-+: *$/.test(item.align[i])) {
+              item.align[i] = 'center';
+            } else if (/^ *:-+ *$/.test(item.align[i])) {
+              item.align[i] = 'left';
+            } else {
+              item.align[i] = null;
+            }
+          }
+
+          l = item.cells.length;
+
+          for (i = 0; i < l; i++) {
+            item.cells[i] = splitCells$1(item.cells[i].replace(/^ *\| *| *\| *$/g, ''), item.header.length);
+          }
+
+          return item;
+        }
+      }
+    };
+
+    _proto.lheading = function lheading(src) {
+      var cap = this.rules.block.lheading.exec(src);
+
+      if (cap) {
+        return {
+          type: 'heading',
+          raw: cap[0],
+          depth: cap[2].charAt(0) === '=' ? 1 : 2,
+          text: cap[1]
+        };
+      }
+    };
+
+    _proto.paragraph = function paragraph(src) {
+      var cap = this.rules.block.paragraph.exec(src);
+
+      if (cap) {
+        return {
+          type: 'paragraph',
+          raw: cap[0],
+          text: cap[1].charAt(cap[1].length - 1) === '\n' ? cap[1].slice(0, -1) : cap[1]
+        };
+      }
+    };
+
+    _proto.text = function text(src, tokens) {
+      var cap = this.rules.block.text.exec(src);
+
+      if (cap) {
+        var lastToken = tokens[tokens.length - 1];
+
+        if (lastToken && lastToken.type === 'text') {
+          return {
+            raw: cap[0],
+            text: cap[0]
+          };
+        }
+
+        return {
+          type: 'text',
+          raw: cap[0],
+          text: cap[0]
+        };
+      }
+    };
+
+    _proto.escape = function escape(src) {
+      var cap = this.rules.inline.escape.exec(src);
+
+      if (cap) {
+        return {
+          type: 'escape',
+          raw: cap[0],
+          text: _escape(cap[1])
+        };
+      }
+    };
+
+    _proto.tag = function tag(src, inLink, inRawBlock) {
+      var cap = this.rules.inline.tag.exec(src);
+
+      if (cap) {
+        if (!inLink && /^<a /i.test(cap[0])) {
+          inLink = true;
+        } else if (inLink && /^<\/a>/i.test(cap[0])) {
+          inLink = false;
+        }
+
+        if (!inRawBlock && /^<(pre|code|kbd|script)(\s|>)/i.test(cap[0])) {
+          inRawBlock = true;
+        } else if (inRawBlock && /^<\/(pre|code|kbd|script)(\s|>)/i.test(cap[0])) {
+          inRawBlock = false;
+        }
+
+        return {
+          type: this.options.sanitize ? 'text' : 'html',
+          raw: cap[0],
+          inLink: inLink,
+          inRawBlock: inRawBlock,
+          text: this.options.sanitize ? this.options.sanitizer ? this.options.sanitizer(cap[0]) : _escape(cap[0]) : cap[0]
+        };
+      }
+    };
+
+    _proto.link = function link(src) {
+      var cap = this.rules.inline.link.exec(src);
+
+      if (cap) {
+        var lastParenIndex = findClosingBracket$1(cap[2], '()');
+
+        if (lastParenIndex > -1) {
+          var start = cap[0].indexOf('!') === 0 ? 5 : 4;
+          var linkLen = start + cap[1].length + lastParenIndex;
+          cap[2] = cap[2].substring(0, lastParenIndex);
+          cap[0] = cap[0].substring(0, linkLen).trim();
+          cap[3] = '';
+        }
+
+        var href = cap[2];
+        var title = '';
+
+        if (this.options.pedantic) {
+          var link = /^([^'"]*[^\s])\s+(['"])(.*)\2/.exec(href);
+
+          if (link) {
+            href = link[1];
+            title = link[3];
+          } else {
+            title = '';
+          }
+        } else {
+          title = cap[3] ? cap[3].slice(1, -1) : '';
+        }
+
+        href = href.trim().replace(/^<([\s\S]*)>$/, '$1');
+        var token = outputLink(cap, {
+          href: href ? href.replace(this.rules.inline._escapes, '$1') : href,
+          title: title ? title.replace(this.rules.inline._escapes, '$1') : title
+        }, cap[0]);
+        return token;
+      }
+    };
+
+    _proto.reflink = function reflink(src, links) {
+      var cap;
+
+      if ((cap = this.rules.inline.reflink.exec(src)) || (cap = this.rules.inline.nolink.exec(src))) {
+        var link = (cap[2] || cap[1]).replace(/\s+/g, ' ');
+        link = links[link.toLowerCase()];
+
+        if (!link || !link.href) {
+          var text = cap[0].charAt(0);
+          return {
+            type: 'text',
+            raw: text,
+            text: text
+          };
+        }
+
+        var token = outputLink(cap, link, cap[0]);
+        return token;
+      }
+    };
+
+    _proto.strong = function strong(src) {
+      var cap = this.rules.inline.strong.exec(src);
+
+      if (cap) {
+        return {
+          type: 'strong',
+          raw: cap[0],
+          text: cap[4] || cap[3] || cap[2] || cap[1]
+        };
+      }
+    };
+
+    _proto.em = function em(src) {
+      var cap = this.rules.inline.em.exec(src);
+
+      if (cap) {
+        return {
+          type: 'em',
+          raw: cap[0],
+          text: cap[6] || cap[5] || cap[4] || cap[3] || cap[2] || cap[1]
+        };
+      }
+    };
+
+    _proto.codespan = function codespan(src) {
+      var cap = this.rules.inline.code.exec(src);
+
+      if (cap) {
+        var text = cap[2].replace(/\n/g, ' ');
+        var hasNonSpaceChars = /[^ ]/.test(text);
+        var hasSpaceCharsOnBothEnds = text.startsWith(' ') && text.endsWith(' ');
+
+        if (hasNonSpaceChars && hasSpaceCharsOnBothEnds) {
+          text = text.substring(1, text.length - 1);
+        }
+
+        text = _escape(text, true);
+        return {
+          type: 'codespan',
+          raw: cap[0],
+          text: text
+        };
+      }
+    };
+
+    _proto.br = function br(src) {
+      var cap = this.rules.inline.br.exec(src);
+
+      if (cap) {
+        return {
+          type: 'br',
+          raw: cap[0]
+        };
+      }
+    };
+
+    _proto.del = function del(src) {
+      var cap = this.rules.inline.del.exec(src);
+
+      if (cap) {
+        return {
+          type: 'del',
+          raw: cap[0],
+          text: cap[1]
+        };
+      }
+    };
+
+    _proto.autolink = function autolink(src, mangle) {
+      var cap = this.rules.inline.autolink.exec(src);
+
+      if (cap) {
+        var text, href;
+
+        if (cap[2] === '@') {
+          text = _escape(this.options.mangle ? mangle(cap[1]) : cap[1]);
+          href = 'mailto:' + text;
+        } else {
+          text = _escape(cap[1]);
+          href = text;
+        }
+
+        return {
+          type: 'link',
+          raw: cap[0],
+          text: text,
+          href: href,
+          tokens: [{
+            type: 'text',
+            raw: text,
+            text: text
+          }]
+        };
+      }
+    };
+
+    _proto.url = function url(src, mangle) {
+      var cap;
+
+      if (cap = this.rules.inline.url.exec(src)) {
+        var text, href;
+
+        if (cap[2] === '@') {
+          text = _escape(this.options.mangle ? mangle(cap[0]) : cap[0]);
+          href = 'mailto:' + text;
+        } else {
+          // do extended autolink path validation
+          var prevCapZero;
+
+          do {
+            prevCapZero = cap[0];
+            cap[0] = this.rules.inline._backpedal.exec(cap[0])[0];
+          } while (prevCapZero !== cap[0]);
+
+          text = _escape(cap[0]);
+
+          if (cap[1] === 'www.') {
+            href = 'http://' + text;
+          } else {
+            href = text;
+          }
+        }
+
+        return {
+          type: 'link',
+          raw: cap[0],
+          text: text,
+          href: href,
+          tokens: [{
+            type: 'text',
+            raw: text,
+            text: text
+          }]
+        };
+      }
+    };
+
+    _proto.inlineText = function inlineText(src, inRawBlock, smartypants) {
+      var cap = this.rules.inline.text.exec(src);
+
+      if (cap) {
+        var text;
+
+        if (inRawBlock) {
+          text = this.options.sanitize ? this.options.sanitizer ? this.options.sanitizer(cap[0]) : _escape(cap[0]) : cap[0];
+        } else {
+          text = _escape(this.options.smartypants ? smartypants(cap[0]) : cap[0]);
+        }
+
+        return {
+          type: 'text',
+          raw: cap[0],
+          text: text
+        };
+      }
+    };
+
+    return Tokenizer;
+  }();
+
+  var noopTest$1 = helpers.noopTest,
+      edit$1 = helpers.edit,
+      merge$1 = helpers.merge;
+  /**
+   * Block-Level Grammar
+   */
+
+  var block = {
+    newline: /^\n+/,
+    code: /^( {4}[^\n]+\n*)+/,
+    fences: /^ {0,3}(`{3,}(?=[^`\n]*\n)|~{3,})([^\n]*)\n(?:|([\s\S]*?)\n)(?: {0,3}\1[~`]* *(?:\n+|$)|$)/,
+    hr: /^ {0,3}((?:- *){3,}|(?:_ *){3,}|(?:\* *){3,})(?:\n+|$)/,
+    heading: /^ {0,3}(#{1,6}) +([^\n]*?)(?: +#+)? *(?:\n+|$)/,
+    blockquote: /^( {0,3}> ?(paragraph|[^\n]*)(?:\n|$))+/,
+    list: /^( {0,3})(bull) [\s\S]+?(?:hr|def|\n{2,}(?! )(?!\1bull )\n*|\s*$)/,
+    html: '^ {0,3}(?:' // optional indentation
+    + '<(script|pre|style)[\\s>][\\s\\S]*?(?:</\\1>[^\\n]*\\n+|$)' // (1)
+    + '|comment[^\\n]*(\\n+|$)' // (2)
+    + '|<\\?[\\s\\S]*?\\?>\\n*' // (3)
+    + '|<![A-Z][\\s\\S]*?>\\n*' // (4)
+    + '|<!\\[CDATA\\[[\\s\\S]*?\\]\\]>\\n*' // (5)
+    + '|</?(tag)(?: +|\\n|/?>)[\\s\\S]*?(?:\\n{2,}|$)' // (6)
+    + '|<(?!script|pre|style)([a-z][\\w-]*)(?:attribute)*? */?>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:\\n{2,}|$)' // (7) open tag
+    + '|</(?!script|pre|style)[a-z][\\w-]*\\s*>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:\\n{2,}|$)' // (7) closing tag
+    + ')',
+    def: /^ {0,3}\[(label)\]: *\n? *<?([^\s>]+)>?(?:(?: +\n? *| *\n *)(title))? *(?:\n+|$)/,
+    nptable: noopTest$1,
+    table: noopTest$1,
+    lheading: /^([^\n]+)\n {0,3}(=+|-+) *(?:\n+|$)/,
+    // regex template, placeholders will be replaced according to different paragraph
+    // interruption rules of commonmark and the original markdown spec:
+    _paragraph: /^([^\n]+(?:\n(?!hr|heading|lheading|blockquote|fences|list|html)[^\n]+)*)/,
+    text: /^[^\n]+/
+  };
+  block._label = /(?!\s*\])(?:\\[\[\]]|[^\[\]])+/;
+  block._title = /(?:"(?:\\"?|[^"\\])*"|'[^'\n]*(?:\n[^'\n]+)*\n?'|\([^()]*\))/;
+  block.def = edit$1(block.def).replace('label', block._label).replace('title', block._title).getRegex();
+  block.bullet = /(?:[*+-]|\d{1,9}[.)])/;
+  block.item = /^( *)(bull) ?[^\n]*(?:\n(?!\1bull ?)[^\n]*)*/;
+  block.item = edit$1(block.item, 'gm').replace(/bull/g, block.bullet).getRegex();
+  block.list = edit$1(block.list).replace(/bull/g, block.bullet).replace('hr', '\\n+(?=\\1?(?:(?:- *){3,}|(?:_ *){3,}|(?:\\* *){3,})(?:\\n+|$))').replace('def', '\\n+(?=' + block.def.source + ')').getRegex();
+  block._tag = 'address|article|aside|base|basefont|blockquote|body|caption' + '|center|col|colgroup|dd|details|dialog|dir|div|dl|dt|fieldset|figcaption' + '|figure|footer|form|frame|frameset|h[1-6]|head|header|hr|html|iframe' + '|legend|li|link|main|menu|menuitem|meta|nav|noframes|ol|optgroup|option' + '|p|param|section|source|summary|table|tbody|td|tfoot|th|thead|title|tr' + '|track|ul';
+  block._comment = /<!--(?!-?>)[\s\S]*?-->/;
+  block.html = edit$1(block.html, 'i').replace('comment', block._comment).replace('tag', block._tag).replace('attribute', / +[a-zA-Z:_][\w.:-]*(?: *= *"[^"\n]*"| *= *'[^'\n]*'| *= *[^\s"'=<>`]+)?/).getRegex();
+  block.paragraph = edit$1(block._paragraph).replace('hr', block.hr).replace('heading', ' {0,3}#{1,6} ').replace('|lheading', '') // setex headings don't interrupt commonmark paragraphs
+  .replace('blockquote', ' {0,3}>').replace('fences', ' {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n').replace('list', ' {0,3}(?:[*+-]|1[.)]) ') // only lists starting from 1 can interrupt
+  .replace('html', '</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|!--)').replace('tag', block._tag) // pars can be interrupted by type (6) html blocks
+  .getRegex();
+  block.blockquote = edit$1(block.blockquote).replace('paragraph', block.paragraph).getRegex();
+  /**
+   * Normal Block Grammar
+   */
+
+  block.normal = merge$1({}, block);
+  /**
+   * GFM Block Grammar
+   */
+
+  block.gfm = merge$1({}, block.normal, {
+    nptable: '^ *([^|\\n ].*\\|.*)\\n' // Header
+    + ' *([-:]+ *\\|[-| :]*)' // Align
+    + '(?:\\n((?:(?!\\n|hr|heading|blockquote|code|fences|list|html).*(?:\\n|$))*)\\n*|$)',
+    // Cells
+    table: '^ *\\|(.+)\\n' // Header
+    + ' *\\|?( *[-:]+[-| :]*)' // Align
+    + '(?:\\n *((?:(?!\\n|hr|heading|blockquote|code|fences|list|html).*(?:\\n|$))*)\\n*|$)' // Cells
+
+  });
+  block.gfm.nptable = edit$1(block.gfm.nptable).replace('hr', block.hr).replace('heading', ' {0,3}#{1,6} ').replace('blockquote', ' {0,3}>').replace('code', ' {4}[^\\n]').replace('fences', ' {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n').replace('list', ' {0,3}(?:[*+-]|1[.)]) ') // only lists starting from 1 can interrupt
+  .replace('html', '</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|!--)').replace('tag', block._tag) // tables can be interrupted by type (6) html blocks
+  .getRegex();
+  block.gfm.table = edit$1(block.gfm.table).replace('hr', block.hr).replace('heading', ' {0,3}#{1,6} ').replace('blockquote', ' {0,3}>').replace('code', ' {4}[^\\n]').replace('fences', ' {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n').replace('list', ' {0,3}(?:[*+-]|1[.)]) ') // only lists starting from 1 can interrupt
+  .replace('html', '</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|!--)').replace('tag', block._tag) // tables can be interrupted by type (6) html blocks
+  .getRegex();
+  /**
+   * Pedantic grammar (original John Gruber's loose markdown specification)
+   */
+
+  block.pedantic = merge$1({}, block.normal, {
+    html: edit$1('^ *(?:comment *(?:\\n|\\s*$)' + '|<(tag)[\\s\\S]+?</\\1> *(?:\\n{2,}|\\s*$)' // closed tag
+    + '|<tag(?:"[^"]*"|\'[^\']*\'|\\s[^\'"/>\\s]*)*?/?> *(?:\\n{2,}|\\s*$))').replace('comment', block._comment).replace(/tag/g, '(?!(?:' + 'a|em|strong|small|s|cite|q|dfn|abbr|data|time|code|var|samp|kbd|sub' + '|sup|i|b|u|mark|ruby|rt|rp|bdi|bdo|span|br|wbr|ins|del|img)' + '\\b)\\w+(?!:|[^\\w\\s@]*@)\\b').getRegex(),
+    def: /^ *\[([^\]]+)\]: *<?([^\s>]+)>?(?: +(["(][^\n]+[")]))? *(?:\n+|$)/,
+    heading: /^ *(#{1,6}) *([^\n]+?) *(?:#+ *)?(?:\n+|$)/,
+    fences: noopTest$1,
+    // fences not supported
+    paragraph: edit$1(block.normal._paragraph).replace('hr', block.hr).replace('heading', ' *#{1,6} *[^\n]').replace('lheading', block.lheading).replace('blockquote', ' {0,3}>').replace('|fences', '').replace('|list', '').replace('|html', '').getRegex()
+  });
+  /**
+   * Inline-Level Grammar
+   */
+
+  var inline = {
+    bilibiliEmoji: /^f\(x\)=∫\(([^A-Z]\w+?)\)sec²xdx/,
+    textEmoji: /^`([^a-zA-Z]+?)`/,
+    codeEmoji: /^:([^A-Z]\w+!?):/,
+    escape: /^\\([!"#$%&'()*+,\-./:;<=>?@\[\]\\^_`{|}~])/,
+    autolink: /^<(scheme:[^\s\x00-\x1f<>]*|email)>/,
+    url: noopTest$1,
+    tag: '^comment' + '|^</[a-zA-Z][\\w:-]*\\s*>' // self-closing tag
+    + '|^<[a-zA-Z][\\w-]*(?:attribute)*?\\s*/?>' // open tag
+    + '|^<\\?[\\s\\S]*?\\?>' // processing instruction, e.g. <?php ?>
+    + '|^<![a-zA-Z]+\\s[\\s\\S]*?>' // declaration, e.g. <!DOCTYPE html>
+    + '|^<!\\[CDATA\\[[\\s\\S]*?\\]\\]>',
+    // CDATA section
+    link: /^!?\[(label)\]\(\s*(href)(?:\s+(title))?\s*\)/,
+    reflink: /^!?\[(label)\]\[(?!\s*\])((?:\\[\[\]]?|[^\[\]\\])+)\]/,
+    nolink: /^!?\[(?!\s*\])((?:\[[^\[\]]*\]|\\[\[\]]|[^\[\]])*)\](?:\[\])?/,
+    strong: /^__([^\s_])__(?!_)|^\*\*([^\s*])\*\*(?!\*)|^__([^\s][\s\S]*?[^\s])__(?!_)|^\*\*([^\s][\s\S]*?[^\s])\*\*(?!\*)/,
+    em: /^_([^\s_])_(?!_)|^_([^\s_<][\s\S]*?[^\s_])_(?!_|[^\s,punctuation])|^_([^\s_<][\s\S]*?[^\s])_(?!_|[^\s,punctuation])|^\*([^\s*<\[])\*(?!\*)|^\*([^\s<"][\s\S]*?[^\s\[\*])\*(?![\]`punctuation])|^\*([^\s*"<\[][\s\S]*[^\s])\*(?!\*)/,
+    code: /^(`+)([^`]|[^`][\s\S]*?[^`])\1(?!`)/,
+    br: /^( {2,}|\\)\n(?!\s*$)/,
+    del: noopTest$1,
+    text: /^(`+|[^`])(?:[\s\S]*?(?:(?=[\\<!\[`:f*]|\b_|$)|[^ ](?= {2,}\n))|(?= {2,}\n))/
+  }; // list of punctuation marks from common mark spec
+  // without ` and ] to workaround Rule 17 (inline code blocks/links)
+  // without , to work around example 393
+
+  inline._punctuation = '!"#$%&\'()*+\\-./:;<=>?@\\[^_{|}~';
+  inline.em = edit$1(inline.em).replace(/punctuation/g, inline._punctuation).getRegex();
+  inline._escapes = /\\([!"#$%&'()*+,\-./:;<=>?@\[\]\\^_`{|}~])/g;
+  inline._scheme = /[a-zA-Z][a-zA-Z0-9+.-]{1,31}/;
+  inline._email = /[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+(@)[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+(?![-_])/;
+  inline.autolink = edit$1(inline.autolink).replace('scheme', inline._scheme).replace('email', inline._email).getRegex();
+  inline._attribute = /\s+[a-zA-Z:_][\w.:-]*(?:\s*=\s*"[^"]*"|\s*=\s*'[^']*'|\s*=\s*[^\s"'=<>`]+)?/;
+  inline.tag = edit$1(inline.tag).replace('comment', block._comment).replace('attribute', inline._attribute).getRegex();
+  inline._label = /(?:\[(?:\\.|[^\[\]\\])*\]|\\.|`[^`]*`|[^\[\]\\`])*?/;
+  inline._href = /<(?:\\[<>]?|[^\s<>\\])*>|[^\s\x00-\x1f]*/;
+  inline._title = /"(?:\\"?|[^"\\])*"|'(?:\\'?|[^'\\])*'|\((?:\\\)?|[^)\\])*\)/;
+  inline.link = edit$1(inline.link).replace('label', inline._label).replace('href', inline._href).replace('title', inline._title).getRegex();
+  inline.reflink = edit$1(inline.reflink).replace('label', inline._label).getRegex();
+  /**
+   * Normal Inline Grammar
+   */
+
+  inline.normal = merge$1({}, inline);
+  /**
+   * Pedantic Inline Grammar
+   */
+
+  inline.pedantic = merge$1({}, inline.normal, {
+    strong: /^__(?=\S)([\s\S]*?\S)__(?!_)|^\*\*(?=\S)([\s\S]*?\S)\*\*(?!\*)/,
+    em: /^_(?=\S)([\s\S]*?\S)_(?!_)|^\*(?=\S)([\s\S]*?\S)\*(?!\*)/,
+    link: edit$1(/^!?\[(label)\]\((.*?)\)/).replace('label', inline._label).getRegex(),
+    reflink: edit$1(/^!?\[(label)\]\s*\[([^\]]*)\]/).replace('label', inline._label).getRegex()
+  });
+  /**
+   * GFM Inline Grammar
+   */
+
+  inline.gfm = merge$1({}, inline.normal, {
+    escape: edit$1(inline.escape).replace('])', '~|])').getRegex(),
+    _extended_email: /[A-Za-z0-9._+-]+(@)[a-zA-Z0-9-_]+(?:\.[a-zA-Z0-9-_]*[a-zA-Z0-9])+(?![-_])/,
+    url: /^((?:ftp|https?):\/\/|www\.)(?:[a-zA-Z0-9\-]+\.?)+[^\s<]*|^email/,
+    _backpedal: /(?:[^?!.,:;*_~()&]+|\([^)]*\)|&(?![a-zA-Z0-9]+;$)|[?!.,:;*_~)]+(?!$))+/,
+    del: /^~+(?=\S)([\s\S]*?\S)~+/,
+    text: /^(`+|[^`])(?:[\s\S]*?(?:(?=[\\<!\[`:f*~]|\b_|https?:\/\/|ftp:\/\/|www\.|$)|[^ ](?= {2,}\n)|[^a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-](?=[a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-]+@))|(?= {2,}\n|[a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-]+@))/
+  });
+  inline.gfm.url = edit$1(inline.gfm.url, 'i').replace('email', inline.gfm._extended_email).getRegex();
+  /**
+   * GFM + Line Breaks Inline Grammar
+   */
+
+  inline.breaks = merge$1({}, inline.gfm, {
+    br: edit$1(inline.br).replace('{2,}', '*').getRegex(),
+    text: edit$1(inline.gfm.text).replace('\\b_', '\\b_| {2,}\\n').replace(/\{2,\}/g, '*').getRegex()
+  });
+  var rules = {
+    block: block,
+    inline: inline
+  };
+
+  var defaults$2 = defaults.defaults;
+  var block$1 = rules.block,
+      inline$1 = rules.inline;
+  /**
+   * smartypants text replacement
+   */
+
+  function smartypants(text) {
+    return text // em-dashes
+    .replace(/---/g, "\u2014") // en-dashes
+    .replace(/--/g, "\u2013") // opening singles
+    .replace(/(^|[-\u2014/(\[{"\s])'/g, "$1\u2018") // closing singles & apostrophes
+    .replace(/'/g, "\u2019") // opening doubles
+    .replace(/(^|[-\u2014/(\[{\u2018\s])"/g, "$1\u201C") // closing doubles
+    .replace(/"/g, "\u201D") // ellipses
+    .replace(/\.{3}/g, "\u2026");
+  }
+  /**
+   * mangle email addresses
+   */
+
+
+  function mangle(text) {
+    var out = '',
+        i,
+        ch;
+    var l = text.length;
+
+    for (i = 0; i < l; i++) {
+      ch = text.charCodeAt(i);
+
+      if (Math.random() > 0.5) {
+        ch = 'x' + ch.toString(16);
+      }
+
+      out += '&#' + ch + ';';
+    }
+
+    return out;
+  }
+  /**
+   * Block Lexer
+   */
+
+
+  var Lexer_1 = /*#__PURE__*/function () {
+    function Lexer(options) {
+      this.tokens = [];
+      this.tokens.links = Object.create(null);
+      this.options = options || defaults$2;
+      this.options.tokenizer = this.options.tokenizer || new Tokenizer_1();
+      this.tokenizer = this.options.tokenizer;
+      this.tokenizer.options = this.options;
+      var rules = {
+        block: block$1.normal,
+        inline: inline$1.normal
+      };
+
+      if (this.options.pedantic) {
+        rules.block = block$1.pedantic;
+        rules.inline = inline$1.pedantic;
+      } else if (this.options.gfm) {
+        rules.block = block$1.gfm;
+
+        if (this.options.breaks) {
+          rules.inline = inline$1.breaks;
+        } else {
+          rules.inline = inline$1.gfm;
+        }
+      }
+
+      this.tokenizer.rules = rules;
+    }
+    /**
+     * Expose Rules
+     */
+
+
+    /**
+     * Static Lex Method
+     */
+    Lexer.lex = function lex(src, options) {
+      var lexer = new Lexer(options);
+      return lexer.lex(src);
+    }
+    /**
+     * Preprocessing
+     */
+    ;
+
+    var _proto = Lexer.prototype;
+
+    _proto.lex = function lex(src) {
+      src = src.replace(/\r\n|\r/g, '\n').replace(/\t/g, '    ');
+      this.blockTokens(src, this.tokens, true);
+      this.inline(this.tokens);
+      return this.tokens;
+    }
+    /**
+     * Lexing
+     */
+    ;
+
+    _proto.blockTokens = function blockTokens(src, tokens, top) {
+      if (tokens === void 0) {
+        tokens = [];
+      }
+
+      if (top === void 0) {
+        top = true;
+      }
+
+      src = src.replace(/^ +$/gm, '');
+      var token, i, l, lastToken;
+
+      while (src) {
+        // newline
+        if (token = this.tokenizer.space(src)) {
+          src = src.substring(token.raw.length);
+
+          if (token.type) {
+            tokens.push(token);
+          }
+
+          continue;
+        } // code
+
+
+        if (token = this.tokenizer.code(src, tokens)) {
+          src = src.substring(token.raw.length);
+
+          if (token.type) {
+            tokens.push(token);
+          } else {
+            lastToken = tokens[tokens.length - 1];
+            lastToken.raw += '\n' + token.raw;
+            lastToken.text += '\n' + token.text;
+          }
+
+          continue;
+        } // fences
+
+
+        if (token = this.tokenizer.fences(src)) {
+          src = src.substring(token.raw.length);
+          tokens.push(token);
+          continue;
+        } // heading
+
+
+        if (token = this.tokenizer.heading(src)) {
+          src = src.substring(token.raw.length);
+          tokens.push(token);
+          continue;
+        } // table no leading pipe (gfm)
+
+
+        if (token = this.tokenizer.nptable(src)) {
+          src = src.substring(token.raw.length);
+          tokens.push(token);
+          continue;
+        } // hr
+
+
+        if (token = this.tokenizer.hr(src)) {
+          src = src.substring(token.raw.length);
+          tokens.push(token);
+          continue;
+        } // blockquote
+
+
+        if (token = this.tokenizer.blockquote(src)) {
+          src = src.substring(token.raw.length);
+          token.tokens = this.blockTokens(token.text, [], top);
+          tokens.push(token);
+          continue;
+        } // list
+
+
+        if (token = this.tokenizer.list(src)) {
+          src = src.substring(token.raw.length);
+          l = token.items.length;
+
+          for (i = 0; i < l; i++) {
+            token.items[i].tokens = this.blockTokens(token.items[i].text, [], false);
+          }
+
+          tokens.push(token);
+          continue;
+        } // html
+
+
+        if (token = this.tokenizer.html(src)) {
+          src = src.substring(token.raw.length);
+          tokens.push(token);
+          continue;
+        } // def
+
+
+        if (top && (token = this.tokenizer.def(src))) {
+          src = src.substring(token.raw.length);
+
+          if (!this.tokens.links[token.tag]) {
+            this.tokens.links[token.tag] = {
+              href: token.href,
+              title: token.title
+            };
+          }
+
+          continue;
+        } // table (gfm)
+
+
+        if (token = this.tokenizer.table(src)) {
+          src = src.substring(token.raw.length);
+          tokens.push(token);
+          continue;
+        } // lheading
+
+
+        if (token = this.tokenizer.lheading(src)) {
+          src = src.substring(token.raw.length);
+          tokens.push(token);
+          continue;
+        } // top-level paragraph
+
+
+        if (top && (token = this.tokenizer.paragraph(src))) {
+          src = src.substring(token.raw.length);
+          tokens.push(token);
+          continue;
+        } // text
+
+
+        if (token = this.tokenizer.text(src, tokens)) {
+          src = src.substring(token.raw.length);
+
+          if (token.type) {
+            tokens.push(token);
+          } else {
+            lastToken = tokens[tokens.length - 1];
+            lastToken.raw += '\n' + token.raw;
+            lastToken.text += '\n' + token.text;
+          }
+
+          continue;
+        }
+
+        if (src) {
+          var errMsg = 'Infinite loop on byte: ' + src.charCodeAt(0);
+
+          if (this.options.silent) {
+            console.error(errMsg);
+            break;
+          } else {
+            throw new Error(errMsg);
+          }
+        }
+      }
+
+      return tokens;
+    };
+
+    _proto.inline = function inline(tokens) {
+      var i, j, k, l2, row, token;
+      var l = tokens.length;
+
+      for (i = 0; i < l; i++) {
+        token = tokens[i];
+
+        switch (token.type) {
+          case 'paragraph':
+          case 'text':
+          case 'heading':
+            {
+              token.tokens = [];
+              this.inlineTokens(token.text, token.tokens);
+              break;
+            }
+
+          case 'table':
+            {
+              token.tokens = {
+                header: [],
+                cells: []
+              }; // header
+
+              l2 = token.header.length;
+
+              for (j = 0; j < l2; j++) {
+                token.tokens.header[j] = [];
+                this.inlineTokens(token.header[j], token.tokens.header[j]);
+              } // cells
+
+
+              l2 = token.cells.length;
+
+              for (j = 0; j < l2; j++) {
+                row = token.cells[j];
+                token.tokens.cells[j] = [];
+
+                for (k = 0; k < row.length; k++) {
+                  token.tokens.cells[j][k] = [];
+                  this.inlineTokens(row[k], token.tokens.cells[j][k]);
+                }
+              }
+
+              break;
+            }
+
+          case 'blockquote':
+            {
+              this.inline(token.tokens);
+              break;
+            }
+
+          case 'list':
+            {
+              l2 = token.items.length;
+
+              for (j = 0; j < l2; j++) {
+                this.inline(token.items[j].tokens);
+              }
+
+              break;
+            }
+        }
+      }
+
+      return tokens;
+    }
+    /**
+     * Lexing/Compiling
+     */
+    ;
+
+    _proto.inlineTokens = function inlineTokens(src, tokens, inLink, inRawBlock) {
+      if (tokens === void 0) {
+        tokens = [];
+      }
+
+      if (inLink === void 0) {
+        inLink = false;
+      }
+
+      if (inRawBlock === void 0) {
+        inRawBlock = false;
+      }
+
+      var token;
+
+      while (src) {
+        // bilibili表情 f(x)=∫(weiqu)sec²xdx
+        if (token = this.tokenizer.bilibiliEmoji(src)) {
+          src = src.substring(token.raw.length);
+
+          if (token.type) {
+            tokens.push(token);
+          }
+
+          continue;
+        } // 文字表情
+
+
+        if (token = this.tokenizer.textEmoji(src)) {
+          src = src.substring(token.raw.length);
+
+          if (token.type) {
+            tokens.push(token);
+          }
+
+          continue;
+        } // 帖吧表情/BBcodeEmoji
+
+
+        if (token = this.tokenizer.codeEmoji(src)) {
+          src = src.substring(token.raw.length);
+
+          if (token.type) {
+            tokens.push(token);
+          }
+
+          continue;
+        } // escape
+
+
+        if (token = this.tokenizer.escape(src)) {
+          src = src.substring(token.raw.length);
+          tokens.push(token);
+          continue;
+        } // tag
+
+
+        if (token = this.tokenizer.tag(src, inLink, inRawBlock)) {
+          src = src.substring(token.raw.length);
+          inLink = token.inLink;
+          inRawBlock = token.inRawBlock;
+          tokens.push(token);
+          continue;
+        } // link
+
+
+        if (token = this.tokenizer.link(src)) {
+          src = src.substring(token.raw.length);
+
+          if (token.type === 'link') {
+            token.tokens = this.inlineTokens(token.text, [], true, inRawBlock);
+          }
+
+          tokens.push(token);
+          continue;
+        } // reflink, nolink
+
+
+        if (token = this.tokenizer.reflink(src, this.tokens.links)) {
+          src = src.substring(token.raw.length);
+
+          if (token.type === 'link') {
+            token.tokens = this.inlineTokens(token.text, [], true, inRawBlock);
+          }
+
+          tokens.push(token);
+          continue;
+        } // strong
+
+
+        if (token = this.tokenizer.strong(src)) {
+          src = src.substring(token.raw.length);
+          token.tokens = this.inlineTokens(token.text, [], inLink, inRawBlock);
+          tokens.push(token);
+          continue;
+        } // em
+
+
+        if (token = this.tokenizer.em(src)) {
+          src = src.substring(token.raw.length);
+          token.tokens = this.inlineTokens(token.text, [], inLink, inRawBlock);
+          tokens.push(token);
+          continue;
+        } // code
+
+
+        if (token = this.tokenizer.codespan(src)) {
+          src = src.substring(token.raw.length);
+          tokens.push(token);
+          continue;
+        } // br
+
+
+        if (token = this.tokenizer.br(src)) {
+          src = src.substring(token.raw.length);
+          tokens.push(token);
+          continue;
+        } // del (gfm)
+
+
+        if (token = this.tokenizer.del(src)) {
+          src = src.substring(token.raw.length);
+          token.tokens = this.inlineTokens(token.text, [], inLink, inRawBlock);
+          tokens.push(token);
+          continue;
+        } // autolink
+
+
+        if (token = this.tokenizer.autolink(src, mangle)) {
+          src = src.substring(token.raw.length);
+          tokens.push(token);
+          continue;
+        } // url (gfm)
+
+
+        if (!inLink && (token = this.tokenizer.url(src, mangle))) {
+          src = src.substring(token.raw.length);
+          tokens.push(token);
+          continue;
+        } // text
+
+
+        if (token = this.tokenizer.inlineText(src, inRawBlock, smartypants)) {
+          src = src.substring(token.raw.length);
+          tokens.push(token);
+          continue;
+        }
+
+        if (src) {
+          var errMsg = 'Infinite loop on byte: ' + src.charCodeAt(0);
+
+          if (this.options.silent) {
+            console.error(errMsg);
+            break;
+          } else {
+            throw new Error(errMsg);
+          }
+        }
+      }
+
+      return tokens;
+    };
+
+    _createClass(Lexer, null, [{
+      key: "rules",
+      get: function get() {
+        return {
+          block: block$1,
+          inline: inline$1
+        };
+      }
+    }]);
+
+    return Lexer;
+  }();
+
+  var defaults$3 = defaults.defaults;
+  var cleanUrl$1 = helpers.cleanUrl,
+      escape$1 = helpers.escape;
+  /**
+   * Renderer
+   */
+
+  var Renderer_1 = /*#__PURE__*/function () {
+    function Renderer(options) {
+      this.options = options || defaults$3;
+    }
+
+    var _proto = Renderer.prototype;
+
+    _proto.bilibiliEmoji = function bilibiliEmoji(text) {
+      var href = cleanUrl$1(this.options.sanitize, this.options.bilibiliEmojiUrl, text + '.png');
+      return "<span class=\"emoji-item emoji-animate\" data-icon=\"" + text + "\"><img src=\"" + href + "\" class=\"img\" alt=\":" + text + ":\"></span>";
+    };
+
+    _proto.textEmoji = function textEmoji(text) {
+      return text;
+    };
+
+    _proto.codeEmoji = function codeEmoji(text) {
+      var extension = "." + (/.+!$/.test(text) ? 'gif' : 'png');
+      var name = text.replace(/!$/, '');
+      var href = cleanUrl$1(this.options.sanitize, this.options[(extension === '.gif' ? 'tieba' : 'haha') + "EmojiUrl"], "icon_" + name + extension);
+      return "<img class=\"emoji-item emoji-img\" data-icon=\"" + name + "\" src=\"" + href + "\" alt=\":" + name + ":\">";
+    };
+
+    _proto.code = function code(_code, infostring, escaped) {
+      var lang = (infostring || '').match(/\S*/)[0];
+
+      if (this.options.highlight) {
+        var out = this.options.highlight(_code, lang);
+
+        if (out != null && out !== _code) {
+          escaped = true;
+          _code = out;
+        }
+      }
+
+      if (!lang) {
+        return '<pre><code>' + (escaped ? _code : escape$1(_code, true)) + '</code></pre>\n';
+      }
+
+      return '<pre><code class="' + this.options.langPrefix + escape$1(lang, true) + '">' + (escaped ? _code : escape$1(_code, true)) + '</code></pre>\n';
+    };
+
+    _proto.blockquote = function blockquote(quote) {
+      return '<blockquote>\n' + quote + '</blockquote>\n';
+    };
+
+    _proto.html = function html(_html) {
+      return _html;
+    };
+
+    _proto.heading = function heading(text, level, raw, slugger) {
+      if (this.options.headerIds) {
+        return '<h' + level + ' id="' + this.options.headerPrefix + slugger.slug(raw) + '">' + text + '</h' + level + '>\n';
+      } // ignore IDs
+
+
+      return '<h' + level + '>' + text + '</h' + level + '>\n';
+    };
+
+    _proto.hr = function hr() {
+      return this.options.xhtml ? '<hr/>\n' : '<hr>\n';
+    };
+
+    _proto.list = function list(body, ordered, start) {
+      var type = ordered ? 'ol' : 'ul',
+          startatt = ordered && start !== 1 ? ' start="' + start + '"' : '';
+      return '<' + type + startatt + '>\n' + body + '</' + type + '>\n';
+    };
+
+    _proto.listitem = function listitem(text) {
+      return '<li>' + text + '</li>\n';
+    };
+
+    _proto.checkbox = function checkbox(checked) {
+      return '<input ' + (checked ? 'checked="" ' : '') + 'disabled="" type="checkbox"' + (this.options.xhtml ? ' /' : '') + '> ';
+    };
+
+    _proto.paragraph = function paragraph(text) {
+      return '<p>' + text + '</p>\n';
+    };
+
+    _proto.table = function table(header, body) {
+      if (body) body = '<tbody>' + body + '</tbody>';
+      return '<table>\n' + '<thead>\n' + header + '</thead>\n' + body + '</table>\n';
+    };
+
+    _proto.tablerow = function tablerow(content) {
+      return '<tr>\n' + content + '</tr>\n';
+    };
+
+    _proto.tablecell = function tablecell(content, flags) {
+      var type = flags.header ? 'th' : 'td';
+      var tag = flags.align ? '<' + type + ' align="' + flags.align + '">' : '<' + type + '>';
+      return tag + content + '</' + type + '>\n';
+    } // span level renderer
+    ;
+
+    _proto.strong = function strong(text) {
+      return '<strong>' + text + '</strong>';
+    };
+
+    _proto.em = function em(text) {
+      return '<em>' + text + '</em>';
+    };
+
+    _proto.codespan = function codespan(text) {
+      return '<code>' + text + '</code>';
+    };
+
+    _proto.br = function br() {
+      return this.options.xhtml ? '<br/>' : '<br>';
+    };
+
+    _proto.del = function del(text) {
+      return '<del>' + text + '</del>';
+    };
+
+    _proto.link = function link(href, title, text) {
+      href = cleanUrl$1(this.options.sanitize, this.options.baseUrl, href);
+
+      if (href === null) {
+        return text;
+      }
+
+      var out = '<a href="' + escape$1(href) + '"';
+
+      if (title) {
+        out += ' title="' + title + '"';
+      }
+
+      out += '>' + text + '</a>';
+      return out;
+    };
+
+    _proto.image = function image(href, title, text) {
+      href = cleanUrl$1(this.options.sanitize, this.options.baseUrl, href);
+
+      if (href === null) {
+        return text;
+      }
+
+      var out = '<img src="' + href + '" alt="' + text + '"';
+
+      if (title) {
+        out += ' title="' + title + '"';
+      }
+
+      out += this.options.xhtml ? '/>' : '>';
+      return out;
+    };
+
+    _proto.text = function text(_text) {
+      return _text;
+    };
+
+    return Renderer;
+  }();
+
+  /**
+   * TextRenderer
+   * returns only the textual part of the token
+   */
+  var TextRenderer_1 = /*#__PURE__*/function () {
+    function TextRenderer() {}
+
+    var _proto = TextRenderer.prototype;
+
+    // no need for block level renderers
+    _proto.strong = function strong(text) {
+      return text;
+    };
+
+    _proto.em = function em(text) {
+      return text;
+    };
+
+    _proto.codespan = function codespan(text) {
+      return text;
+    };
+
+    _proto.del = function del(text) {
+      return text;
+    };
+
+    _proto.html = function html(text) {
+      return text;
+    };
+
+    _proto.text = function text(_text) {
+      return _text;
+    };
+
+    _proto.link = function link(href, title, text) {
+      return '' + text;
+    };
+
+    _proto.image = function image(href, title, text) {
+      return '' + text;
+    };
+
+    _proto.br = function br() {
+      return '';
+    };
+
+    return TextRenderer;
+  }();
+
+  /**
+   * Slugger generates header id
+   */
+  var Slugger_1 = /*#__PURE__*/function () {
+    function Slugger() {
+      this.seen = {};
+    }
+    /**
+     * Convert string to unique id
+     */
+
+
+    var _proto = Slugger.prototype;
+
+    _proto.slug = function slug(value) {
+      var slug = value.toLowerCase().trim() // remove html tags
+      .replace(/<[!\/a-z].*?>/ig, '') // remove unwanted chars
+      .replace(/[\u2000-\u206F\u2E00-\u2E7F\\'!"#$%&()*+,./:;<=>?@[\]^`{|}~]/g, '').replace(/\s/g, '-');
+
+      if (this.seen.hasOwnProperty(slug)) {
+        var originalSlug = slug;
+
+        do {
+          this.seen[originalSlug]++;
+          slug = originalSlug + '-' + this.seen[originalSlug];
+        } while (this.seen.hasOwnProperty(slug));
+      }
+
+      this.seen[slug] = 0;
+      return slug;
+    };
+
+    return Slugger;
+  }();
+
+  var defaults$4 = defaults.defaults;
+  var unescape$1 = helpers.unescape;
+  /**
+   * Parsing & Compiling
+   */
+
+  var Parser_1 = /*#__PURE__*/function () {
+    function Parser(options) {
+      this.options = options || defaults$4;
+      this.options.renderer = this.options.renderer || new Renderer_1();
+      this.renderer = this.options.renderer;
+      this.renderer.options = this.options;
+      this.textRenderer = new TextRenderer_1();
+      this.slugger = new Slugger_1();
+    }
+    /**
+     * Static Parse Method
+     */
+
+
+    Parser.parse = function parse(tokens, options) {
+      var parser = new Parser(options);
+      return parser.parse(tokens);
+    }
+    /**
+     * Parse Loop
+     */
+    ;
+
+    var _proto = Parser.prototype;
+
+    _proto.parse = function parse(tokens, top) {
+      if (top === void 0) {
+        top = true;
+      }
+
+      var out = '',
+          i,
+          j,
+          k,
+          l2,
+          l3,
+          row,
+          cell,
+          header,
+          body,
+          token,
+          ordered,
+          start,
+          loose,
+          itemBody,
+          item,
+          checked,
+          task,
+          checkbox;
+      var l = tokens.length;
+
+      for (i = 0; i < l; i++) {
+        token = tokens[i];
+
+        switch (token.type) {
+          case 'space':
+            {
+              continue;
+            }
+
+          case 'hr':
+            {
+              out += this.renderer.hr();
+              continue;
+            }
+
+          case 'heading':
+            {
+              out += this.renderer.heading(this.parseInline(token.tokens), token.depth, unescape$1(this.parseInline(token.tokens, this.textRenderer)), this.slugger);
+              continue;
+            }
+
+          case 'code':
+            {
+              out += this.renderer.code(token.text, token.lang, token.escaped);
+              continue;
+            }
+
+          case 'table':
+            {
+              header = ''; // header
+
+              cell = '';
+              l2 = token.header.length;
+
+              for (j = 0; j < l2; j++) {
+                cell += this.renderer.tablecell(this.parseInline(token.tokens.header[j]), {
+                  header: true,
+                  align: token.align[j]
+                });
+              }
+
+              header += this.renderer.tablerow(cell);
+              body = '';
+              l2 = token.cells.length;
+
+              for (j = 0; j < l2; j++) {
+                row = token.tokens.cells[j];
+                cell = '';
+                l3 = row.length;
+
+                for (k = 0; k < l3; k++) {
+                  cell += this.renderer.tablecell(this.parseInline(row[k]), {
+                    header: false,
+                    align: token.align[k]
+                  });
+                }
+
+                body += this.renderer.tablerow(cell);
+              }
+
+              out += this.renderer.table(header, body);
+              continue;
+            }
+
+          case 'blockquote':
+            {
+              body = this.parse(token.tokens);
+              out += this.renderer.blockquote(body);
+              continue;
+            }
+
+          case 'list':
+            {
+              ordered = token.ordered;
+              start = token.start;
+              loose = token.loose;
+              l2 = token.items.length;
+              body = '';
+
+              for (j = 0; j < l2; j++) {
+                item = token.items[j];
+                checked = item.checked;
+                task = item.task;
+                itemBody = '';
+
+                if (item.task) {
+                  checkbox = this.renderer.checkbox(checked);
+
+                  if (loose) {
+                    if (item.tokens.length > 0 && item.tokens[0].type === 'text') {
+                      item.tokens[0].text = checkbox + ' ' + item.tokens[0].text;
+
+                      if (item.tokens[0].tokens && item.tokens[0].tokens.length > 0 && item.tokens[0].tokens[0].type === 'text') {
+                        item.tokens[0].tokens[0].text = checkbox + ' ' + item.tokens[0].tokens[0].text;
+                      }
+                    } else {
+                      item.tokens.unshift({
+                        type: 'text',
+                        text: checkbox
+                      });
+                    }
+                  } else {
+                    itemBody += checkbox;
+                  }
+                }
+
+                itemBody += this.parse(item.tokens, loose);
+                body += this.renderer.listitem(itemBody, task, checked);
+              }
+
+              out += this.renderer.list(body, ordered, start);
+              continue;
+            }
+
+          case 'html':
+            {
+              // TODO parse inline content if parameter markdown=1
+              out += this.renderer.html(token.text);
+              continue;
+            }
+
+          case 'paragraph':
+            {
+              out += this.renderer.paragraph(this.parseInline(token.tokens));
+              continue;
+            }
+
+          case 'text':
+            {
+              body = token.tokens ? this.parseInline(token.tokens) : token.text;
+
+              while (i + 1 < l && tokens[i + 1].type === 'text') {
+                token = tokens[++i];
+                body += '\n' + (token.tokens ? this.parseInline(token.tokens) : token.text);
+              }
+
+              out += top ? this.renderer.paragraph(body) : body;
+              continue;
+            }
+
+          default:
+            {
+              var errMsg = 'Token with "' + token.type + '" type was not found.';
+
+              if (this.options.silent) {
+                console.error(errMsg);
+                return;
+              } else {
+                throw new Error(errMsg);
+              }
+            }
+        }
+      }
+
+      return out;
+    }
+    /**
+     * Parse Inline Tokens
+     */
+    ;
+
+    _proto.parseInline = function parseInline(tokens, renderer) {
+      renderer = renderer || this.renderer;
+      var out = '',
+          i,
+          token;
+      var l = tokens.length;
+
+      for (i = 0; i < l; i++) {
+        token = tokens[i];
+
+        switch (token.type) {
+          case 'bilibiliEmoji':
+            {
+              out += renderer.bilibiliEmoji(token.text);
+              break;
+            }
+
+          case 'textEmoji':
+            {
+              out += renderer.textEmoji(token.text);
+              break;
+            }
+
+          case 'codeEmoji':
+            {
+              out += renderer.codeEmoji(token.text);
+              break;
+            }
+
+          case 'escape':
+            {
+              out += renderer.text(token.text);
+              break;
+            }
+
+          case 'html':
+            {
+              out += renderer.html(token.text);
+              break;
+            }
+
+          case 'link':
+            {
+              out += renderer.link(token.href, token.title, this.parseInline(token.tokens, renderer));
+              break;
+            }
+
+          case 'image':
+            {
+              out += renderer.image(token.href, token.title, token.text);
+              break;
+            }
+
+          case 'strong':
+            {
+              out += renderer.strong(this.parseInline(token.tokens, renderer));
+              break;
+            }
+
+          case 'em':
+            {
+              out += renderer.em(this.parseInline(token.tokens, renderer));
+              break;
+            }
+
+          case 'codespan':
+            {
+              out += renderer.codespan(token.text);
+              break;
+            }
+
+          case 'br':
+            {
+              out += renderer.br();
+              break;
+            }
+
+          case 'del':
+            {
+              out += renderer.del(this.parseInline(token.tokens, renderer));
+              break;
+            }
+
+          case 'text':
+            {
+              out += renderer.text(token.text);
+              break;
+            }
+
+          default:
+            {
+              var errMsg = 'Token with "' + token.type + '" type was not found.';
+
+              if (this.options.silent) {
+                console.error(errMsg);
+                return;
+              } else {
+                throw new Error(errMsg);
+              }
+            }
+        }
+      }
+
+      return out;
+    };
+
+    return Parser;
+  }();
+
+  var merge$2 = helpers.merge,
+      checkSanitizeDeprecation$1 = helpers.checkSanitizeDeprecation,
+      escape$2 = helpers.escape;
+  var getDefaults = defaults.getDefaults,
+      changeDefaults = defaults.changeDefaults,
+      defaults$5 = defaults.defaults;
+  /**
+   * Marked
+   */
+
+  function marked(src, opt, callback) {
+    // throw error in case of non string input
+    if (typeof src === 'undefined' || src === null) {
+      throw new Error('marked(): input parameter is undefined or null');
+    }
+
+    if (typeof src !== 'string') {
+      throw new Error('marked(): input parameter is of type ' + Object.prototype.toString.call(src) + ', string expected');
+    }
+
+    if (typeof opt === 'function') {
+      callback = opt;
+      opt = null;
+    }
+
+    opt = merge$2({}, marked.defaults, opt || {});
+    checkSanitizeDeprecation$1(opt);
+
+    if (callback) {
+      var highlight = opt.highlight;
+      var tokens;
+
+      try {
+        tokens = Lexer_1.lex(src, opt);
+      } catch (e) {
+        return callback(e);
+      }
+
+      var done = function done(err) {
+        var out;
+
+        if (!err) {
+          try {
+            out = Parser_1.parse(tokens, opt);
+          } catch (e) {
+            err = e;
+          }
+        }
+
+        opt.highlight = highlight;
+        return err ? callback(err) : callback(null, out);
+      };
+
+      if (!highlight || highlight.length < 3) {
+        return done();
+      }
+
+      delete opt.highlight;
+      if (!tokens.length) return done();
+      var pending = 0;
+      marked.walkTokens(tokens, function (token) {
+        if (token.type === 'code') {
+          pending++;
+          setTimeout(function () {
+            highlight(token.text, token.lang, function (err, code) {
+              if (err) {
+                return done(err);
+              }
+
+              if (code != null && code !== token.text) {
+                token.text = code;
+                token.escaped = true;
+              }
+
+              pending--;
+
+              if (pending === 0) {
+                done();
+              }
+            });
+          }, 0);
+        }
+      });
+
+      if (pending === 0) {
+        done();
+      }
+
+      return;
+    }
+
+    try {
+      var _tokens = Lexer_1.lex(src, opt);
+
+      if (opt.walkTokens) {
+        marked.walkTokens(_tokens, opt.walkTokens);
+      }
+
+      return Parser_1.parse(_tokens, opt);
+    } catch (e) {
+      e.message += '\nPlease report this to https://github.com/markedjs/marked.';
+
+      if (opt.silent) {
+        return '<p>An error occurred:</p><pre>' + escape$2(e.message + '', true) + '</pre>';
+      }
+
+      throw e;
+    }
+  }
+  /**
+   * Options
+   */
+
+
+  marked.options = marked.setOptions = function (opt) {
+    merge$2(marked.defaults, opt);
+    changeDefaults(marked.defaults);
+    return marked;
+  };
+
+  marked.getDefaults = getDefaults;
+  marked.defaults = defaults$5;
+  /**
+   * Use Extension
+   */
+
+  marked.use = function (extension) {
+    var opts = merge$2({}, extension);
+
+    if (extension.renderer) {
+      (function () {
+        var renderer = marked.defaults.renderer || new Renderer_1();
+
+        var _loop = function _loop(prop) {
+          var prevRenderer = renderer[prop];
+
+          renderer[prop] = function () {
+            for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+              args[_key] = arguments[_key];
+            }
+
+            var ret = extension.renderer[prop].apply(renderer, args);
+
+            if (ret === false) {
+              ret = prevRenderer.apply(renderer, args);
+            }
+
+            return ret;
+          };
+        };
+
+        for (var prop in extension.renderer) {
+          _loop(prop);
+        }
+
+        opts.renderer = renderer;
+      })();
+    }
+
+    if (extension.tokenizer) {
+      (function () {
+        var tokenizer = marked.defaults.tokenizer || new Tokenizer_1();
+
+        var _loop2 = function _loop2(prop) {
+          var prevTokenizer = tokenizer[prop];
+
+          tokenizer[prop] = function () {
+            for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+              args[_key2] = arguments[_key2];
+            }
+
+            var ret = extension.tokenizer[prop].apply(tokenizer, args);
+
+            if (ret === false) {
+              ret = prevTokenizer.apply(tokenizer, args);
+            }
+
+            return ret;
+          };
+        };
+
+        for (var prop in extension.tokenizer) {
+          _loop2(prop);
+        }
+
+        opts.tokenizer = tokenizer;
+      })();
+    }
+
+    if (extension.walkTokens) {
+      var walkTokens = marked.defaults.walkTokens;
+
+      opts.walkTokens = function (token) {
+        extension.walkTokens(token);
+
+        if (walkTokens) {
+          walkTokens(token);
+        }
+      };
+    }
+
+    marked.setOptions(opts);
+  };
+  /**
+   * Run callback for every token
+   */
+
+
+  marked.walkTokens = function (tokens, callback) {
+    for (var _iterator = _createForOfIteratorHelperLoose(tokens), _step; !(_step = _iterator()).done;) {
+      var token = _step.value;
+      callback(token);
+
+      switch (token.type) {
+        case 'table':
+          {
+            for (var _iterator2 = _createForOfIteratorHelperLoose(token.tokens.header), _step2; !(_step2 = _iterator2()).done;) {
+              var cell = _step2.value;
+              marked.walkTokens(cell, callback);
+            }
+
+            for (var _iterator3 = _createForOfIteratorHelperLoose(token.tokens.cells), _step3; !(_step3 = _iterator3()).done;) {
+              var row = _step3.value;
+
+              for (var _iterator4 = _createForOfIteratorHelperLoose(row), _step4; !(_step4 = _iterator4()).done;) {
+                var _cell = _step4.value;
+                marked.walkTokens(_cell, callback);
+              }
+            }
+
+            break;
+          }
+
+        case 'list':
+          {
+            marked.walkTokens(token.items, callback);
+            break;
+          }
+
+        default:
+          {
+            if (token.tokens) {
+              marked.walkTokens(token.tokens, callback);
+            }
+          }
+      }
+    }
+  };
+  /**
+   * Expose
+   */
+
+
+  marked.Parser = Parser_1;
+  marked.parser = Parser_1.parse;
+  marked.Renderer = Renderer_1;
+  marked.TextRenderer = TextRenderer_1;
+  marked.Lexer = Lexer_1;
+  marked.lexer = Lexer_1.lex;
+  marked.Tokenizer = Tokenizer_1;
+  marked.Slugger = Slugger_1;
+  marked.parse = marked;
+  var marked_1 = marked;
+
+  return marked_1;
+
+})));
 
 
 /***/ }),
@@ -13934,17 +14009,18 @@ module.exports = function GetIntrinsic(name, allowMissing) {
 const emojiData = __webpack_require__("fb89");
 
 function renderedEmojiHtml(html) {
-  let parser = new DOMParser();
-  let doc = removeNotEmoji(parser.parseFromString(html, "text/html"));
-  let emotions = doc.getElementsByClassName("emotion-item");
+  const parser = new DOMParser();
+  const doc = removeNotEmoji(parser.parseFromString(html, "text/html"));
+  const emotions = doc.getElementsByClassName("emoji-animate");
 
   for (let i = 0; i < emotions.length; i++) {
-    let emojiName = emotions[i].getAttribute("data-icon");
+    const emojiName = emotions[i].getAttribute("data-icon");
 
     for (let j = 0; j < emojiData["default"].length; j++) {
-      if (emojiData["default"][j]["name"] === emojiName) {
-        let emoji = emojiData["default"][j];
-        let img = emotions[i].getElementsByClassName("img")[0];
+      const emoji = emojiData["default"][j];
+
+      if (emoji.style && emoji.name === emojiName) {
+        const img = emotions[i].getElementsByClassName("img")[0];
         let dataStyle = "";
         Object.keys(emoji.style).forEach(function (item) {
           dataStyle += item + ":" + emoji.style[item] + ";";
@@ -13959,17 +14035,16 @@ function renderedEmojiHtml(html) {
 }
 /**
  * 判断需要渲染的 HTML 是否属于表情包，如果不属于，则去除此 HTML，仅保留文字
- * issue#17 https://github.com/LIlGG/halo-comment-joe2.0/issues/17
  */
 
 function removeNotEmoji(doc) {
-  let smilies = doc.getElementsByClassName("smilies");
+  const smilies = doc.getElementsByClassName("emoji-img");
   let skip = true;
 
   for (let i = 0; i < smilies.length; i++) {
-    let name = smilies[i].dataset.icon;
+    const name = smilies[i].dataset.icon;
 
-    if (!findEmoji("tieba", name)) {
+    if (!findEmoji("tieba", name) && !findEmoji("haha", name)) {
       skip = false;
       break;
     }
@@ -13979,10 +14054,10 @@ function removeNotEmoji(doc) {
     return doc;
   }
 
-  var firstNode = smilies[0];
-  var name = firstNode.dataset.icon;
+  const firstNode = smilies[0];
+  const name = firstNode.dataset.icon;
 
-  if (!findEmoji("tieba", name)) {
+  if (!findEmoji("tieba", name) && !findEmoji("haha", name)) {
     removeNode(firstNode);
   }
 
@@ -13990,8 +14065,8 @@ function removeNotEmoji(doc) {
 }
 
 function removeNode(node) {
-  let alt = node.getAttribute("alt");
-  let textNode = document.createTextNode(alt);
+  const alt = node.getAttribute("alt");
+  const textNode = document.createTextNode(alt);
   node.parentNode.replaceChild(textNode, node);
 }
 /**
@@ -14156,12 +14231,12 @@ module.exports = function (key) {
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"0d6fe75f-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/CommentNode.vue?vue&type=template&id=854462fe&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"4e61017a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/CommentNode.vue?vue&type=template&id=41586e95&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"comment-wrp"},[_c('li',{staticClass:"comment",class:_vm.commentClass,attrs:{"id":'comment-' + _vm.comment.id,"itemtype":"http://schema.org/Comment","itemprop":"comment"}},[_c('div',{staticClass:"contents"},[_c('div',{staticClass:"main shadow"},[_c('div',{staticClass:"profile"},[_c('a',{attrs:{"href":"javascript:;","rel":"nofollow noopener noreferrer"}},[_c('img',{directives:[{name:"lazy",rawName:"v-lazy",value:(_vm.comment.isAdmin ? _vm.options.blog_logo : _vm.avatar),expression:"comment.isAdmin ? options.blog_logo : avatar"}],staticClass:"avatar",attrs:{"alt":_vm.comment.author,"height":"80","width":"80"},on:{"error":_vm.handleAvatarError}})])]),_c('div',{staticClass:"commentinfo"},[_c('section',{staticClass:"commeta"},[_c('div',{staticClass:"left"},[_c('h4',{staticClass:"author"},[_c('a',{attrs:{"href":"javascript:;","rel":"noopener noreferrer nofollow"}},[_c('img',{directives:[{name:"lazy",rawName:"v-lazy",value:(_vm.comment.isAdmin ? _vm.options.blog_logo : _vm.avatar),expression:"comment.isAdmin ? options.blog_logo : avatar"}],staticClass:"avatar",attrs:{"alt":_vm.comment.author,"height":"24","width":"24"},on:{"error":_vm.handleAvatarError}}),(_vm.comment.isAdmin)?_c('span',{staticClass:"bb-comment isauthor",attrs:{"title":"博主"}},[_vm._v("博主")]):_vm._e(),_vm._v(" "+_vm._s(_vm.comment.author)+" ")])])]),_c('a',{staticClass:"comment-reply-link",style:(_vm.editing ? 'display:block;' : ''),attrs:{"href":"javascript:;"},on:{"click":_vm.handleReplyClick}},[_vm._v("回复")]),_c('div',{staticClass:"right"},[_c('div',{staticClass:"info"},[_c('time',{staticClass:"comment-time",attrs:{"itemprop":"datePublished","datetime":_vm.comment.createTime}},[_vm._v("发布于 "+_vm._s(_vm.createTimeAgo)+" ")]),(_vm.configs.showUserAgent)?_c('span',{staticClass:"useragent-info",domProps:{"innerHTML":_vm._s(_vm.compileUserAgent)}}):_vm._e()])])])]),_c('div',{staticClass:"body markdown-body"},[_c('pre',{domProps:{"innerHTML":_vm._s(_vm.compileContent)}})])])]),(_vm.comment.children)?_c('ul',{staticClass:"children"},[_vm._l((_vm.comment.children),function(children,index){return [_c('CommentNode',{key:index,attrs:{"isChild":true,"targetId":_vm.targetId,"target":_vm.target,"comment":children,"options":_vm.options,"configs":_vm.configs,"depth":_vm.selfAddDepth,"parent":_vm.comment}})]})],2):_vm._e()]),_c('CommentEditor',{attrs:{"targetId":_vm.targetId,"target":_vm.target,"replyComment":_vm.comment,"options":_vm.options,"configs":_vm.configs}})],1)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/CommentNode.vue?vue&type=template&id=854462fe&
+// CONCATENATED MODULE: ./src/components/CommentNode.vue?vue&type=template&id=41586e95&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.string.replace.js
 var es_string_replace = __webpack_require__("5319");
@@ -14176,14 +14251,14 @@ var util = __webpack_require__("ca00");
 var ua_parser = __webpack_require__("2b80");
 var ua_parser_default = /*#__PURE__*/__webpack_require__.n(ua_parser);
 
-// EXTERNAL MODULE: ./node_modules/l-marked/lib/marked.js
-var marked = __webpack_require__("a571");
+// EXTERNAL MODULE: ./node_modules/j-marked/lib/marked.js
+var marked = __webpack_require__("e7f9");
 var marked_default = /*#__PURE__*/__webpack_require__.n(marked);
 
 // EXTERNAL MODULE: ./src/utils/emojiutil.js
 var emojiutil = __webpack_require__("f058");
 
-// EXTERNAL MODULE: ./src/components/CommentEditor.vue + 40 modules
+// EXTERNAL MODULE: ./src/components/CommentEditor.vue + 45 modules
 var CommentEditor = __webpack_require__("3f17");
 
 // EXTERNAL MODULE: ./src/utils/globals.js
@@ -14406,7 +14481,7 @@ var globals = __webpack_require__("0e4d");
       // } else {
       // !!优先从主题配置取，取不到才从后台配置取
       const gravatarSource = this.configs.gravatarSource || this.options.gravatar_source || this.configs.gravatarSourceDefault;
-      return gravatarSource + `/${this.comment.gravatarMd5}?s=256&d=` + this.options.comment_gravatar_default; // }
+      return `${gravatarSource}/${this.comment.gravatarMd5}?s=256&d=${this.options.comment_gravatar_default}`; // }
     },
 
     compileContent() {
@@ -14489,7 +14564,7 @@ var globals = __webpack_require__("0e4d");
 
     handleAvatarError(e) {
       const img = e.target || e.srcElement;
-      img.src = this.config.avatarError;
+      img.src = this.configs.avatarError;
       img.onerror = null;
     }
 
@@ -14538,264 +14613,266 @@ class Emoji {
     this.description = description;
     this.category = category;
     this.style = style;
+    this.extension = ["tieba"].includes(category) ? "gif" : "png";
   }
 
 }
 
-let bilibiliEmoji = [new Emoji("baiyan", "白眼", "bilibili", {
+const hahaEmoji = [new Emoji("kuxiao", "哭笑", "haha"), new Emoji("heng", "哼", "haha"), new Emoji("guzhang", "鼓掌", "haha"), new Emoji("haha", "哈哈", "haha"), new Emoji("aini", "爱你", "haha"), new Emoji("bazhang", "巴掌", "haha"), new Emoji("beishang", "悲伤", "haha"), new Emoji("han", "汗", "haha"), new Emoji("deyi", "得意", "haha"), new Emoji("ok", "ok", "haha"), new Emoji("touxiao", "偷笑", "haha"), new Emoji("wabikong", "挖鼻孔", "haha"), new Emoji("weiqu", "委屈", "haha"), new Emoji("weixiao", "微笑", "haha"), new Emoji("huaixiao", "坏笑", "haha"), new Emoji("woshou", "握手", "haha"), new Emoji("wulian", "捂脸", "haha"), new Emoji("xiaku", "吓哭", "haha"), new Emoji("xiaoku", "笑哭", "haha"), new Emoji("xixi", "嘻嘻", "haha"), new Emoji("qinqin", "亲亲", "haha"), new Emoji("qiwang", "期望", "haha"), new Emoji("chanzui", "馋嘴", "haha"), new Emoji("huaxin", "花心", "haha"), new Emoji("hufen", "互粉", "haha"), new Emoji("keai", "可爱", "haha"), new Emoji("kelian", "可怜", "haha"), new Emoji("bishi", "鄙视", "haha"), new Emoji("bizui", "闭嘴", "haha"), new Emoji("yep", "耶", "haha"), new Emoji("zan", "赞", "haha"), new Emoji("yihuo", "疑惑", "haha"), new Emoji("yinxiao", "阴笑", "haha"), new Emoji("yiwen", "疑问", "haha"), new Emoji("bujiandan", "不简单", "haha"), new Emoji("bye", "拜拜", "haha"), new Emoji("chigua", "吃瓜", "haha"), new Emoji("chijing", "吃惊", "haha"), new Emoji("chuitou", "锤头", "haha"), new Emoji("dahaqian", "打哈欠", "haha"), new Emoji("fahuo", "发火", "haha"), new Emoji("bang", "棒", "haha"), new Emoji("gou", "狗", "haha"), new Emoji("guolai", "过来", "haha"), new Emoji("haixiu", "害羞", "haha"), new Emoji("hashiiqi", "哈士奇", "haha"), new Emoji("heixian", "黑线", "haha"), new Emoji("kouzhao", "口罩", "haha"), new Emoji("kulou", "骷髅", "haha"), new Emoji("kun", "困", "haha"), new Emoji("landelini", "懒得理你", "haha"), new Emoji("mao", "猫", "haha"), new Emoji("outu", "呕吐", "haha"), new Emoji("qian", "钱", "haha"), new Emoji("quantou", "拳头", "haha"), new Emoji("shaoerbuyi", "少儿不宜", "haha"), new Emoji("shayan", "傻眼", "haha"), new Emoji("shengbing", "生病", "haha"), new Emoji("tushetou", "吐舌头", "haha"), new Emoji("shuijiao", "睡觉", "haha"), new Emoji("sikao", "思考", "haha"), new Emoji("shiwang", "失望", "haha"), new Emoji("taikaixin", "太开心", "haha"), new Emoji("tear", "流泪", "haha"), new Emoji("tianping", "舔屏", "haha"), new Emoji("xu", "嘘", "haha"), new Emoji("youhengheng", "右哼哼", "haha"), new Emoji("yun", "晕", "haha"), new Emoji("zhouma", "咒骂", "haha"), new Emoji("zhuakuang", "抓狂", "haha"), new Emoji("zuohengheng", "左哼哼", "haha"), new Emoji("zuoyi", "作揖", "haha")];
+const bilibiliEmoji = [new Emoji("baiyan", "白眼", "bilibili", {
   "animation-duration": "1800ms",
   "animation-timing-function": "steps(45)",
-  "transform": "translateY(-1408px)",
-  "height": "1440px"
+  transform: "translateY(-1408px)",
+  height: "1440px"
 }), new Emoji("fadai", "发呆", "bilibili", {
   "animation-duration": "1080ms",
   "animation-timing-function": "steps(27)",
-  "transform": "translateY(-832px)",
-  "height": "864px"
+  transform: "translateY(-832px)",
+  height: "864px"
 }), new Emoji("koubi", "抠鼻", "bilibili", {
   "animation-duration": "1200ms",
   "animation-timing-function": "steps(30)",
-  "transform": "translateY(-928px)",
-  "height": "960px"
+  transform: "translateY(-928px)",
+  height: "960px"
 }), new Emoji("qinqin", "亲亲", "bilibili", {
   "animation-duration": "280ms",
   "animation-timing-function": "steps(7)",
-  "transform": "translateY(-192px)",
-  "height": "224px"
+  transform: "translateY(-192px)",
+  height: "224px"
 }), new Emoji("weiqu", "委屈", "bilibili", {
   "animation-duration": "800ms",
   "animation-timing-function": "steps(20)",
-  "transform": "translateY(-608px)",
-  "height": "640px"
+  transform: "translateY(-608px)",
+  height: "640px"
 }), new Emoji("bishi", "鄙视", "bilibili", {
   "animation-duration": "360ms",
   "animation-timing-function": "steps(9)",
-  "transform": "translateY(-256px)",
-  "height": "288px"
+  transform: "translateY(-256px)",
+  height: "288px"
 }), new Emoji("fanu", "发怒", "bilibili", {
   "animation-duration": "1320ms",
   "animation-timing-function": "steps(33)",
-  "transform": "translateY(-1024px)",
-  "height": "1056px"
+  transform: "translateY(-1024px)",
+  height: "1056px"
 }), new Emoji("kun", "困", "bilibili", {
   "animation-duration": "1760ms",
   "animation-timing-function": "steps(44)",
-  "transform": "translateY(-1376px)",
-  "height": "1408px"
+  transform: "translateY(-1376px)",
+  height: "1408px"
 }), new Emoji("se", "色", "bilibili", {
   "animation-duration": "400ms",
   "animation-timing-function": "steps(10)",
-  "transform": "translateY(-288px)",
-  "height": "320px"
+  transform: "translateY(-288px)",
+  height: "320px"
 }), new Emoji("weixiao", "微笑", "bilibili", {
   "animation-duration": "800ms",
   "animation-timing-function": "steps(20)",
-  "transform": "translateY(-608px)",
-  "height": "640px"
+  transform: "translateY(-608px)",
+  height: "640px"
 }), new Emoji("bizui", "闭嘴", "bilibili", {
   "animation-duration": "1240ms",
   "animation-timing-function": "steps(31)",
-  "transform": "translateY(-960px)",
-  "height": "992px"
+  transform: "translateY(-960px)",
+  height: "992px"
 }), new Emoji("ganga", "尴尬", "bilibili", {
   "animation-duration": "1520ms",
   "animation-timing-function": "steps(38)",
-  "transform": "translateY(-1184px)",
-  "height": "1216px"
+  transform: "translateY(-1184px)",
+  height: "1216px"
 }), new Emoji("lengmo", "冷漠", "bilibili", {
   "animation-duration": "40ms",
   "animation-timing-function": "steps(1)",
-  "transform": "translateY(-0px)",
-  "height": "32px"
+  transform: "translateY(-0px)",
+  height: "32px"
 }), new Emoji("shengbing", "生病", "bilibili", {
   "animation-duration": "1400ms",
   "animation-timing-function": "steps(35)",
-  "transform": "translateY(-1088px)",
-  "height": "1120px"
+  transform: "translateY(-1088px)",
+  height: "1120px"
 }), new Emoji("wunai", "无奈", "bilibili", {
   "animation-duration": "920ms",
   "animation-timing-function": "steps(23)",
-  "transform": "translateY(-704px)",
-  "height": "736px"
+  transform: "translateY(-704px)",
+  height: "736px"
 }), new Emoji("chan", "馋", "bilibili", {
   "animation-duration": "1600ms",
   "animation-timing-function": "steps(40)",
-  "transform": "translateY(-1248px)",
-  "height": "1280px"
+  transform: "translateY(-1248px)",
+  height: "1280px"
 }), new Emoji("guilian", "鬼脸", "bilibili", {
   "animation-duration": "40ms",
   "animation-timing-function": "steps(1)",
-  "transform": "translateY(-0px)",
-  "height": "32px"
+  transform: "translateY(-0px)",
+  height: "32px"
 }), new Emoji("liubixue", "流鼻血", "bilibili", {
   "animation-duration": "1400ms",
   "animation-timing-function": "steps(35)",
-  "transform": "translateY(-1088px)",
-  "height": "1120px"
+  transform: "translateY(-1088px)",
+  height: "1120px"
 }), new Emoji("shengqi", "生气", "bilibili", {
   "animation-duration": "440ms",
   "animation-timing-function": "steps(11)",
-  "transform": "translateY(-320px)",
-  "height": "352px"
+  transform: "translateY(-320px)",
+  height: "352px"
 }), new Emoji("xiaoku", "笑哭", "bilibili", {
   "animation-duration": "600ms",
   "animation-timing-function": "steps(15)",
-  "transform": "translateY(-448px)",
-  "height": "480px"
+  transform: "translateY(-448px)",
+  height: "480px"
 }), new Emoji("daku", "大哭", "bilibili", {
   "animation-duration": "320ms",
   "animation-timing-function": "steps(8)",
-  "transform": "translateY(-224px)",
-  "height": "256px"
+  transform: "translateY(-224px)",
+  height: "256px"
 }), new Emoji("guzhang", "鼓掌", "bilibili", {
   "animation-duration": "680ms",
   "animation-timing-function": "steps(17)",
-  "transform": "translateY(-512px)",
-  "height": "544px"
+  transform: "translateY(-512px)",
+  height: "544px"
 }), new Emoji("liuhan", "流汗", "bilibili", {
   "animation-duration": "1080ms",
   "animation-timing-function": "steps(27)",
-  "transform": "translateY(-832px)",
-  "height": "864px"
+  transform: "translateY(-832px)",
+  height: "864px"
 }), new Emoji("shuizhao", "睡着", "bilibili", {
   "animation-duration": "960ms",
   "animation-timing-function": "steps(24)",
-  "transform": "translateY(-736px)",
-  "height": "768px"
+  transform: "translateY(-736px)",
+  height: "768px"
 }), new Emoji("xieyanxiao", "斜眼笑", "bilibili", {
   "animation-duration": "320ms",
   "animation-timing-function": "steps(8)",
-  "transform": "translateY(-224px)",
-  "height": "256px"
+  transform: "translateY(-224px)",
+  height: "256px"
 }), new Emoji("dalao", "大佬", "bilibili", {
   "animation-duration": "1320ms",
   "animation-timing-function": "steps(33)",
-  "transform": "translateY(-1024px)",
-  "height": "1056px"
+  transform: "translateY(-1024px)",
+  height: "1056px"
 }), new Emoji("haixiu", "害羞", "bilibili", {
   "animation-duration": "1240ms",
   "animation-timing-function": "steps(31)",
-  "transform": "translateY(-960px))",
-  "height": "992px"
+  transform: "translateY(-960px))",
+  height: "992px"
 }), new Emoji("liulei", "流泪", "bilibili", {
   "animation-duration": "40ms",
   "animation-timing-function": "steps(1)",
-  "transform": "translateY(-0px)",
-  "height": "32px"
+  transform: "translateY(-0px)",
+  height: "32px"
 }), new Emoji("sikao", "思考", "bilibili", {
   "animation-duration": "1440ms",
   "animation-timing-function": "steps(36)",
-  "transform": "translateY(-1120px)",
-  "height": "1152px"
+  transform: "translateY(-1120px)",
+  height: "1152px"
 }), new Emoji("yiwen", "疑问", "bilibili", {
   "animation-duration": "840ms",
   "animation-timing-function": "steps(21)",
-  "transform": "translateY(-640px)",
-  "height": "672px"
+  transform: "translateY(-640px)",
+  height: "672px"
 }), new Emoji("dalian", "打脸", "bilibili", {
   "animation-duration": "1480ms",
   "animation-timing-function": "steps(37)",
-  "transform": "translateY(-1152px)",
-  "height": "1184px"
+  transform: "translateY(-1152px)",
+  height: "1184px"
 }), new Emoji("heirenwenhao", "黑人问号", "bilibili", {
   "animation-duration": "1040ms",
   "animation-timing-function": "steps(26)",
-  "transform": "translateY(-800px)",
-  "height": "832px"
+  transform: "translateY(-800px)",
+  height: "832px"
 }), new Emoji("miantian", "腼腆", "bilibili", {
   "animation-duration": "1120ms",
   "animation-timing-function": "steps(28)",
-  "transform": "translateY(-864px)",
-  "height": "896px"
+  transform: "translateY(-864px)",
+  height: "896px"
 }), new Emoji("tiaokan", "调侃", "bilibili", {
   "animation-duration": "40ms",
   "animation-timing-function": "steps(1)",
-  "transform": "translateY(-0px)",
-  "height": "32px"
+  transform: "translateY(-0px)",
+  height: "32px"
 }), new Emoji("yun", "晕", "bilibili", {
   "animation-duration": "480ms",
   "animation-timing-function": "steps(12)",
-  "transform": "translateY(-352px)",
-  "height": "384px"
+  transform: "translateY(-352px)",
+  height: "384px"
 }), new Emoji("dianzan", "点赞", "bilibili", {
   "animation-duration": "800ms",
   "animation-timing-function": "steps(20)",
-  "transform": "translateY(-608px)",
-  "height": "640px"
+  transform: "translateY(-608px)",
+  height: "640px"
 }), new Emoji("huaixiao", "坏笑", "bilibili", {
   "animation-duration": "1240ms",
   "animation-timing-function": "steps(31)",
-  "transform": "translateY(-960px)",
-  "height": "992px"
+  transform: "translateY(-960px)",
+  height: "992px"
 }), new Emoji("mudengkoudai", "目瞪口呆", "bilibili", {
   "animation-duration": "40ms",
   "animation-timing-function": "steps(1)",
-  "transform": "translateY(-0px)",
-  "height": "32px"
+  transform: "translateY(-0px)",
+  height: "32px"
 }), new Emoji("tiaopi", "调皮", "bilibili", {
   "animation-duration": "2000ms",
   "animation-timing-function": "steps(50)",
-  "transform": "translateY(-1568px)",
-  "height": "1600px"
+  transform: "translateY(-1568px)",
+  height: "1600px"
 }), new Emoji("zaijian", "再见", "bilibili", {
   "animation-duration": "960ms",
   "animation-timing-function": "steps(24)",
-  "transform": "translateY(-736px)",
-  "height": "768px"
+  transform: "translateY(-736px)",
+  height: "768px"
 }), new Emoji("doge", "狗头", "bilibili", {
   "animation-duration": "800ms",
   "animation-timing-function": "steps(20)",
-  "transform": "translateY(-608px)",
-  "height": "640px"
+  transform: "translateY(-608px)",
+  height: "640px"
 }), new Emoji("jingxia", "惊吓", "bilibili", {
   "animation-duration": "1280ms",
   "animation-timing-function": "steps(32)",
-  "transform": "translateY(-992px)",
-  "height": "1024px"
+  transform: "translateY(-992px)",
+  height: "1024px"
 }), new Emoji("nanguo", "难过", "bilibili", {
   "animation-duration": "1120ms",
   "animation-timing-function": "steps(28)",
-  "transform": "translateY(-864px)",
-  "height": "896px"
+  transform: "translateY(-864px)",
+  height: "896px"
 }), new Emoji("touxiao", "偷笑", "bilibili", {
   "animation-duration": "240ms",
   "animation-timing-function": "steps(6)",
-  "transform": "translateY(-160px)",
-  "height": "192px"
+  transform: "translateY(-160px)",
+  height: "192px"
 }), new Emoji("zhoumei", "皱眉", "bilibili", {
   "animation-duration": "40ms",
   "animation-timing-function": "steps(1)",
-  "transform": "translateY(-0px)",
-  "height": "32px"
+  transform: "translateY(-0px)",
+  height: "32px"
 }), new Emoji("facai", "发财", "bilibili", {
   "animation-duration": "1200ms",
   "animation-timing-function": "steps(30)",
-  "transform": "translateY(-928px)",
-  "height": "960px"
+  transform: "translateY(-928px)",
+  height: "960px"
 }), new Emoji("keai", "可爱", "bilibili", {
   "animation-duration": "680ms",
   "animation-timing-function": "steps(17)",
-  "transform": "translateY(-512px)",
-  "height": "544px"
+  transform: "translateY(-512px)",
+  height: "544px"
 }), new Emoji("outu", "呕吐", "bilibili", {
   "animation-duration": "1680ms",
   "animation-timing-function": "steps(42)",
-  "transform": "translateY(-1312px)",
-  "height": "1344px"
+  transform: "translateY(-1312px)",
+  height: "1344px"
 }), new Emoji("tuxue", "吐血", "bilibili", {
   "animation-duration": "320ms",
   "animation-timing-function": "steps(8)",
-  "transform": "translateY(-224px)",
-  "height": "256px"
+  transform: "translateY(-224px)",
+  height: "256px"
 }), new Emoji("zhuakuang", "抓狂", "bilibili", {
   "animation-duration": "760ms",
   "animation-timing-function": "steps(19)",
-  "transform": "translateY(-576px)",
-  "height": "608px"
+  transform: "translateY(-576px)",
+  height: "608px"
 })];
-let menheraEmoji = [new Emoji("(⌒▽⌒)", "(⌒▽⌒)", "menhera"), new Emoji("(￣▽￣)", "(￣▽￣)", "menhera"), new Emoji("(=・ω・=)", "(=・ω・=)", "menhera"), new Emoji("(｀・ω・´)", "(｀・ω・´)", "menhera"), new Emoji("(〜￣△￣)〜", "(〜￣△￣)〜", "menhera"), new Emoji("(･∀･)", "(･∀･)", "menhera"), new Emoji("(°∀°)ﾉ", "(°∀°)ﾉ", "menhera"), new Emoji("(￣3￣)", "(￣3￣)", "menhera"), new Emoji("╮(￣▽￣)╭", "╮(￣▽￣)╭", "menhera"), new Emoji("(´_ゝ｀)", "(´_ゝ｀)", "menhera"), new Emoji("←_←", "←_←", "menhera"), new Emoji("→_→", "→_→", "menhera"), new Emoji("(<_<)", "(<_<)", "menhera"), new Emoji("(>_>)", "(>_>)", "menhera"), new Emoji("(;¬_¬)", "(;¬_¬)", "menhera"), new Emoji("(▔□▔)/", "(▔□▔)/", "menhera"), new Emoji("(ﾟДﾟ≡ﾟдﾟ)!?", "(ﾟДﾟ≡ﾟдﾟ)!?", "menhera"), new Emoji("Σ(ﾟдﾟ;)", "Σ(ﾟдﾟ;)", "menhera"), new Emoji("Σ(￣□￣||)", "Σ(￣□￣||)", "menhera"), new Emoji("(’；ω；‘)", "(’；ω；‘)", "menhera"), new Emoji("（/TДT)/", "（/TДT)/", "menhera"), new Emoji("(^・ω・^ )", "(^・ω・^ )", "menhera"), new Emoji("(｡･ω･｡)", "(｡･ω･｡)", "menhera"), new Emoji("(●￣(ｴ)￣●)", "(●￣(ｴ)￣●)", "menhera"), new Emoji("ε=ε=(ノ≧∇≦)ノ", "ε=ε=(ノ≧∇≦)ノ", "menhera"), new Emoji("(’･_･‘)", "(’･_･‘)", "menhera"), new Emoji("(-_-#)", "(-_-#)", "menhera"), new Emoji("（￣へ￣）", "（￣へ￣）", "menhera"), new Emoji("(￣ε(#￣)Σ", "(￣ε(#￣)Σ", "menhera"), new Emoji("ヽ(‘Д’)ﾉ", "ヽ(‘Д’)ﾉ", "menhera"), new Emoji("（#-_-)┯━┯", "（#-_-)┯━┯", "menhera"), new Emoji("(╯°口°)╯(┴—┴", "(╯°口°)╯(┴—┴", "menhera"), new Emoji("←◡←", "←◡←", "menhera"), new Emoji("( ♥д♥)", "( ♥д♥)", "menhera"), new Emoji("_(:3」∠)_", "_(:3」∠)_", "menhera"), new Emoji("Σ>―(〃°ω°〃)♡→", "Σ>―(〃°ω°〃)♡→", "menhera"), new Emoji("⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄", "⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄", "menhera"), new Emoji("(╬ﾟдﾟ)▄︻┻┳═一", "(╬ﾟдﾟ)▄︻┻┳═一", "menhera"), new Emoji("･*･:≡(　ε:)", "･*･:≡(　ε:)", "menhera"), new Emoji("(笑)", "(笑)", "menhera"), new Emoji("(汗)", "(汗)", "menhera"), new Emoji("(泣)", "(泣)", "menhera"), new Emoji("(苦笑)", "(苦笑)", "menhera")];
-let tiebaEmoji = [new Emoji("tongue", "吐舌", "tieba"), new Emoji("theblackline", "尴尬", "tieba"), new Emoji("tear", "大哭", "tieba"), new Emoji("surprised", "惊哭", "tieba"), new Emoji("surprised2", "惊讶", "tieba"), new Emoji("spray", "喷", "tieba"), new Emoji("spit", "呕吐", "tieba"), new Emoji("smilingeyes", "笑眼", "tieba"), new Emoji("shui", "睡", "tieba"), new Emoji("shame", "羞辱", "tieba"), new Emoji("se", "色", "tieba"), new Emoji("rmb", "钱", "tieba"), new Emoji("reluctantly", "勉强", "tieba"), new Emoji("rbq", "观望", "tieba"), new Emoji("niconiconit", "niconiconit", "tieba"), new Emoji("niconiconi", "niconiconi", "tieba"), new Emoji("niconiconi_t", "niconiconi-t", "tieba"), new Emoji("naive", "naive", "tieba"), new Emoji("ku", "ku", "tieba"), new Emoji("huaji", "huaji", "tieba"), new Emoji("hu", "hu", "tieba"), new Emoji("han", "han", "tieba"), new Emoji("haha", "haha", "tieba"), new Emoji("good", "good", "tieba"), new Emoji("doubt", "doubt", "tieba"), new Emoji("britan", "britan", "tieba"), new Emoji("bbd", "bbd", "tieba"), new Emoji("awesome", "awesome", "tieba"), new Emoji("anger", "anger", "tieba"), new Emoji("aa", "aa", "tieba"), new Emoji("Happy", "Happy", "tieba"), new Emoji("Grievance", "Grievance", "tieba")];
-/* harmony default export */ __webpack_exports__["default"] = ([...bilibiliEmoji, ...menheraEmoji, ...tiebaEmoji]);
+const tiebaEmoji = [new Emoji("tongue", "吐舌", "tieba"), new Emoji("theblackline", "尴尬", "tieba"), new Emoji("tear", "大哭", "tieba"), new Emoji("surprised", "惊哭", "tieba"), new Emoji("surprised2", "惊讶", "tieba"), new Emoji("spray", "喷", "tieba"), new Emoji("spit", "呕吐", "tieba"), new Emoji("smilingeyes", "笑眼", "tieba"), new Emoji("shui", "睡觉", "tieba"), new Emoji("shame", "羞辱", "tieba"), new Emoji("se", "色", "tieba"), new Emoji("rmb", "钱", "tieba"), new Emoji("reluctantly", "勉强", "tieba"), new Emoji("rbq", "观望", "tieba"), new Emoji("niconiconi", "爱你", "tieba"), new Emoji("naive", "天真", "tieba"), new Emoji("ku", "酷", "tieba"), new Emoji("huaji", "滑稽", "tieba"), new Emoji("hu", "呼", "tieba"), new Emoji("han", "汗", "tieba"), new Emoji("haha", "哈哈", "tieba"), new Emoji("good", "棒", "tieba"), new Emoji("doubt", "疑惑", "tieba"), new Emoji("britan", "茶", "tieba"), new Emoji("bbd", "棒棒哒", "tieba"), new Emoji("awesome", "强", "tieba"), new Emoji("anger", "愤怒", "tieba"), new Emoji("aa", "啊啊", "tieba"), new Emoji("happy", "高兴", "tieba"), new Emoji("grievance", "郁闷", "tieba")];
+const menheraEmoji = [new Emoji("(⌒▽⌒)", "(⌒▽⌒)", "menhera"), new Emoji("(￣▽￣)", "(￣▽￣)", "menhera"), new Emoji("(=・ω・=)", "(=・ω・=)", "menhera"), new Emoji("(｀・ω・´)", "(｀・ω・´)", "menhera"), new Emoji("(〜￣△￣)〜", "(〜￣△￣)〜", "menhera"), new Emoji("(･∀･)", "(･∀･)", "menhera"), new Emoji("(°∀°)ﾉ", "(°∀°)ﾉ", "menhera"), new Emoji("(￣3￣)", "(￣3￣)", "menhera"), new Emoji("╮(￣▽￣)╭", "╮(￣▽￣)╭", "menhera"), new Emoji("(´_ゝ｀)", "(´_ゝ｀)", "menhera"), new Emoji("←_←", "←_←", "menhera"), new Emoji("→_→", "→_→", "menhera"), new Emoji("(<_<)", "(<_<)", "menhera"), new Emoji("(>_>)", "(>_>)", "menhera"), new Emoji("(;¬_¬)", "(;¬_¬)", "menhera"), new Emoji("(▔□▔)/", "(▔□▔)/", "menhera"), new Emoji("(ﾟДﾟ≡ﾟдﾟ)!?", "(ﾟДﾟ≡ﾟдﾟ)!?", "menhera"), new Emoji("Σ(ﾟдﾟ;)", "Σ(ﾟдﾟ;)", "menhera"), new Emoji("Σ(￣□￣||)", "Σ(￣□￣||)", "menhera"), new Emoji("(’；ω；‘)", "(’；ω；‘)", "menhera"), new Emoji("（/TДT)/", "（/TДT)/", "menhera"), new Emoji("(^・ω・^ )", "(^・ω・^ )", "menhera"), new Emoji("(｡･ω･｡)", "(｡･ω･｡)", "menhera"), new Emoji("(●￣(ｴ)￣●)", "(●￣(ｴ)￣●)", "menhera"), new Emoji("ε=ε=(ノ≧∇≦)ノ", "ε=ε=(ノ≧∇≦)ノ", "menhera"), new Emoji("(’･_･‘)", "(’･_･‘)", "menhera"), new Emoji("(-_-#)", "(-_-#)", "menhera"), new Emoji("（￣へ￣）", "（￣へ￣）", "menhera"), new Emoji("(￣ε(#￣)Σ", "(￣ε(#￣)Σ", "menhera"), new Emoji("ヽ(‘Д’)ﾉ", "ヽ(‘Д’)ﾉ", "menhera"), new Emoji("（#-_-)┯━┯", "（#-_-)┯━┯", "menhera"), new Emoji("(╯°口°)╯(┴—┴", "(╯°口°)╯(┴—┴", "menhera"), new Emoji("←◡←", "←◡←", "menhera"), new Emoji("( ♥д♥)", "( ♥д♥)", "menhera"), new Emoji("_(:3」∠)_", "_(:3」∠)_", "menhera"), new Emoji("Σ>―(〃°ω°〃)♡→", "Σ>―(〃°ω°〃)♡→", "menhera"), new Emoji("⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄", "⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄", "menhera"), new Emoji("(╬ﾟдﾟ)▄︻┻┳═一", "(╬ﾟдﾟ)▄︻┻┳═一", "menhera"), new Emoji("･*･:≡(　ε:)", "･*･:≡(　ε:)", "menhera"), new Emoji("(笑)", "(笑)", "menhera"), new Emoji("(汗)", "(汗)", "menhera"), new Emoji("(泣)", "(泣)", "menhera"), new Emoji("(苦笑)", "(苦笑)", "menhera")];
+/* harmony default export */ __webpack_exports__["default"] = ([...hahaEmoji, ...bilibiliEmoji, ...tiebaEmoji, ...menheraEmoji]);
 
 /***/ }),
 

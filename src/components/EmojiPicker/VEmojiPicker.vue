@@ -30,7 +30,7 @@ export default {
   },
   data: () => ({
     mapEmojis: {},
-    category: 'bilibili'
+    category: 'haha'
   }),
   created() {
     this.mapperData(this.pack)
@@ -46,7 +46,6 @@ export default {
     mapperData(dataEmojis) {
       dataEmojis.forEach(emoji => {
         const _category = emoji['category']
-
         if (!this.mapEmojis[_category]) {
           this.$set(this.mapEmojis, _category, [emoji])
         } else {
