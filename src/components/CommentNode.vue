@@ -172,7 +172,7 @@ export default {
       // eslint-disable-next-line no-unused-vars
       image(href, title) {
         return `
-          <img src="${href}" class="lazyload comment_inline_img" onerror="handleAvatarError(this)">`;
+          <img src="${href}" class="lazyload comment_inline_img" onerror="this.src='https://cdn.jsdelivr.net/gh/qinhua/cdn_assets@master/comment/img_error.svg'">`;
       },
       link(href, title, text) {
         return `<a href="${href}" title="${text}" target="_blank" rel="noopener noreferrer nofollow">${text}</a>`;
@@ -263,7 +263,7 @@ export default {
           break;
       }
 
-      return `（<img src="${browserImg}" onerror="this.src='https://cdn.jsdelivr.net/gh/qinhua/cdn_assets@master/comment/ua/svg/unknown.svg'" alt="ua-browser"/>  ${result.browser.name} ${result.browser.version} <img src="${uaImg}" onerror="this.src='https://cdn.jsdelivr.net/gh/qinhua/cdn_assets@master/comment/ua/svg/unknown.svg'" alt="ua-os"/> ${result.os.name} ${result.os.version}）`
+      return `（<img src="${browserImg}" onerror="this.src='https://cdn.jsdelivr.net/gh/qinhua/cdn_assets@master/comment/ua/svg/unknow.svg'" alt="ua-browser"/>  ${result.browser.name} ${result.browser.version} <img src="${uaImg}" onerror="this.src='https://cdn.jsdelivr.net/gh/qinhua/cdn_assets@master/comment/ua/svg/unknow.svg'" alt="ua-os"/> ${result.os.name} ${result.os.version}）`
     },
     selfAddDepth() {
       return this.depth + 1;

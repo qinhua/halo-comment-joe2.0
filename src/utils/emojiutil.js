@@ -30,8 +30,7 @@ function removeNotEmoji(doc) {
   let skip = true;
   for (let i = 0; i < smilies.length; i++) {
     const name = smilies[i].dataset.icon;
-    // if (!findEmoji("tieba", name) && !findEmoji("haha", name)) {
-    if (!findEmoji("haha", name)) {
+    if (!findEmoji("tieba", name) && !findEmoji("haha", name)) {
       skip = false;
       break;
     }
@@ -44,8 +43,7 @@ function removeNotEmoji(doc) {
   const firstNode = smilies[0];
   const name = firstNode.dataset.icon;
 
-  // if (!findEmoji("tieba", name) && !findEmoji("haha", name)) {
-  if (!findEmoji("haha", name)) {
+  if (!findEmoji("tieba", name) && !findEmoji("haha", name)) {
     removeNode(firstNode);
   }
 

@@ -207,7 +207,7 @@ export default {
   },
   computed: {
     renderedContent() {
-      let html = this.comment.content ? marked(this.comment.content) : "";
+      const html = this.comment.content ? marked(this.comment.content) : "";
       // return return2Br(renderedEmojiHtml(html));
       return renderedEmojiHtml(html);
     },

@@ -581,6 +581,7 @@ div {
     background: none;
 
     .markdown-content {
+      padding-left: 3px;
       white-space: normal;
       word-break: break-word;
     }
@@ -594,6 +595,8 @@ div {
       padding: 0;
       overflow: hidden;
       color: #333;
+      background-color: transparent;
+      ;
 
       @media (max-width: 860px) {
         transform: scale(0.8);
@@ -642,13 +645,20 @@ div {
     }
 
     .comment_inline_img {
-      display: inline-block;
-      height: 150px;
-      margin-right: 3px;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      padding: 3px;
       cursor: pointer;
+      display: inline-block;
+      max-height: 150px;
+      margin-right: 3px;
+      padding: 3px;
+      background-color: #fff;
+      border: 1px solid var(--classC);
+      border-radius: 4px;
+    }
+
+    @media screen and (max-width:880px) {
+      .markdown-content {
+        padding-left: 0;
+      }
     }
   }
 
