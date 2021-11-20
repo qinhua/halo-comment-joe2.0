@@ -449,7 +449,7 @@ div {
       }
     }
 
-    h4 {
+    .author {
       font-size: 24px;
       font-weight: 400;
       margin: 0;
@@ -510,7 +510,6 @@ div {
         # Commment Body
         --------------------------------------------------------------*/
     .body {
-      line-height: 32px;
       color: #63686d;
       position: relative;
 
@@ -575,13 +574,15 @@ div {
   }
 
   .markdown-body {
+    padding: 0;
+    white-space: normal;
+    word-break: break-word;
     font-size: 14px !important;
+    background: none;
 
-    pre {
-      padding: 0;
+    .markdown-content {
       white-space: normal;
       word-break: break-word;
-      background: none;
     }
 
     img {
@@ -628,7 +629,8 @@ div {
         height: 864px;
         max-width: 32px;
         background: top/32px no-repeat;
-        background-image: none;animation: im-emotion-step 1.08s steps(27) infinite;
+        background-image: none;
+        animation: im-emotion-step 1.08s steps(27) infinite;
       }
     }
 

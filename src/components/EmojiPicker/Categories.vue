@@ -29,7 +29,7 @@ export default {
     categories: [
       { name: "haha", title: "Haha" },
       { name: "bilibili", title: "Bilibili" },
-      { name: "tieba", title: "Tieba" },
+      // { name: "tieba", title: "Tieba" },
       { name: "menhera", title: "(✪ω✪)" },
     ],
     active: 0,

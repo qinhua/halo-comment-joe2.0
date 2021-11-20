@@ -13,7 +13,7 @@
 <script>
 import HahaEmoji from './HahaEmoji'
 import BilibiliEmoji from './BilibiliEmoji'
-import TiebaEmoji from './TiebaEmoji'
+// import TiebaEmoji from './TiebaEmoji'
 import MenheraEmoji from './MenheraEmoji'
 
 export default {
@@ -21,14 +21,14 @@ export default {
   components: {
     HahaEmoji,
     BilibiliEmoji,
-    TiebaEmoji,
+    // TiebaEmoji,
     MenheraEmoji
   },
   data: () => ({
     categories: [
       { name: 'haha', title: 'Haha' },
       { name: 'bilibili', title: 'Bilibili' },
-      { name: 'tieba', title: 'Tieba' },
+      // { name: 'tieba', title: 'Tieba' },
       { name: 'menhera', title: '(✪ω✪)' },
     ]
   }),

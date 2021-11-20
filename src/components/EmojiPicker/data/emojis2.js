@@ -386,38 +386,38 @@ const bilibiliEmoji = [
   }),
 ];
 
-const tiebaEmoji = [
-  new Emoji("tongue", "吐舌", "tieba"),
-  new Emoji("theblackline", "尴尬", "tieba"),
-  new Emoji("tear", "大哭", "tieba"),
-  new Emoji("surprised", "惊哭", "tieba"),
-  new Emoji("surprised2", "惊讶", "tieba"),
-  new Emoji("spray", "喷", "tieba"),
-  new Emoji("spit", "呕吐", "tieba"),
-  new Emoji("smilingeyes", "笑眼", "tieba"),
-  new Emoji("shui", "睡觉", "tieba"),
-  new Emoji("shame", "羞辱", "tieba"),
-  new Emoji("se", "色", "tieba"),
-  new Emoji("rmb", "钱", "tieba"),
-  new Emoji("reluctantly", "勉强", "tieba"),
-  new Emoji("rbq", "观望", "tieba"),
-  new Emoji("niconiconi", "爱你", "tieba"),
-  new Emoji("naive", "天真", "tieba"),
-  new Emoji("ku", "酷", "tieba"),
-  new Emoji("huaji", "滑稽", "tieba"),
-  new Emoji("hu", "呼", "tieba"),
-  new Emoji("han", "汗", "tieba"),
-  new Emoji("haha", "哈哈", "tieba"),
-  new Emoji("good", "棒", "tieba"),
-  new Emoji("doubt", "疑惑", "tieba"),
-  new Emoji("britan", "茶", "tieba"),
-  new Emoji("bbd", "棒棒哒", "tieba"),
-  new Emoji("awesome", "强", "tieba"),
-  new Emoji("anger", "愤怒", "tieba"),
-  new Emoji("aa", "啊啊", "tieba"),
-  new Emoji("happy", "高兴", "tieba"),
-  new Emoji("grievance", "郁闷", "tieba"),
-];
+// const tiebaEmoji = [
+//   new Emoji("tongue", "吐舌", "tieba"),
+//   new Emoji("theblackline", "尴尬", "tieba"),
+//   new Emoji("tear", "大哭", "tieba"),
+//   new Emoji("surprised", "惊哭", "tieba"),
+//   new Emoji("surprised2", "惊讶", "tieba"),
+//   new Emoji("spray", "喷", "tieba"),
+//   new Emoji("spit", "呕吐", "tieba"),
+//   new Emoji("smilingeyes", "笑眼", "tieba"),
+//   new Emoji("shui", "睡觉", "tieba"),
+//   new Emoji("shame", "羞辱", "tieba"),
+//   new Emoji("se", "色", "tieba"),
+//   new Emoji("rmb", "钱", "tieba"),
+//   new Emoji("reluctantly", "勉强", "tieba"),
+//   new Emoji("rbq", "观望", "tieba"),
+//   new Emoji("niconiconi", "爱你", "tieba"),
+//   new Emoji("naive", "天真", "tieba"),
+//   new Emoji("ku", "酷", "tieba"),
+//   new Emoji("huaji", "滑稽", "tieba"),
+//   new Emoji("hu", "呼", "tieba"),
+//   new Emoji("han", "汗", "tieba"),
+//   new Emoji("haha", "哈哈", "tieba"),
+//   new Emoji("good", "棒", "tieba"),
+//   new Emoji("doubt", "疑惑", "tieba"),
+//   new Emoji("britan", "茶", "tieba"),
+//   new Emoji("bbd", "棒棒哒", "tieba"),
+//   new Emoji("awesome", "强", "tieba"),
+//   new Emoji("anger", "愤怒", "tieba"),
+//   new Emoji("aa", "啊啊", "tieba"),
+//   new Emoji("happy", "高兴", "tieba"),
+//   new Emoji("grievance", "郁闷", "tieba"),
+// ];
 
 const menheraEmoji = [
   new Emoji("(⌒▽⌒)", "(⌒▽⌒)", "menhera"),
@@ -465,4 +465,5 @@ const menheraEmoji = [
   new Emoji("(苦笑)", "(苦笑)", "menhera"),
 ];
 
-export default [...hahaEmoji, ...bilibiliEmoji, ...tiebaEmoji, ...menheraEmoji];
+// export default [...hahaEmoji, ...bilibiliEmoji, ...tiebaEmoji, ...menheraEmoji];
+export default [...hahaEmoji, ...bilibiliEmoji, ...menheraEmoji];

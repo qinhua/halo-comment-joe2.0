@@ -125,14 +125,22 @@
 </template>
 
 <script>
+/* eslint-disable no-unused-vars */
 import Vue from "vue";
 import marked from "j-marked";
 import md5 from "md5";
 import VEmojiPicker from "./EmojiPicker/VEmojiPicker";
 import emojiData from "./EmojiPicker/data/emojis2.js";
 import { renderedEmojiHtml } from "@/utils/emojiutil";
-import { isEmpty, isObject, getUrlKey, return2Br, isQQ } from "@/utils/util";
-import { queryStringify, isInVisibleArea } from "@/utils/util";
+import {
+  isEmpty,
+  isObject,
+  return2Br,
+  getUrlKey,
+  isQQ,
+  queryStringify,
+  isInVisibleArea,
+} from "@/utils/util";
 import commentApi from "../api/comment";
 import axios from "axios";
 import PopupInput from "./PopupInput";
@@ -200,7 +208,8 @@ export default {
   computed: {
     renderedContent() {
       let html = this.comment.content ? marked(this.comment.content) : "";
-      return return2Br(renderedEmojiHtml(html));
+      // return return2Br(renderedEmojiHtml(html));
+      return renderedEmojiHtml(html);
     },
     // commentValid() {
     //   return (

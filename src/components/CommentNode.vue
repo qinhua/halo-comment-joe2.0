@@ -72,7 +72,7 @@
           </div>
           <div class="body markdown-body">
             <!-- 将所有的评论内容约束为一段 -->
-            <pre v-html="compileContent"></pre>
+            <pre class="markdown-content" v-html="compileContent"></pre>
           </div>
         </div>
       </div>
@@ -103,6 +103,7 @@
 </template>
 
 <script>
+/* eslint-disable no-unused-vars */
 import "./index";
 import { timeAgo, return2Br } from "@/utils/util";
 import ua from "ua-parser-js";
@@ -163,36 +164,6 @@ export default {
   data() {
     return {
       editing: false,
-      level: [
-        {
-          name: "小萌新~",
-          icon: "https://cdn.jsdelivr.net/gh/qinhua/cdn_assets@master/svg/level/level_0.svg",
-        },
-        {
-          name: "小魔仙",
-          icon: "https://cdn.jsdelivr.net/gh/qinhua/cdn_assets@master/svg/level/level_1.svg",
-        },
-        {
-          name: "初露头角",
-          icon: "https://cdn.jsdelivr.net/gh/qinhua/cdn_assets@master/svg/level/level_2.svg",
-        },
-        {
-          name: "大水笔",
-          icon: "https://cdn.jsdelivr.net/gh/qinhua/cdn_assets@master/svg/level/level_3.svg",
-        },
-        {
-          name: "后宫团",
-          icon: "https://cdn.jsdelivr.net/gh/qinhua/cdn_assets@master/svg/level/level_4.svg",
-        },
-        {
-          name: "有豪宅",
-          icon: "https://cdn.jsdelivr.net/gh/qinhua/cdn_assets@master/svg/level/level_5.svg",
-        },
-        {
-          name: "德国骨科",
-          icon: "https://cdn.jsdelivr.net/gh/qinhua/cdn_assets@master/svg/level/level_6.svg",
-        },
-      ],
       globalData: globals,
     };
   },
@@ -242,7 +213,8 @@ export default {
       // 处理其中的表情包
       const emoji = renderedEmojiHtml(markedHtml);
       // 将回车转换为br
-      return return2Br(emoji);
+      // return return2Br(emoji);
+      return emoji;
     },
     createTimeAgo() {
       return timeAgo(this.comment.createTime);
