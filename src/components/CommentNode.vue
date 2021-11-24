@@ -72,7 +72,7 @@
           </div>
           <div class="body markdown-body">
             <!-- 将所有的评论内容约束为一段 -->
-            <pre class="markdown-content" v-html="compileContent"></pre>
+            <div class="markdown-content" v-html="compileContent"></div>
           </div>
         </div>
       </div>
@@ -143,7 +143,7 @@ export default {
       required: false,
       default: "posts",
       validator: function (value) {
-        return ["posts", "sheets", "journals"].indexOf(value) !== -1;
+        return ["posts", "journals", "sheets"].includes(value);
       },
     },
     comment: {
@@ -171,8 +171,7 @@ export default {
     const renderer = {
       // eslint-disable-next-line no-unused-vars
       image(href, title) {
-        return `
-          <img src="${href}" class="lazyload comment_inline_img" onerror="this.src='https://cdn.jsdelivr.net/gh/qinhua/cdn_assets@master/comment/img_error.svg'">`;
+        return `<a data-fancybox target="_blank" rel="noopener noreferrer nofollow" href="${href}"><img src="${href}" class="lazyload comment_inline_img" onerror="this.src='https://cdn.jsdelivr.net/gh/qinhua/cdn_assets@master/comment/img_error.svg'"></a>`;
       },
       link(href, title, text) {
         return `<a href="${href}" title="${text}" target="_blank" rel="noopener noreferrer nofollow">${text}</a>`;
@@ -213,8 +212,7 @@ export default {
       // 处理其中的表情包
       const emoji = renderedEmojiHtml(markedHtml);
       // 将回车转换为br
-      // return return2Br(emoji);
-      return emoji;
+      return return2Br(emoji);
     },
     createTimeAgo() {
       return timeAgo(this.comment.createTime);

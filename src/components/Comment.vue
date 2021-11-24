@@ -51,14 +51,18 @@
         @change="handlePaginationChange"
       />
     </div>
+    <!-- <img-previewer :visible.sync="showImgPreviewer" :url="previewImgUrl" /> -->
   </div>
 </template>
 <script>
+/* eslint-disable no-unused-vars */
 import Vue from "vue";
+// import $ from "jquery";
 import "./index";
 import defaultConfig from "@/config/default_config";
 import defaultOption from "@/config/default_option";
 import commentApi from "../api/comment";
+// import ImgPreviewer from "./ImgPreviewer";
 // import optionApi from "../api/option";
 import globals from "@/utils/globals.js";
 import VueLazyload from "vue-lazyload";
@@ -78,7 +82,7 @@ export default {
       type: String,
       required: false,
       default: "post",
-      validator: function(value) {
+      validator: function (value) {
         return ["post", "sheet", "journal", "links"].indexOf(value) !== -1;
       },
     },
@@ -93,6 +97,7 @@ export default {
       default: () => defaultOption,
     },
   },
+  // components: { ImgPreviewer },
   data() {
     return {
       comments: [],
@@ -109,6 +114,8 @@ export default {
       replyingComment: null,
       // options: {},
       globalData: globals,
+      showImgPreviewer: false,
+      previewImgUrl: "",
     };
   },
   computed: {
@@ -180,13 +187,19 @@ export default {
       this.loadComments();
     }
   },
+  // mounted() {
+  //   $("[data-fancybox]").on("click", (e) => {
+  //     this.previewImgUrl = e.target.src;
+  //     this.showImgPreviewer = true;
+  //   });
+  // },
   methods: {
     loadComments() {
       this.comments = [];
       this.commentLoading = true;
       commentApi
         .listComments(this.target, this.id, "tree_view", this.pagination)
-        .then((response) => {
+        .then(async (response) => {
           this.comments = response.data.data.content;
           this.pagination.size = response.data.data.rpp;
           this.pagination.total = response.data.data.total;
@@ -220,7 +233,6 @@ export default {
 </script>
 <style lang="scss">
 $color: var(--theme);
-@import "../styles/global";
-// @import url("https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC");
 @import "../styles/github-markdown";
+@import "../styles/global";
 </style>

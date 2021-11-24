@@ -30,11 +30,11 @@
           configs.aWord || "你是我一生只会遇见一次的惊喜 ..."
         }}</label>
       </div>
-      <pre
+      <div
         class="comment-preview markdown-body"
         v-else
         v-html="renderedContent"
-      ></pre>
+      ></div>
       <!-- 上传图片预览 -->
       <div id="upload-img-show"></div>
       <!-- 表情开关 -->
@@ -127,7 +127,7 @@
 <script>
 /* eslint-disable no-unused-vars */
 import Vue from "vue";
-import marked from "j-marked";
+import marked from "j-marked/lib/marked";
 import md5 from "md5";
 import VEmojiPicker from "./EmojiPicker/VEmojiPicker";
 import emojiData from "./EmojiPicker/data/emojis2.js";
@@ -208,8 +208,7 @@ export default {
   computed: {
     renderedContent() {
       const html = this.comment.content ? marked(this.comment.content) : "";
-      // return return2Br(renderedEmojiHtml(html));
-      return renderedEmojiHtml(html);
+      return return2Br(renderedEmojiHtml(html));
     },
     // commentValid() {
     //   return (

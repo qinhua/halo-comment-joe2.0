@@ -1,6 +1,13 @@
 /*--------------------------------------------------------------
   # Normalize
 --------------------------------------------------------------*/
+html {
+  &.disable-scroll {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -71,10 +78,9 @@ div {
 .halo-comment {
   position: relative;
   box-sizing: border-box;
-  padding: 0 10px;
   font-size: 14px;
-  font-weight: 500;
-  line-height: 1.8;
+  font-weight: normal;
+  line-height: 1.5;
   color: #313131;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
@@ -279,6 +285,12 @@ div {
             }
           }
         }
+      }
+    }
+
+    @media screen and (max-width:500px) {
+      .children {
+        padding-left: 20px;
       }
     }
   }
@@ -519,7 +531,7 @@ div {
 
       p {
         font-size: 14px;
-        line-height: 30px;
+        line-height: 1.5;
         color: #63686d;
 
         a {
@@ -569,21 +581,21 @@ div {
         }
       }
     }
-
-
   }
 
   .markdown-body {
-    padding: 0;
-    white-space: normal;
-    word-break: break-word;
+    padding-left: 50px;
+    line-height: 1;
+    white-space: pre-line;
+    word-break: break-all;
     font-size: 14px !important;
-    background: none;
 
     .markdown-content {
-      padding-left: 3px;
-      white-space: normal;
-      word-break: break-word;
+      padding: 10px;
+      white-space: pre-line;
+      word-break: break-all;
+      background: var(--sub-background);
+      border-radius: 0 8px 8px;
     }
 
     img {
@@ -656,9 +668,7 @@ div {
     }
 
     @media screen and (max-width:880px) {
-      .markdown-content {
-        padding-left: 0;
-      }
+      padding-left: 0;
     }
   }
 
@@ -795,7 +805,7 @@ div {
         height: 180px;
         margin: 0 0 10px;
         padding: 10px;
-        white-space: normal;
+        white-space: pre-line;
         word-break: break-word;
         font-size: 14px !important;
         line-height: 1.5;
@@ -1043,26 +1053,11 @@ div {
         color: #ccc;
       }
 
-      #container-emoji {
-        background: #fff;
-      }
-
       .author-info {
         input {
           color: #b3b3b3;
           background: #2e2e2e;
           border-color: #555;
-        }
-      }
-
-      .motion-switcher-table {
-        tr {
-          color: #e2e2e2;
-        }
-
-        th:hover {
-          background-color: #4c4a43;
-          color: var(--theme);
         }
       }
     }
@@ -1120,6 +1115,10 @@ div {
   margin-bottom: 5px;
 }
 
+#container-emoji {
+  background: var(--sub-background);
+}
+
 .emoji-fade-enter-active,
 .emoji-fade-leave-active {
   transition: all 0.8s ease;
@@ -1169,20 +1168,27 @@ div {
     margin: 0;
     table-layout: fixed;
 
+    tr {
+      color: #e2e2e2;
+      color: var(--classF);
+    }
+
     th,
     td {
+      cursor: pointer;
       padding: 8px;
       text-align: center;
-      border-radius: 5px;
+      border-radius: 5px 5px 0 0;
     }
 
     th:hover {
-      background-color: rgba(245, 245, 245, 0.5);
       color: var(--theme);
     }
 
     .on-hover {
       color: var(--theme);
+      background-color: rgba(245, 245, 245, 0.5);
+      background-color: var(--sub-background);
     }
   }
 
@@ -1193,7 +1199,8 @@ div {
     height: 110px;
     overflow: auto;
     margin-bottom: 5px;
-    border-radius: 5px;
+    padding: 6px 6px 0 16px;
+    border-radius: 0 0 5px 5px;
 
     .emoji-item {
       cursor: pointer;
@@ -1204,6 +1211,7 @@ div {
       margin: 3px;
       overflow: hidden;
       color: #333;
+      color: var(--main);
       border-radius: 4px;
 
       @media (max-width: 860px) {
@@ -1221,7 +1229,8 @@ div {
       }
 
       &:hover {
-        background-color: rgba(245, 245, 245, 0.8);
+        background-color: #e9e9e9;
+        background-color: var(--classB);
       }
 
       &.text {
@@ -1255,8 +1264,6 @@ div {
     &.bilibili-container,
     &.tieba-container,
     &.haha-container {
-      padding-left: 16px;
-
       @media (max-width: 860px) {
         padding-left: 0;
       }
@@ -1292,9 +1299,7 @@ div {
       background-position: center;
 
       &:hover {
-        background-color: rgba(245, 245, 245, 0.8);
         background-image: none !important;
-        border-radius: 5px;
 
         .emotion-select-child {
           display: block;

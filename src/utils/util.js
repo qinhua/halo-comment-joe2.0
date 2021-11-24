@@ -111,7 +111,8 @@ function trimTailBr(str) {
 }
 
 function limitBr(str) {
-  return str.replace(/((\s|&nbsp;)*\r?\n){3,}/g, "\r\n\r\n");
+  // return str.replace(/((\s|&nbsp;)*\r?\n){3,}/g, "\r\n\r\n");
+  return str.replace(/((\s|&nbsp;)*\r?\n){3,}/g, "");
 }
 
 function trimHeadBr(str) {
@@ -122,7 +123,8 @@ export function return2Br(str) {
   str = trimHeadBr(str);
   str = trimTailBr(str);
   str = limitBr(str);
-  return str.replace(/\r?\n/g, "<br />");
+  // return str.replace(/\r?\n/g, "<br />");
+  return str;
 }
 
 //判断一个元素是否在可视区域内
