@@ -351,7 +351,6 @@ div {
             -moz-transition: all ease 1s;
             -o-transition: all ease 1s;
             box-shadow: 0 1px 10px -6px rgba(0, 0, 0, 0.5);
-            margin-left: 3px;
           }
         }
       }
@@ -565,9 +564,8 @@ div {
 
         @media (max-width: 580px) {
           margin: 0;
-          font-size: 12px;
-          line-height: 24px;
-          padding-bottom: 13px;
+          font-size: 13px;
+          line-height: 1.7;
         }
       }
 
