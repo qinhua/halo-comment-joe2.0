@@ -325,7 +325,7 @@ export default {
         try {
           this.createdNewNode(createdComment);
           this.$tips("评论成功！", 5000, this);
-          this.$emit("post-success", {
+          this.$parent.$emit("post-success", {
             target: this.target,
             targetId: this.targetId,
           });
