@@ -163,7 +163,7 @@ export default {
       type: String,
       required: false,
       default: "posts",
-      validator: function (value) {
+      validator: function(value) {
         return ["posts", "sheets", "journals"].indexOf(value) !== -1;
       },
     },
@@ -325,6 +325,10 @@ export default {
         try {
           this.createdNewNode(createdComment);
           this.$tips("评论成功！", 5000, this);
+          this.$emit("post-success", {
+            target: this.target,
+            targetId: this.targetId,
+          });
         } catch {
           this.$tips("评论成功，刷新即可显示最新评论！", 5000, this);
         }
@@ -437,9 +441,8 @@ export default {
           emojiComment = "f(x)=∫(" + emoji.name + ")sec²xdx";
         } else if (type === "BBCode") {
           // 区分扩展名，gif末尾加个感叹号
-          emojiComment = `:${
-            emoji.name + (emoji.extension === "gif" ? "!" : "")
-          }:`;
+          emojiComment = `:${emoji.name +
+            (emoji.extension === "gif" ? "!" : "")}:`;
         }
       }
       this.comment.content += " " + emojiComment + " ";
@@ -464,7 +467,7 @@ export default {
             },
           }
         )
-        .then(function (response) {
+        .then(function(response) {
           this.$tips(response);
         })
         .catch((error) => {
@@ -485,7 +488,7 @@ export default {
               },
             }
           )
-          .then(function (response) {
+          .then(function(response) {
             let args = response.split("&");
             let arg = args[0].split("=");
             let access_token = arg[1];
@@ -537,7 +540,7 @@ export default {
             id: _self.comment.author,
           },
         })
-        .then(function (res) {
+        .then(function(res) {
           let data = res.data;
           if (!!data.code && data.code == 500) {
             errorQQCallback();
