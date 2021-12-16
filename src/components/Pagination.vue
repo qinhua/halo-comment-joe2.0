@@ -9,7 +9,9 @@
         class="prev-button"
         tabindex="-1"
         @click="handlePrevClick"
-      >上一页</button>
+      >
+        <svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path d="M507.733333 490.666667L768 230.4 704 170.666667 384 490.666667l320 320 59.733333-59.733334-256-260.266666zM341.333333 170.666667H256v640h85.333333V170.666667z"></path></svg>
+      </button>
     </li>
     <!-- Show first page -->
     <li
@@ -42,7 +44,6 @@
         {{ middlePage + 1}}
       </button>
     </li>
-
     <li
       class="page-item"
       v-show="hasMoreNext"
@@ -62,7 +63,6 @@
         {{ lastPage + 1 }}
       </button>
     </li>
-
     <li
       class="page-item"
       :class="{ disabled: !hasNext }"
@@ -70,7 +70,9 @@
       <button
         class="next-button"
         @click="handleNextClick"
-      >下一页</button>
+      >
+      <svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path d="M516.266667 490.666667L256 230.4 315.733333 170.666667l320 320L315.733333 810.666667 256 750.933333l260.266667-260.266666zM678.4 170.666667h85.333333v640h-85.333333V170.666667z"></path></svg>
+      </button>
     </li>
   </ul>
 </template>

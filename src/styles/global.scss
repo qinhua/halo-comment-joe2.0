@@ -967,7 +967,7 @@ div {
   .comment-page {
     padding-top: 20px;
     text-align: center;
-    border-top: 3px solid #f5f8fa;
+    border-top: 3px solid var(--classD);
 
     .page {
       display: inline-block;
@@ -977,6 +977,7 @@ div {
       li {
         display: inline;
         margin: 0 3px;
+        color: var(--main);
       }
 
       button {
@@ -988,19 +989,74 @@ div {
         border-radius: 4px;
         cursor: pointer;
         font-weight: normal;
-        color: rgba(0, 0, 0, 0.65);
-        background-color: #fff;
-        border: 1px solid #d9d9d9;
+        color: var(--main);
+        background-color: var(--sub-background);
+        border: 1px solid var(--classE);
+
+        svg {
+          display: none;
+          fill: var(--main);
+        }
 
         &:hover {
           color: var(--theme);
           border-color: var(--theme);
+          svg {
+            fill: var(--theme);
+          }
+        }
+
+        &.prev-button {
+          &:before {
+            display: block;
+            content: '上一页';
+          }
+        }
+
+        &.next-button {
+          &:before {
+            display: block;
+            content: '下一页';
+          }
         }
       }
 
       .active {
         color: var(--theme);
         border-color: var(--theme);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .page {
+        button {
+          height: 32px;
+          padding: 4px 8px;
+
+          &.prev-button {
+            position: relative;
+            top: 4px;
+            &:before {
+              display: none;
+            }
+
+            svg {
+              display: block;
+            }
+          }
+
+          &.next-button {
+            position: relative;
+            top: 4px;
+            &:before {
+              display: none;
+            }
+
+            svg {
+              display: block;
+            }
+          }
+        }
       }
     }
   }
@@ -1075,16 +1131,6 @@ div {
       color: #b3b3b3;
       background: #2e2e2e;
       border-color: #555;
-    }
-
-    .comment-page {
-      border-color: #545454;
-
-      button {
-        color: #ccc;
-        background-color: #2e2e2e;
-        border-color: #666;
-      }
     }
 
     .comment-empty {
