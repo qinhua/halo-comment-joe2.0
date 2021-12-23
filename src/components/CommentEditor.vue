@@ -47,7 +47,7 @@
         <VEmojiPicker
           :pack="emojiPack"
           @select="handleSelectEmoji"
-          v-show="emojiDialogVisible"
+          v-if="emojiDialogVisible"
         />
       </transition>
       <div class="author-info">
