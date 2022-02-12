@@ -106,7 +106,7 @@ div {
   textarea {
     color: #666;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 5px;
   }
 
   .avatar {
@@ -162,6 +162,7 @@ div {
       }
 
       @keyframes grow {
+
         0%,
         100% {
           transform: scaleY(1);
@@ -293,10 +294,6 @@ div {
     overflow: hidden;
     list-style: none;
 
-    .comment-reply-title {
-      text-align: right;
-    }
-
     .contents {
       width: 100%;
       padding-top: 10px;
@@ -355,6 +352,12 @@ div {
       float: left;
       margin-right: 10px;
       margin-top: 6px;
+
+      a {
+        &.disabled {
+          pointer-events: none;
+        }
+      }
 
       img {
         width: 100%;
@@ -465,6 +468,10 @@ div {
         font-size: 14px;
         font-weight: 600;
 
+        &.disabled {
+          pointer-events: none;
+        }
+
         &:hover {
           color: var(--theme);
         }
@@ -516,7 +523,7 @@ div {
       color: #63686d;
       position: relative;
 
-      > *:last-child {
+      >*:last-child {
         margin-bottom: 0;
       }
 
@@ -574,7 +581,7 @@ div {
   }
 
   .markdown-body {
-    padding-left: 50px;
+    margin-bottom: 15px;
     line-height: 1;
     white-space: pre-line;
     word-break: break-all;
@@ -598,6 +605,7 @@ div {
       overflow: hidden;
       color: #333;
       background-color: transparent;
+
       @media (max-width: 860px) {
         transform: scale(0.8);
       }
@@ -670,6 +678,7 @@ div {
 
     input,
     textarea {
+
       &:focus,
       &:active {
         outline: 0;
@@ -687,15 +696,6 @@ div {
       &::-ms-input-placeholder {
         color: #999;
       }
-    }
-
-    // 取消回复按钮
-    .cancel-comment-reply-link {
-      background: #eee;
-      border-radius: 3px;
-      padding: 12px 25px;
-      font-size: 12px;
-      color: #454545;
     }
 
     /*--------------------------------------------------------------
@@ -760,12 +760,12 @@ div {
             }
           }
 
-          &:not(:placeholder-shown) ~ .input-label,
-          &:focus ~ .input-label {
+          &:not(:placeholder-shown)~.input-label,
+          &:focus~.input-label {
             color: #fff;
             background-color: var(--theme);
             transform: scale(0.75) translate(-2px, -37px);
-            border-radius: 3px;
+            border-radius: 5px;
           }
         }
 
@@ -918,12 +918,13 @@ div {
         .button-preview-edit {
           opacity: 0.9;
           display: inline-block;
+          margin-left: 5px;
           color: #fff;
           font-weight: 500;
-          padding: 4px 16px;
+          padding: 4px 12px;
           text-transform: uppercase;
-          border: none;
           background: $color;
+          border: 1px solid var(--theme);
           border-radius: 4px;
           animation: bottom20 500ms;
           transition: all 0.3s ease 0s;
@@ -932,8 +933,28 @@ div {
             opacity: 1;
             font-weight: 700;
             letter-spacing: 3px;
-            -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-            -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+            box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+            transition: all 0.3s ease 0s;
+          }
+        }
+
+        .button-cancel-reply {
+          opacity: .9;
+          display: inline-block;
+          color: var(--minor);
+          font-weight: 500;
+          padding: 4px 12px;
+          text-transform: uppercase;
+          background: transparent;
+          border: 1px solid var(--minor);
+          border-radius: 4px;
+          animation: bottom20 .5s;
+          transition: all .3s ease 0s;
+
+          &:hover {
+            opacity: 1;
+            font-weight: 700;
+            letter-spacing: 3px;
             box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
             transition: all 0.3s ease 0s;
           }
@@ -998,6 +1019,7 @@ div {
         &:hover {
           color: var(--theme);
           border-color: var(--theme);
+
           svg {
             fill: var(--theme);
           }
@@ -1033,6 +1055,7 @@ div {
           &.prev-button {
             position: relative;
             top: 4px;
+
             &:before {
               display: none;
             }
@@ -1045,6 +1068,7 @@ div {
           &.next-button {
             position: relative;
             top: 4px;
+
             &:before {
               display: none;
             }
@@ -1108,10 +1132,6 @@ div {
 
     .comment-wrp {
       border-color: #4e4e4e;
-
-      .cancel-comment-reply-link {
-        background: #c7c7c7;
-      }
 
       .commeta {
         .info {

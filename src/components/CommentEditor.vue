@@ -6,16 +6,6 @@
     ref="editor"
     v-if="isCurrReply"
   >
-    <h3 id="reply-title" class="comment-reply-title" v-if="isReply">
-      <small>
-        <a
-          href="javascript:;"
-          class="cancel-comment-reply-link"
-          @click="cancelReply"
-          >取消回复</a
-        >
-      </small>
-    </h3>
     <form class="comment-form">
       <div class="comment-textarea" v-if="!previewMode">
         <textarea
@@ -73,12 +63,12 @@
           popupStyle="margin-left: -65px;"
           :popupText="configs.emailPopup || '你将收到回复通知'"
           inputType="text"
-          placeholder="* 电子邮件"
+          placeholder="* 邮箱"
           id="email"
           v-model="comment.email"
           @blurInput="pullInfo"
         />
-        <!-- <PopupInput
+        <PopupInput
           class="cmt-popup"
           popupStyle="margin-left: -55px;"
           :popupText="configs.urlPopup || '禁止小广告😀'"
@@ -86,10 +76,18 @@
           placeholder="个人站点"
           id="url"
           v-model="comment.authorUrl"
-        /> -->
+        />
       </div>
-      <ul class="comment-buttons">
-        <li v-if="comment.content" class="middle" style="margin-right: 5px">
+      <ul class="comment-buttons">    
+        <li class="middle" id="reply-title" v-if="isReply">
+          <a
+            href="javascript:;"
+            class="button-cancel-reply"
+            @click="cancelReply"
+            >取消回复</a
+          >
+        </li>
+        <li v-if="comment.content" class="middle">
           <a
             class="button-preview-edit"
             href="javascript:;"
@@ -257,10 +255,10 @@ export default {
   created() {
     // Get info from local storage
     var author = localStorage.getItem("comment-author");
-    // var authorUrl = localStorage.getItem("comment-authorUrl");
+    var authorUrl = localStorage.getItem("comment-authorUrl");
     var email = localStorage.getItem("comment-email");
     this.comment.author = author ? author : "";
-    // this.comment.authorUrl = authorUrl || "";
+    this.comment.authorUrl = authorUrl || "";
     // this.comment.avatar = this.avatar;
     this.comment.email = email ? email : "";
     this.updateAvatar();
@@ -303,7 +301,7 @@ export default {
           // Store comment author, email, authorUrl
           localStorage.setItem("comment-author", this.comment.author);
           localStorage.setItem("comment-email", this.comment.email);
-          // localStorage.setItem("comment-authorUrl", this.comment.authorUrl);
+          localStorage.setItem("comment-authorUrl", this.comment.authorUrl);
           localStorage.setItem("avatar", this.avatar);
 
           // clear comment

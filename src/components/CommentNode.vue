@@ -10,14 +10,13 @@
       <div class="contents">
         <div class="main shadow">
           <div class="profile">
-            <!-- <a :href="comment.authorUrl" rel="nofollow noopener noreferrer" target="_blank"> -->
-            <a href="javascript:;" rel="nofollow noopener noreferrer">
+            <a :class="{'disabled': invalidUrl(comment.authorUrl)}" :href="comment.authorUrl" rel="nofollow noopener noreferrer" target="_blank">
               <img
-                :alt="comment.author"
                 v-lazy="comment.isAdmin ? options.blog_logo : avatar"
                 class="avatar"
                 height="80"
                 width="80"
+                :alt="comment.author"
                 @error="handleAvatarError"
               />
             </a>
@@ -26,8 +25,7 @@
             <section class="commeta">
               <div class="left">
                 <h4 class="author">
-                  <!-- <a :href="comment.authorUrl" rel="nofollow noopener noreferrer" target="_blank"> -->
-                  <a href="javascript:;" rel="noopener noreferrer nofollow">
+                  <a :class="{'disabled': invalidUrl(comment.authorUrl)}" :href="comment.authorUrl" rel="nofollow noopener noreferrer" target="_blank">
                     <img
                       :alt="comment.author"
                       v-lazy="comment.isAdmin ? options.blog_logo : avatar"
@@ -271,6 +269,9 @@ export default {
     },
   },
   methods: {
+    invalidUrl(url) {
+      return !/^http(s)?:\/\//.test(url);
+    },
     handleReplyClick(e) {
       e.stopPropagation();
       // 设置状态为回复状态
