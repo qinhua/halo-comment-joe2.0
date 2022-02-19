@@ -1430,29 +1430,24 @@ div {
 # Default Tips
 --------------------------------------------------------------*/
 .butterBar {
-  position: fixed;
+  position: absolute;
   text-align: center;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  z-index: 10000;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
 
   &.butterBar-center {
     margin: auto;
   }
 
   .butterBar-message {
-    background: #fe9600;
-    color: #fff;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
     display: inline-block;
+    margin: 0;
+    padding: 8px 20px;
     font-size: 14px;
-    margin-bottom: 0;
-    padding: 12px 25px;
-    z-index: 10000;
-    margin-top: -4px;
+    color: #fff;
+    background: #fe9600;
+    border-radius: 4px;
   }
 }
 
