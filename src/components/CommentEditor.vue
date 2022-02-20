@@ -78,7 +78,7 @@
           v-model="comment.authorUrl"
         />
       </div>
-      <ul class="comment-buttons">    
+      <ul class="comment-buttons">
         <li class="middle" id="reply-title" v-if="isReply">
           <a
             href="javascript:;"
@@ -276,15 +276,15 @@ export default {
     },
     handleSubmitClick() {
       if (isEmpty(this.comment.author)) {
-        this.$tips("昵称不能为空", 5000, this);
+        this.$tips("昵称不能为空！", 5000, this);
         return;
       }
       if (isEmpty(this.comment.email)) {
-        this.$tips("邮箱不能为空", 5000, this);
+        this.$tips("邮箱不能为空！", 5000, this);
         return;
       }
       if (isEmpty(this.comment.content)) {
-        this.$tips("评论内容不能为空", 5000, this);
+        this.$tips("评论内容不能为空！", 5000, this);
         return;
       }
       // Submit the comment
@@ -322,16 +322,21 @@ export default {
         // 成功后直接新增新的评论node
         try {
           this.createdNewNode(createdComment);
-          this.$tips("评论成功！", 5000, this);
+          this.$tips("评论成功！", 3500, this, "success");
           this.$parent.$emit("post-success", {
             target: this.target,
             targetId: this.targetId,
           });
         } catch {
-          this.$tips("评论成功，刷新即可显示最新评论！", 5000, this);
+          this.$tips("评论成功，刷新即可显示最新评论！", 5000, this, "success");
         }
       } else {
-        this.$tips("您的评论已经投递至博主，等待博主审核！", 5000, this);
+        this.$tips(
+          "您的评论已经投递至博主，等待博主审核！",
+          5000,
+          this,
+          "success"
+        );
       }
     },
     handleAvatarError(e) {
@@ -406,12 +411,12 @@ export default {
     },
     handleFailedToCreateComment(response) {
       if (response.status === 400) {
-        this.$tips(response.data.message);
+        this.$tips(response.data.message, 3500, this, "danger");
         if (response.data) {
           const errorDetail = response.data.data;
           if (isObject(errorDetail)) {
             Object.keys(errorDetail).forEach((key) => {
-              this.$tips(errorDetail[key]);
+              this.$tips(errorDetail[key], 3500, this, "danger");
             });
           }
         }
@@ -543,7 +548,7 @@ export default {
           if (!!data.code && data.code == 500) {
             errorQQCallback();
           }
-          _self.$tips("拉取QQ头像成功！", 2000, _self);
+          _self.$tips("拉取QQ头像成功！", 2000, _self, "success");
           _self.comment.author = data.nickname;
           _self.comment.email = data.email;
           _self.avatar = data.avatar;

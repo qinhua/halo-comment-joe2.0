@@ -5,7 +5,7 @@ let tipTem = Vue.extend(Tips);
 let instance;
 let timer = null;
 
-const tips = (message, time = 6000, _self) => {
+const tips = (message, time = 3500, _self, type = 'warning') => {
   if (!instance) {
     instance = new tipTem();
     instance.vm = instance.$mount();
@@ -24,7 +24,7 @@ const tips = (message, time = 6000, _self) => {
     instance.message = "";
   }
   instance.time = 3000;
-
+  instance.type = type;
   if (typeof message === "string") {
     instance.message = message;
   } else {

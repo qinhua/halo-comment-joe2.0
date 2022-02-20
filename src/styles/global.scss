@@ -78,6 +78,7 @@ div {
 .halo-comment {
   position: relative;
   box-sizing: border-box;
+  text-align: left;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.5;
@@ -85,7 +86,6 @@ div {
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  box-sizing: content-box;
   animation: main 0.6s;
 
   input[type="text"],
@@ -316,30 +316,16 @@ div {
       padding: 0;
 
       &.shadow {
-        &:hover {
-          img {
-            &.avatar {
-              -webkit-transform: rotate(360deg);
-              -moz-transform: rotate(360deg);
-              -ms-transform: rotate(360deg);
-              -o-transform: rotate(360deg);
-              transform: rotate(360deg);
-            }
-          }
+
+        img.avatar {
+          transition: all ease 1s;
+          box-shadow: 0 1px 10px -6px rgba(0, 0, 0, 0.5);
+
         }
 
-        img {
-          &.avatar {
-            transform: rotate(0deg);
-            -webkit-transform: rotate(0deg);
-            -moz-transform: rotate(0deg);
-            -o-transform: rotate(0deg);
-            -ms-transform: rotate(0deg);
-            transition: all ease 1s;
-            -webkit-transition: all ease 1s;
-            -moz-transition: all ease 1s;
-            -o-transition: all ease 1s;
-            box-shadow: 0 1px 10px -6px rgba(0, 0, 0, 0.5);
+        .profile:hover {
+          img.avatar {
+            transform: rotate(360deg);
           }
         }
       }
@@ -1447,7 +1433,7 @@ div {
   position: absolute;
   text-align: center;
   top: 10px;
-  right: 10px;
+  right: 0px;
   z-index: 1000;
 
   &.butterBar-center {
@@ -1461,7 +1447,15 @@ div {
     font-size: 14px;
     color: #fff;
     background: #fe9600;
-    border-radius: 4px;
+    border-radius: 18px 0 0 18px;
+
+    &.success {
+      background: #31c560;
+    }
+
+    &.danger {
+      background: #e74b32;
+    }
   }
 }
 
