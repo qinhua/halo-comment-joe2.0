@@ -593,6 +593,20 @@ div {
       word-break: break-all;
       background: var(--sub-background);
       border-radius: 0 8px 8px;
+
+      &.blink {
+        animation: blink 0.3s linear infinite alternate;
+      }
+    }
+
+    @keyframes blink {
+      from {
+        filter: brightness(1);
+      }
+
+      from {
+        filter: brightness(0.5);
+      }
     }
 
     img {
