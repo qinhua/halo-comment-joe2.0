@@ -1448,13 +1448,17 @@ div {
     color: #fff;
     background: #fe9600;
     border-radius: 18px 0 0 18px;
+    box-shadow: -2px 4px 10px -5px #f74009;
+    animation: dung 0.3s 0.1s 2 linear;
 
     &.success {
       background: #31c560;
+      box-shadow: -2px 4px 10px -5px #07600a;
     }
 
     &.danger {
       background: #e74b32;
+      box-shadow: -2px 4px 10px -5px #e10000;
     }
   }
 }
@@ -1470,6 +1474,38 @@ div {
 
   100% {
     opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes dung {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  30% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+
+  60% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px);
+  }
+
+  90% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
