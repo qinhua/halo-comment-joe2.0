@@ -175,11 +175,9 @@ export default {
     this.$nextTick(() => {
       Vue.use(VueLazyload, {
         error:
-          this.mergedConfigs.avatarError ||
-          "https://cdn.jsdelivr.net/gh/qinhua/cdn_assets@master/comment/default_avatar.jpg",
+          this.mergedConfigs.avatarError,
         loading:
-          this.mergedConfigs.avatarLoading ||
-          "https://cdn.jsdelivr.net/gh/qinhua/cdn_assets@master/comment/spinner-preloader.svg",
+          this.mergedConfigs.avatarLoading,
         attempt: 1,
       });
     });

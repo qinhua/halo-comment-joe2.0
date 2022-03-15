@@ -1,4 +1,4 @@
-const emojiData = require("../components/EmojiPicker/data/emojis2.js");
+const emojiData = require("../components/EmojiPicker/data/emojis.js");
 
 export function renderedEmojiHtml(html) {
   const parser = new DOMParser();
@@ -11,7 +11,7 @@ export function renderedEmojiHtml(html) {
       if (emoji.style && emoji.name === emojiName) {
         const img = emotions[i].getElementsByClassName("img")[0];
         let dataStyle = "";
-        Object.keys(emoji.style).forEach(function(item) {
+        Object.keys(emoji.style).forEach(function (item) {
           dataStyle += item + ":" + emoji.style[item] + ";";
         });
         img.style.cssText = dataStyle;
@@ -21,7 +21,6 @@ export function renderedEmojiHtml(html) {
   }
   return doc.body.innerHTML;
 }
-
 /**
  * 判断需要渲染的 HTML 是否属于表情包，如果不属于，则去除此 HTML，仅保留文字
  */
@@ -30,22 +29,18 @@ function removeNotEmoji(doc) {
   let skip = true;
   for (let i = 0; i < smilies.length; i++) {
     const name = smilies[i].dataset.icon;
-    if (!findEmoji("tieba", name) && !findEmoji("haha", name)) {
+    if (!findEmoji(name)) {
       skip = false;
       break;
     }
   }
 
-  if (skip) {
-    return doc;
-  }
+  if (skip) return doc;
 
   const firstNode = smilies[0];
   const name = firstNode.dataset.icon;
 
-  if (!findEmoji("tieba", name) && !findEmoji("haha", name)) {
-    removeNode(firstNode);
-  }
+  !findEmoji(name) && removeNode(firstNode);
 
   return removeNotEmoji(doc);
 }
@@ -62,10 +57,9 @@ function removeNode(node) {
  * @param {*} name
  * @returns 返回 true 则表示表情存在，返回 false 则表示不存在
  */
-function findEmoji(type, name) {
-  return (
-    emojiData["default"].filter(
-      (item) => item.category === type && item.name === name
-    ).length > 0
-  );
+function findEmoji(name) {
+  // const emojis = ["haha", "gulu", "tieba"];
+  return emojiData["default"].filter(
+    (item) => ["haha", "tieba"].includes(item.category) && item.name === name
+  ).length > 0;
 }

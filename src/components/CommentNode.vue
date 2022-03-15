@@ -10,7 +10,12 @@
       <div class="contents">
         <div class="main shadow">
           <div class="profile">
-            <a :class="{'disabled': invalidUrl(comment.authorUrl)}" :href="comment.authorUrl" rel="nofollow noopener noreferrer" target="_blank">
+            <a
+              :class="{ disabled: invalidUrl(comment.authorUrl) }"
+              :href="comment.authorUrl"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
               <img
                 v-lazy="comment.isAdmin ? options.blog_logo : avatar"
                 class="avatar"
@@ -25,7 +30,12 @@
             <section class="commeta">
               <div class="left">
                 <h4 class="author">
-                  <a :class="{'disabled': invalidUrl(comment.authorUrl)}" :href="comment.authorUrl" rel="nofollow noopener noreferrer" target="_blank">
+                  <a
+                    :class="{ disabled: invalidUrl(comment.authorUrl) }"
+                    :href="comment.authorUrl"
+                    rel="nofollow noopener noreferrer"
+                    target="_blank"
+                  >
                     <img
                       :alt="comment.author"
                       v-lazy="comment.isAdmin ? options.blog_logo : avatar"
@@ -163,13 +173,15 @@ export default {
     return {
       editing: false,
       globalData: globals,
+      error_img: `${process.env.BASE_URL}assets/svg/img_error.svg`,
+      unknow_ua: `${process.env.BASE_URL}assets/ua/unknown.svg`,
     };
   },
   created() {
     const renderer = {
       // eslint-disable-next-line no-unused-vars
       image(href, title) {
-        return `<a data-fancybox target="_blank" rel="noopener noreferrer nofollow" href="${href}"><img src="${href}" class="lazyload comment_inline_img" onerror="this.src='https://cdn.jsdelivr.net/gh/qinhua/cdn_assets@master/comment/img_error.svg'"></a>`;
+        return `<a data-fancybox target="_blank" rel="noopener noreferrer nofollow" href="${href}"><img src="${href}" class="lazyload comment_inline_img" onerror="this.src='${this.error_img}'"></a>`;
       },
       link(href, title, text) {
         return `<a href="${href}" title="${text}" target="_blank" rel="noopener noreferrer nofollow">${text}</a>`;
@@ -188,7 +200,7 @@ export default {
         this.options.gravatar_source ||
         this.configs.gravatarSourceDefault;
 
-      return `${gravatarSource}/${this.comment.gravatarMd5}?s=256&d=${this.options.comment_gravatar_default}`;
+      return `${gravatarSource}/${this.comment.gravatarMd5}?s=256&d=${this.options.comment_gravatar_default || 'mm'}`;
       // }
     },
     compileContent() {
@@ -222,10 +234,9 @@ export default {
       var result = parser.getResult();
 
       if (!result.browser.name) return "";
-      var browserImg =
-        "https://cdn.jsdelivr.net/gh/qinhua/cdn_assets@master/comment/ua/svg/" +
-        result.browser.name.toLowerCase() +
-        ".svg";
+      var browserImg = `${
+        process.env.BASE_URL
+      }assets/ua/${result.browser.name.toLowerCase()}.svg`;
       var uaImg = "";
 
       switch (result.os.name) {
@@ -234,32 +245,24 @@ export default {
             case "7":
             case "8":
             case "10":
-              uaImg =
-                "https://cdn.jsdelivr.net/gh/qinhua/cdn_assets@master/comment/ua/svg/windows_win" +
-                result.os.version +
-                ".svg";
+              uaImg = `${process.env.BASE_URL}assets/ua/windows_win${result.os.version}.svg`;
               break;
             case "":
-              uaImg =
-                "https://cdn.jsdelivr.net/gh/qinhua/cdn_assets@master/comment/ua/svg/windows_" +
-                result.os.version +
-                ".svg";
+              uaImg = `${process.env.BASE_URL}assets/ua/windows_${result.os.version}.svg`;
               break;
             default:
-              uaImg =
-                "https://cdn.jsdelivr.net/gh/qinhua/cdn_assets@master/comment/ua/svg/windows.svg";
+              uaImg = `${process.env.BASE_URL}assets/ua/windows.svg`;
               break;
           }
           break;
         default:
-          uaImg =
-            "https://cdn.jsdelivr.net/gh/qinhua/cdn_assets@master/comment/ua/svg/" +
-            result.os.name.replace(/\s+/g, "").toLowerCase() +
-            ".svg";
+          uaImg = `${process.env.BASE_URL}assets/ua/${result.os.name
+            .replace(/\s+/g, "")
+            .toLowerCase()}.svg`;
           break;
       }
 
-      return `（<img src="${browserImg}" onerror="this.src='https://cdn.jsdelivr.net/gh/qinhua/cdn_assets@master/comment/ua/svg/unknow.svg'" alt="ua-browser"/>  ${result.browser.name} ${result.browser.version} <img src="${uaImg}" onerror="this.src='https://cdn.jsdelivr.net/gh/qinhua/cdn_assets@master/comment/ua/svg/unknow.svg'" alt="ua-os"/> ${result.os.name} ${result.os.version}）`
+      return `（<img src="${browserImg}" onerror="this.src='${this.unknow_ua}'" alt="ua-browser"/>  ${result.browser.name} ${result.browser.version} <img src="${uaImg}" onerror="this.src='${this.unknow_ua}'" alt="ua-os"/> ${result.os.name} ${result.os.version}）`;
     },
     selfAddDepth() {
       return this.depth + 1;

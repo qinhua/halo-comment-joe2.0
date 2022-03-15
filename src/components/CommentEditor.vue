@@ -128,7 +128,7 @@ import Vue from "vue";
 import marked from "j-marked/lib/marked";
 import md5 from "md5";
 import VEmojiPicker from "./EmojiPicker/VEmojiPicker";
-import emojiData from "./EmojiPicker/data/emojis2.js";
+import emojiData from "./EmojiPicker/data/emojis.js";
 import { renderedEmojiHtml } from "@/utils/emojiutil";
 import {
   isEmpty,
@@ -568,7 +568,7 @@ export default {
       const avatar =
         gravatarSource +
         `${gravatarMd5}?s=256&d=` +
-        this.options.comment_gravatar_default;
+        this.options.comment_gravatar_default || 'mm';
       if (!isDefault) {
         this.avatar = avatar;
       } else {

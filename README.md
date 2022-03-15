@@ -7,12 +7,6 @@
 
 > 仅适用于 `halo-theme-joe2.0` 主题的评论组件，基于 `LIlGG` 开发的 [halo-comment-sakura](https://github.com/LIlGG/halo-comment-sakura) 定制而成，在此感谢原作者。
 
-<!-- ### 使用指南
-
-1. 进入 `后台 -> 系统 -> 博客设置 -> 评论设置`
-
-2. 将 `评论模块 JS` 修改为：`https://cdn.jsdelivr.net/gh/qinhua/halo-theme-joe2.0@master/source/lib/halo-comment/halo-comment.min.js` -->
-
 ### 自定义配置
 
 如果你需要自定义该评论组件，下面提供了一些属性，默认配置文件见 `src/config/default_config.js`：
@@ -90,13 +84,15 @@ configs='${configs}'
 post.ftl：
 
 ```html
-<#include "comment.ftl"> <@comment target=post type="post" />
+<#include "comment.ftl"> 
+<@comment target=post type="post" />
 ```
 
 sheet.ftl：
 
 ```html
-<#include "comment.ftl"> <@comment target=sheet type="sheet" />
+<#include "comment.ftl"> 
+<@comment target=sheet type="sheet" />
 ```
 
 #### 方法二
@@ -230,4 +226,4 @@ for (var i = 0; i < comments.length; i++) {
 
 ### 关于emoji
 
-项目中的 emoji 解析依赖了 [j-marked](https://gitee.com/duider/j-marked) 这个包。
+项目中的 emoji 解析依赖了 [j-marked](https://github.com/qinhua/j-marked) 这个包。

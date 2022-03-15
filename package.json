@@ -3,15 +3,16 @@
   "version": "1.0.0",
   "private": false,
   "scripts": {
+    "emoji": "node src/utils/emoji-generator/run.js",
     "serve": "cross-env vue-cli-service serve",
     "build": "cross-env vue-cli-service build",
-    "build-comment": "cross-env npx vue-cli-service build --target wc --name halo-comment 'src/components/Comment.vue'",
+    "build-wc": "cross-env NODE_ENV=wc npx vue-cli-service build --target wc --name halo-comment 'src/components/Comment.vue'",
     "lint": "cross-env vue-cli-service lint"
   },
   "dependencies": {
     "autosize": "^4.0.2",
     "axios": "^0.21.1",
-    "j-marked": "^1.0.8",
+    "j-marked": "1.1.0",
     "jquery": "^3.6.0",
     "md5": "^2.3.0",
     "promise.prototype.finally": "^3.1.2",
@@ -24,6 +25,7 @@
     "@vue/cli-plugin-eslint": "^4.5.4",
     "@vue/cli-service": "^4.5.4",
     "babel-eslint": "^10.0.3",
+    "copy-webpack-plugin": "5.0.0",
     "cross-env": "^7.0.3",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
@@ -39,12 +41,12 @@
   "main": "babel.config.js",
   "repository": {
     "type": "git",
-    "url": "git+https://gitee.com/duider/halo-comment-joe2.0.git"
+    "url": "git+https://github.com/qinhua/halo-comment-joe2.0.git"
   },
   "author": "qinhua",
   "license": "MIT",
   "bugs": {
-    "url": "https://gitee.com/duider/halo-comment-joe2.0/issues"
+    "url": "https://github.com/qinhua/halo-comment-joe2.0/issues"
   },
-  "homepage": "https://gitee.com/duider/halo-comment-joe2.0#readme"
+  "homepage": "https://github.com/qinhua/halo-comment-joe2.0#readme"
 }

@@ -27,10 +27,11 @@ export default {
   name: "Categories",
   data: () => ({
     categories: [
-      { name: "haha", title: "Haha" },
-      { name: "bilibili", title: "Bilibili" },
-      // { name: "tieba", title: "Tieba" },
-      { name: "menhera", title: "(✪ω✪)" },
+      { name: 'haha', title: '泡泡' },
+      { name: 'bilibili', title: 'B站' },
+      // { name: 'gulu', title: '咕噜' },
+      // { name: 'tieba', title: '贴吧' },
+      { name: 'menhera', title: '颜文字' },
     ],
     active: 0,
   }),
