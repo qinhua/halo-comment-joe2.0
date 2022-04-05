@@ -174,7 +174,7 @@ export default {
       editing: false,
       globalData: globals,
       error_img: `${process.env.BASE_URL}assets/svg/img_error.svg`,
-      unknow_ua: `${process.env.BASE_URL}assets/ua/unknown.svg`,
+      unknow_ua: `${process.env.BASE_URL}assets/ua/unknow.svg`,
     };
   },
   created() {

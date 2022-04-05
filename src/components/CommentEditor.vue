@@ -517,21 +517,24 @@ export default {
     },
     pullInfo() {
       let author = this.comment.author;
-      if (author.length != 0 && isQQ(author)) {
-        // 如果是QQ号，则拉取QQ头像
-        this.pullQQInfo(() => {
-          this.$tips("拉取QQ信息失败！尝试拉取Gravatar", 2000, this);
-          // 如果QQ拉取失败，则尝试拉取Gravatar
-          this.pullGravatarInfo();
-        });
-        return;
-      }
-      // 防止刚拉取完QQ头像就拉取Gravatar头像
-      if (this.lockPullAvatar) {
-        this.lockPullAvatar = false;
-        return;
-      }
-      // 否则拉取Gravatar头像
+
+      // 暂时注释拉取QQ头像功能
+      // if (author.length != 0 && isQQ(author)) {
+      //   // 如果是QQ号，则拉取QQ头像
+      //   this.pullQQInfo(() => {
+      //     this.$tips("拉取QQ信息失败！尝试拉取Gravatar", 2000, this);
+      //     // 如果QQ拉取失败，则尝试拉取Gravatar
+      //     this.pullGravatarInfo();
+      //   });
+      //   return;
+      // }
+      // // 防止刚拉取完QQ头像就拉取Gravatar头像
+      // if (this.lockPullAvatar) {
+      //   this.lockPullAvatar = false;
+      //   return;
+      // }
+
+      // 拉取Gravatar头像
       this.pullGravatarInfo();
     },
     pullQQInfo(errorQQCallback) {

@@ -2,7 +2,7 @@ import axios from 'axios'
 require('promise.prototype.finally').shim();
 
 const service = axios.create({
-  baseURL: process.env.NODE_ENV === 'production' ? '' : 'http://localhost:8090',
+  baseURL: '',
   timeout: 5000,
   withCredentials: true
 })

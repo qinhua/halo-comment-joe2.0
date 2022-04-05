@@ -227,3 +227,7 @@ for (var i = 0; i < comments.length; i++) {
 ### 关于emoji
 
 项目中的 emoji 解析依赖了 [j-marked](https://github.com/qinhua/j-marked) 这个包。
+
+### 打包
+
+开发完毕后，你可以执行 `npm run build:wc` 编译出用于生产环境的 `webcomponent` 组件
