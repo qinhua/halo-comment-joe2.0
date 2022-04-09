@@ -3,6 +3,7 @@
     <img
       class="preview-content"
       :src="url"
+      onerror="this.src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='"
       alt="评论中的图片"
       @load="loadHandler"
     />

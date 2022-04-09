@@ -1,6 +1,6 @@
 <template>
   <span class="emoji-item" :title="data.description">
-    <img :src="hahaSrc" />
+    <img :src="hahaSrc" onerror="this.src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='" />
   </span>
 </template>
 

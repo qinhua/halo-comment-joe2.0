@@ -1,6 +1,6 @@
 <template>
   <span class="emoji-item" :title="data.description">
-    <img :src="tiebaSrc" />
+    <img :src="tiebaSrc" onerror="this.src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='" />
   </span>
 </template>
 
