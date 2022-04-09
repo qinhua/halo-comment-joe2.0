@@ -9,7 +9,7 @@ export default {
   avatarLoading: `${process.env.BASE_URL}assets/svg/spinner-preloader.svg`, // 头像加载时展示的图片
   loadingStyle: "default", // 评论加载时的loading样式
   aWord: "你是我一生只会遇见一次的惊喜 ...", // 输入框聚焦时提示的一言
-  authorPopup: "输入QQ号将自动拉取昵称和头像", // 输入昵称时的提示文案
+  authorPopup: "你的昵称是啥呢？", // 输入昵称时的提示文案
   emailPopup: "你将收到回复通知", // 输入邮箱时的提示文案
   urlPopup: "禁止小广告😀", // 输入网址时的提示文案
   notComment: "暂无评论", // 无数据时展示的文案

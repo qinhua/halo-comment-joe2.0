@@ -52,7 +52,7 @@
         <PopupInput
           class="cmt-popup cmt-author"
           popupStyle="margin-left: -115px"
-          :popupText="configs.authorPopup || '你的昵称是啥呢'"
+          :popupText="configs.authorPopup"
           inputType="text"
           placeholder="* 昵称"
           id="author"
@@ -62,7 +62,7 @@
         <PopupInput
           class="cmt-popup"
           popupStyle="margin-left: -65px;"
-          :popupText="configs.emailPopup || '你将收到回复通知'"
+          :popupText="configs.emailPopup"
           inputType="text"
           placeholder="* 邮箱"
           id="email"

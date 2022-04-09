@@ -21,7 +21,7 @@
 | avatarLoading  | 头像加载时展示的图片     | ''                                 |                            |
 | loadingStyle   | 评论加载样式             | `default`                          | `default` `circle` `balls` |
 | aWord          | 评论框内的一言           | `你是我一生只会遇见一次的惊喜 ...` | -                          |
-| authorPopup    | 填写昵称时的提示         | `输入QQ号将自动拉取昵称和头像`     | -                          |
+| authorPopup    | 填写昵称时的提示         | `你的昵称是啥呢？`     | -                          |
 | emailPopup     | 填写 email 时的提示      | `你将收到回复通知`                 | -                          |
 | urlPopup       | 填写网站链接时的提示     | `禁止小广告😀`                     | -                          |
 | notComment     | 没有评论时显示的语句     | `暂无评论`                         | -                          |
