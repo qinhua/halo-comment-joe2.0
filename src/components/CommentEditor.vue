@@ -48,10 +48,11 @@
             <i :class="[checkType.icon]" aria-hidden="true"></i>
           </div>
         </div>
+        <!-- :popupText="configs.authorPopup || '输入QQ号将自动拉取昵称和头像'" -->
         <PopupInput
           class="cmt-popup cmt-author"
           popupStyle="margin-left: -115px"
-          :popupText="configs.authorPopup || '输入QQ号将自动拉取昵称和头像'"
+          :popupText="configs.authorPopup || '你的昵称是啥呢'"
           inputType="text"
           placeholder="* 昵称"
           id="author"
