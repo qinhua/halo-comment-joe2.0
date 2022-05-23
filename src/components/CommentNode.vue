@@ -237,7 +237,7 @@ export default {
       if (!result.browser.name) return "";
       var browserImg = `${
         process.env.BASE_URL
-      }assets/ua/${result.browser.name.toLowerCase()}.svg`;
+      }assets/ua/${decodeURIComponent(result.browser.name.toLowerCase())}.svg`;
       var uaImg = "";
 
       switch (result.os.name) {
@@ -246,10 +246,10 @@ export default {
             case "7":
             case "8":
             case "10":
-              uaImg = `${process.env.BASE_URL}assets/ua/windows_win${result.os.version}.svg`;
+              uaImg = `${process.env.BASE_URL}assets/ua/windows_win${decodeURIComponent(result.os.version)}.svg`;
               break;
             case "":
-              uaImg = `${process.env.BASE_URL}assets/ua/windows_${result.os.version}.svg`;
+              uaImg = `${process.env.BASE_URL}assets/ua/windows_${decodeURIComponent(result.os.version)}.svg`;
               break;
             default:
               uaImg = `${process.env.BASE_URL}assets/ua/windows.svg`;
@@ -257,7 +257,7 @@ export default {
           }
           break;
         default:
-          uaImg = `${process.env.BASE_URL}assets/ua/${result.os.name
+          uaImg = `${process.env.BASE_URL}assets/ua/${decodeURIComponent(result.os.name)
             .replace(/\s+/g, "")
             .toLowerCase()}.svg`;
           break;
