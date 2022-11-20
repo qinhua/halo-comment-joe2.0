@@ -4,6 +4,7 @@ export default {
   showUserAgent: true, // 是否显示用户UserAgent信息
   gravatarType: "mm", // gravatar头像类型（可在后台管理里设置）
   gravatarSource: "", // gravatar头像源
+  bloggerAvatar: "", // 博主头像来源
   gravatarSourceDefault: "https://cn.gravatar.com/avatar", // gravatar默认头像源
   avatarError: `${process.env.BASE_URL}assets/img/default_avatar.jpg`, // 头像加载错误时展示的图片
   avatarLoading: `${process.env.BASE_URL}assets/svg/spinner-preloader.svg`, // 头像加载时展示的图片
