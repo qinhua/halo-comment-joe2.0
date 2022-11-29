@@ -56,6 +56,7 @@ div {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-appearance: none;
+    appearance: none;
     outline: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
@@ -162,7 +163,6 @@ div {
       }
 
       @keyframes grow {
-
         0%,
         100% {
           transform: scaleY(1);
@@ -316,11 +316,9 @@ div {
       padding: 0;
 
       &.shadow {
-
         img.avatar {
           transition: all ease 1s;
           box-shadow: 0 1px 10px -6px rgba(0, 0, 0, 0.5);
-
         }
 
         .profile:hover {
@@ -509,7 +507,7 @@ div {
       color: #63686d;
       position: relative;
 
-      >*:last-child {
+      > *:last-child {
         margin-bottom: 0;
       }
 
@@ -678,7 +676,6 @@ div {
 
     input,
     textarea {
-
       &:focus,
       &:active {
         outline: 0;
@@ -760,8 +757,8 @@ div {
             }
           }
 
-          &:not(:placeholder-shown)~.input-label,
-          &:focus~.input-label {
+          &:not(:placeholder-shown) ~ .input-label,
+          &:focus ~ .input-label {
             color: #fff;
             background-color: var(--theme);
             transform: scale(0.75) translate(-2px, -37px);
@@ -939,7 +936,7 @@ div {
         }
 
         .button-cancel-reply {
-          opacity: .9;
+          opacity: 0.9;
           display: inline-block;
           color: var(--minor);
           font-weight: 500;
@@ -948,8 +945,8 @@ div {
           background: transparent;
           border: 1px solid var(--minor);
           border-radius: 4px;
-          animation: bottom20 .5s;
-          transition: all .3s ease 0s;
+          animation: bottom20 0.5s;
+          transition: all 0.3s ease 0s;
 
           &:hover {
             opacity: 1;
